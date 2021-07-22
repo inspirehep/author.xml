@@ -15,7 +15,7 @@ sometext
 
 # author.xml
 
-1.[DDD ](#descd)
+1.[DDD. ](#descd)
 2. [ Usage tips. ](#usage)
 
 <a name="descd"></a>
