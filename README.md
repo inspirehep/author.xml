@@ -1,6 +1,6 @@
 # author.xml
-
-1. [ Description. ](#desc)
+1. [Description. ]   [](#desc)
+1. [Description.](#desc)
 2. [ Usage tips. ](#usage)
 
 <a name="desc"></a>
