@@ -16,7 +16,7 @@ sometext
 # author.xml
 
 1.[DDD.](#descd)
-2. [ Usage tips. ](#usage)
+2.[ Usage tips. ](#usage)
 
 <a name="descd"></a>
 ## 1. Descriptiond
