@@ -12,16 +12,3 @@ sometext
 ## 2. Usage tips
 sometext
 
-
-# author.xml
-
-1.[DDD.](#descd)
-2.[ Usage tips. ](#usage)
-
-<a name="descd"></a>
-## 1. DDD
-sometext
-
-<a name="usage"></a>
-## 2. Usage tips
-sometext
