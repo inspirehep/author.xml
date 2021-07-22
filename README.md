@@ -19,7 +19,7 @@ sometext
 2.[ Usage tips. ](#usage)
 
 <a name="descd"></a>
-## 1. Descriptiond
+## 1. DDD
 sometext
 
 <a name="usage"></a>
