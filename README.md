@@ -1,8 +1,8 @@
 # author.xml
 
 
-3. [Description.](#desc)
-4. [ Usage tips. ](#usage)
+1. [Description.](#desc)
+2. [ Usage tips. ](#usage)
 
 <a name="desc"></a>
 ## 1. Description
