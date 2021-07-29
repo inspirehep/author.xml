@@ -20,3 +20,4 @@ sometext
 <a name="sponsors"></a>
 ## Who sponsors?
 sometext
+![](../images/Angus-Satigny.jpg)
