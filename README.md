@@ -13,9 +13,9 @@ When submitting your document, you should also submit a file called author.xml. 
 
 <a name="whyxml"></a>
 ### Why XML for author.xml?
-From the introduction, you will have gathered that the authors' file, author.xml, uses the language XML. XML stands for eXtensible Markup Language. Markup means implies that there is a specific format structure, hence your content is entered according to that structure. You will put your input between tags that will help you follow the structure. The term 'eXtensible' means that we decide what the tags should be called - the tags in the author.xml schema have been defined and agreed upon, so don't go adding your own. 
+From the introduction, you will have gathered that the authors' file, author.xml, uses the language XML. XML stands for eXtensible Markup Language. Markup means implies that there is a specific format structure, hence your content is entered according to that orgnised model. You will enter your input between tags that will help you follow the structure. The term 'eXtensible' means that we decide what the tags should be called - the tags in the author.xml schema have been defined and agreed upon, so don't go adding your own. 
 
-XML was designed to store and transport data, and it is both human- and machine-readable. This perfectly suits our needs for the language to read and write the author.xml files.
+XML was designed to store and transport data, and it is both human- and machine-readable. This perfectly satisfies our requirements for the language used to read and write the author.xml files. Note that XML files are data files, the information doesn't do anything on its own.
 
 <a name="usage"></a>
 ## 2. Usage tips
