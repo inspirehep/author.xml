@@ -20,11 +20,11 @@ XML was designed to store and transport data, and it is both human- and machine-
 <a name="whatadvantages"></a>
 ### What are the advantages of author.xml file?
 These are the advantages of using an author.xml file when you submit your document:
--- Paper processing speed
+ - Paper processing speed
 
--- Accurate author information
+ - Accurate author information
 
--- Automatic generation
+ - Automatic generation
 
 
 
