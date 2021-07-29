@@ -1,8 +1,8 @@
 # INSPIRE Collaboration Author Lists
 ### The author.xml file - introduction, specification, creation
 1. [Introduction](#introduction)
-    + [Why XML for author.xml](#whyxml)
-    - [Who sponsors?](#sponsors)
+    + [Why XML for author.xml file?](#whyxml)
+    - [What are the advantages of author.xml file?](#whatadvantages)
 
 3. [ Usage tips](#usage)
 
@@ -17,12 +17,20 @@ From the introduction, you will have gathered that the authors' file, author.xml
 
 XML was designed to store and transport data, and it is both human- and machine-readable. This perfectly satisfies our requirements for the language used to read and write the author.xml files. Note that XML files are data files, the information doesn't do anything on its own.
 
+<a name="whatadvantages"></a>
+### What are the advantages of author.xml file?
+These are the advantages of using an author.xml file when you submit your document:
+-- Paper processing speed
+
+-- Accurate author information
+
+-- Automatic generation
+
+
+
 <a name="usage"></a>
 ## 2. Usage tips
 sometext
-
-
-
 <a name="sponsors"></a>
 ## Who sponsors?
 sometext
