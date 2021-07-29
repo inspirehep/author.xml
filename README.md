@@ -1,4 +1,5 @@
-# author.xml
+# INSPIRE Collaboration Author Lists
+## The author.xml file - information, specification, creation
 1. [Description](#desc)
     + [Background](#background)
     - [Who sponsors?](#sponsors)
