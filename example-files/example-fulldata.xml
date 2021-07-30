@@ -1,0 +1,78 @@
+<!--
+ 
+	Example of a minimal authors.xml file.
+	It includes examples for people with and without affiliations and/or author IDs
+!
+-->
+<collaborationauthorlist>
+<cal:creationDate>2010-05-12_10:10</cal:creationDate>
+<cal:publicationReference>http://arXiv.org/abs/1002.0621</cal:publicationReference>
+<cal:collaborations>
+<cal:collaboration id="c1">
+<foaf:name>ATLANTIS</foaf:name>
+</cal:collaboration>
+</cal:collaborations>
+<cal:organizations>
+<foaf:Organization id="a1">
+<foaf:name>Yerevan Phys. Inst.</foaf:name>
+</foaf:Organization>
+<foaf:Organization id="a59a">
+<foaf:name>INFN, Florence</foaf:name>
+</foaf:Organization>
+<foaf:Organization id="a59b">
+<foaf:name>Florence U.</foaf:name>
+</foaf:Organization>
+<foaf:Organization id="a109">
+<foaf:name>CERN</foaf:name>
+</foaf:Organization>
+</cal:organizations>
+<cal:authors>
+<!--
+ Author with 1 affiliation and 1 INSPIRE author ID !
+-->
+<foaf:Person>
+<foaf:name>Vardan Khachatryan</foaf:name>
+<foaf:givenName>Vardan</foaf:givenName>
+<foaf:familyName>Khachatryan</foaf:familyName>
+<cal:authorNamePaper>V. Khachatryan</cal:authorNamePaper>
+<cal:authorNamePaperGiven>V.</cal:authorNamePaperGiven>
+<cal:authorNamePaperFamily>Khachatryan</cal:authorNamePaperFamily>
+<cal:authorCollaboration collaborationid="c1"/>
+<cal:authorAffiliations>
+<cal:authorAffiliation organizationid="a1"/>
+</cal:authorAffiliations>
+<cal:authorids>
+<cal:authorid source="INSPIRE">INSPIRE-00314584</cal:authorid>
+</cal:authorids>
+</foaf:Person>
+<!--
+ Author with no affiliation and 1 internal author ID !
+-->
+<foaf:Person>
+<foaf:name>Marcello Abbrescia</foaf:name>
+<foaf:givenName>Marcello</foaf:givenName>
+<foaf:familyName>Abbrescia</foaf:familyName>
+<cal:authorNamePaper>M. Abbrescia</cal:authorNamePaper>
+<cal:authorNamePaperGiven>M.</cal:authorNamePaperGiven>
+<cal:authorNamePaperFamily>Abbrescia</cal:authorNamePaperFamily>
+<cal:authorCollaboration collaborationid="c1"/>
+<cal:authorids>
+<cal:authorid source="INTERNAL">514</cal:authorid>
+</cal:authorids>
+</foaf:Person>
+<!-- Author with 1 affiliation and no author ID !-->
+<foaf:Person>
+<foaf:name>Benjamin C. Shen</foaf:name>
+<foaf:givenName>Benjamin C.</foaf:givenName>
+<foaf:familyName>Shen</foaf:familyName>
+<cal:authorStatus>Deceased</cal:authorStatus>
+<cal:authorNamePaper>B.C. Shen</cal:authorNamePaper>
+<cal:authorNamePaperGiven>B.C.</cal:authorNamePaperGiven>
+<cal:authorNamePaperFamily>Shen</cal:authorNamePaperFamily>
+<cal:authorCollaboration collaborationid="c1"/>
+<cal:authorAffiliations>
+<cal:authorAffiliation organizationid="a109"/>
+</cal:authorAffiliations>
+</foaf:Person>
+</cal:authors>
+</collaborationauthorlist>
