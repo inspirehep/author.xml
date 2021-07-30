@@ -1,0 +1,130 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
+<!-- 
+	Example of an authors.xml file holding groups of collaborations and institutions.
+!-->
+<collaborationauthorlist
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
+   
+   <cal:creationDate>2011-02-04</cal:creationDate>
+   <cal:publicationReference>CERN-2011-002</cal:publicationReference>
+   <cal:collaborations>
+      <cal:collaboration id="c">
+         <foaf:name>ATLAS-DINGSDA-Collaboration</foaf:name>
+      </cal:collaboration>
+      <cal:collaboration id="c1">
+         <foaf:name>ATLANTIS</foaf:name>
+         <cal:experimentNumber>CERN-VLHC-ATLANTIS</cal:experimentNumber>
+         <cal:group with="c" />
+      </cal:collaboration>
+      <cal:collaboration id="c2">
+         <foaf:name>DINGSDA</foaf:name>
+         <cal:experimentNumber>DESY-DINGSDA</cal:experimentNumber>
+         <cal:group with="c" />
+      </cal:collaboration>
+   </cal:collaborations>
+
+
+   <cal:organizations>
+      <foaf:Organization id="a1">
+         <foaf:name>Pisa</foaf:name>
+         <cal:orgAddress>I-56127 Pisa, Italy</cal:orgAddress>
+      </foaf:Organization>
+      <foaf:Organization id="a1aa">
+         <cal:orgDomain>http://www.pi.infn.it</cal:orgDomain>
+         <foaf:name>Istituto Nazionale di Fisica Nucleare Pisa</foaf:name>
+         <cal:orgName source="INSPIRE">INFN, Pisa</cal:orgName>
+         <cal:orgStatus collaborationid="c1"></cal:orgStatus>
+         <cal:orgAddress>I-56127 Pisa, Italy</cal:orgAddress>
+         <cal:group with="a1" />
+      </foaf:Organization>
+     <foaf:Organization id="a1bb">
+         <cal:orgDomain>http://www.df.unipi.it</cal:orgDomain>
+         <foaf:name>University of Pisa</foaf:name>
+         <cal:orgName source="INSPIRE">Pisa U.</cal:orgName>
+         <cal:orgStatus collaborationid="c1"></cal:orgStatus>
+         <cal:orgAddress>I-56127 Pisa, Italy</cal:orgAddress>
+         <cal:group with="a1" />
+      </foaf:Organization>
+     <foaf:Organization id="a1cc">
+         <cal:orgDomain>http://www.sns.it</cal:orgDomain>
+         <foaf:name>Scuola Normale Superiore</foaf:name>
+         <cal:orgName source="INSPIRE">Pisa, Scuola Normale Superiore</cal:orgName>
+         <cal:orgStatus collaborationid="c1"></cal:orgStatus>
+         <cal:orgAddress>I-56127 Pisa, Italy</cal:orgAddress>
+         <cal:group with="a1" />
+      </foaf:Organization>
+      <foaf:Organization id="aCanada">
+         <foaf:name>Canada</foaf:name>
+      </foaf:Organization>
+     <foaf:Organization id="a2">
+         <cal:orgDomain>http://www.alberta.ca</cal:orgDomain>
+         <foaf:name>University of Alberta</foaf:name>
+         <cal:orgName source=""></cal:orgName>
+         <cal:orgStatus collaborationid="c1"></cal:orgStatus>
+         <cal:orgAddress></cal:orgAddress>
+         <cal:group with="aCanada" />
+      </foaf:Organization>
+     <foaf:Organization id="a3">
+         <cal:orgDomain>http://www.ubc.ca</cal:orgDomain>
+         <foaf:name>University of British Columbia</foaf:name>
+         <cal:orgName source=""></cal:orgName>
+         <cal:orgStatus collaborationid="c1"></cal:orgStatus>
+         <cal:orgAddress></cal:orgAddress>
+         <cal:group with="aCanada" />
+      </foaf:Organization>
+      <foaf:Organization id="a4">
+         <cal:orgDomain>http://www.cern.ch</cal:orgDomain>
+         <foaf:name>CERN</foaf:name>
+         <cal:orgName source=""></cal:orgName>
+         <cal:orgStatus collaborationid="c1"></cal:orgStatus>
+         <cal:orgAddress></cal:orgAddress>
+      </foaf:Organization>
+
+   </cal:organizations>
+   
+   <cal:authors>
+      <foaf:Person>
+         <foaf:name>John Q. Public</foaf:name>
+         <cal:authorNameNative></cal:authorNameNative>
+         <foaf:givenName>John Quentin</foaf:givenName>
+         <foaf:familyName>Public</foaf:familyName>
+         <cal:authorSuffix></cal:authorSuffix>
+         <cal:authorStatus></cal:authorStatus>
+         <cal:authorNamePaper>J. Public</cal:authorNamePaper>
+         <cal:authorNamePaperGiven>J.</cal:authorNamePaperGiven>
+         <cal:authorNamePaperFamily>Public</cal:authorNamePaperFamily>
+         <cal:authorCollaboration collaborationid="c" position="spokesperson" />
+         <cal:authorAffiliations>
+            <cal:authorAffiliation organizationid="aCanada" connection="" />
+         </cal:authorAffiliations>
+         <cal:authorids>
+            <cal:authorid source=""></cal:authorid>
+         </cal:authorids>
+         <cal:authorFunding>Gretzky Foundation Fellow</cal:authorFunding>
+      </foaf:Person>
+      <foaf:Person>
+         <foaf:name>Mario Rossi</foaf:name>
+         <cal:authorNameNative></cal:authorNameNative>
+         <foaf:givenName>Mario</foaf:givenName>
+         <foaf:familyName>Rossi</foaf:familyName>
+         <cal:authorSuffix></cal:authorSuffix>
+         <cal:authorStatus></cal:authorStatus>
+         <cal:authorNamePaper>M. Rossi</cal:authorNamePaper>
+         <cal:authorNamePaperGiven>M.</cal:authorNamePaperGiven>
+         <cal:authorNamePaperFamily>Rossi</cal:authorNamePaperFamily>
+         <cal:authorCollaboration collaborationid="c" position="spokesperson" />
+         <cal:authorAffiliations>
+            <cal:authorAffiliation organizationid="a1aa" connection="" />
+            <cal:authorAffiliation organizationid="a1cc" connection="" />
+         </cal:authorAffiliations>
+         <cal:authorids>
+            <cal:authorid source=""></cal:authorid>
+         </cal:authorids>
+      </foaf:Person>
+
+   </cal:authors>
+</collaborationauthorlist>
