@@ -35,3 +35,5 @@ sometext
 ## Who sponsors?
 sometext
 ![image](images/Angus-Satigny.jpg)
+
+[XML example-minimal file](example-files/example-minimal.xml)
