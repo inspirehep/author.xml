@@ -1,0 +1,137 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
+<!-- 
+	Example of an authors.xml file holding a full set of data with several collaborations.
+	It includes examples for people with multiple affiliations and/or author IDs that are member of
+	either of the collaborations
+!-->
+<collaborationauthorlist 
+   	xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+   	xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
+   		
+  <cal:creationDate>2010-05-12_10:10</cal:creationDate>
+  <cal:publicationReference>http://arXiv.org/abs/1002.0621</cal:publicationReference>
+  
+  <cal:collaborations>
+    <cal:collaboration id="c1">
+      <foaf:name>ATLANTIS</foaf:name>
+      <cal:experimentNumber>CERN-LHC-ATLANTIS</cal:experimentNumber>
+    </cal:collaboration>
+    <cal:collaboration id="c2">
+      <foaf:name>PerSePhoNE</foaf:name>
+      <cal:experimentNumber>FNAL-E-2341</cal:experimentNumber>
+    </cal:collaboration>
+  </cal:collaborations>
+  
+  <cal:organizations>
+    <foaf:Organization id="a1">
+      <cal:orgDomain>http://yerphi.am</cal:orgDomain>
+      <foaf:name>Yerevan Phys. Inst.</foaf:name>
+      <cal:orgName source="INSPIRE">Yerevan Phys. Inst.</cal:orgName>
+      <cal:orgStatus collaborationid="c1">Member</cal:orgStatus>
+      <cal:orgStatus collaborationid="c2">Member</cal:orgStatus>
+      <cal:orgAddress>Yerevan Physics Institute, Yerevan, Armenia</cal:orgAddress>
+    </foaf:Organization>
+    <foaf:Organization id="a59a">
+      <cal:orgDomain>http://fi.infn.it</cal:orgDomain>
+      <foaf:name>INFN, Florence</foaf:name>
+      <cal:orgName source="INSPIRE">INFN, Florence</cal:orgName>
+      <cal:orgStatus collaborationid="c1">Member</cal:orgStatus>
+      <cal:orgAddress>INFN Sezione di Firenze, Firenze, Italy</cal:orgAddress>
+    </foaf:Organization>
+    <foaf:Organization id="a59b">
+      <cal:orgDomain>http://unifi.it</cal:orgDomain>
+      <foaf:name>Florence U.</foaf:name>
+      <cal:orgName source="INSPIRE">Florence U.</cal:orgName>
+      <cal:orgStatus collaborationid="c1">Member</cal:orgStatus>
+      <cal:orgAddress>Università di Firenze, Firenze, Italy</cal:orgAddress>
+    </foaf:Organization>
+    <foaf:Organization id="a139">
+      <cal:orgDomain>http://fnal.gov</cal:orgDomain>
+      <foaf:name>Fermi National Accelerator Laboratory, Batavia, USA</foaf:name>
+      <cal:orgName source="spiresICN">Fermilab</cal:orgName>
+      <cal:orgName source="InstId">808</cal:orgName>
+      <cal:orgStatus collaborationid="c2">Member</cal:orgStatus>
+      <cal:orgAddress/>
+    </foaf:Organization>
+  </cal:organizations>
+  
+  <cal:authors>
+    <foaf:Person>
+      <foaf:name>Vardan Khachatryan</foaf:name>
+      <cal:authorNameNative>Վարդան Խաչատրյան</cal:authorNameNative>
+      <foaf:givenName>Vardan</foaf:givenName>
+      <foaf:familyName>Khachatryan</foaf:familyName>
+      <cal:authorSuffix/>
+      <cal:authorStatus/>
+      <cal:authorNamePaper>V. Khachatryan</cal:authorNamePaper>
+      <cal:authorNamePaperGiven>V.</cal:authorNamePaperGiven>
+      <cal:authorNamePaperFamily>Khachatryan</cal:authorNamePaperFamily>
+      <cal:authorCollaboration collaborationid="c1" position="Contact Person" />
+      <cal:authorAffiliations>
+        <cal:authorAffiliation organizationid="a1"/>
+      </cal:authorAffiliations>
+      <cal:authorids>
+        <cal:authorid source="INSPIRE">INSPIRE-00314584</cal:authorid>
+        <cal:authorid source="INSPIRE">419</cal:authorid>
+      </cal:authorids>
+    </foaf:Person>
+    <foaf:Person>
+      <foaf:name>Marcello Abbrescia</foaf:name>
+      <cal:authorNameNative/>
+      <foaf:givenName>Marcello</foaf:givenName>
+      <foaf:familyName>Abbrescia</foaf:familyName>
+      <cal:authorSuffix/>
+      <cal:authorStatus/>
+      <cal:authorNamePaper>M. Abbrescia</cal:authorNamePaper>
+      <cal:authorNamePaperGiven>M.</cal:authorNamePaperGiven>
+      <cal:authorNamePaperFamily>Abbrescia</cal:authorNamePaperFamily>
+      <cal:authorCollaboration collaborationid="c2" />
+      <cal:authorAffiliations>
+        <cal:authorAffiliation organizationid="a59a"/>
+        <cal:authorAffiliation organizationid="a59b"/>
+        <cal:authorAffiliation organizationid="a139" connection="Also at"/>
+      </cal:authorAffiliations>
+      <cal:authorids>
+        <cal:authorid source="INSPIRE">INSPIRE-00307514</cal:authorid>
+      </cal:authorids>
+    </foaf:Person>
+    <foaf:Person>
+      <foaf:name>Benjamin C. Shen</foaf:name>
+      <cal:authorNameNative/>
+      <foaf:givenName>Benjamin C.</foaf:givenName>
+      <foaf:familyName>Shen</foaf:familyName>
+      <cal:authorSuffix/>
+      <cal:authorStatus>Deceased</cal:authorStatus>
+      <cal:authorNamePaper>B.C. Shen</cal:authorNamePaper>
+      <cal:authorNamePaperGiven>B.C.</cal:authorNamePaperGiven>
+      <cal:authorNamePaperFamily>Shen</cal:authorNamePaperFamily>
+      <cal:authorCollaboration collaborationid="c1" />
+      <cal:authorAffiliations>
+        <cal:authorAffiliation organizationid="a139"/>
+      </cal:authorAffiliations>
+      <cal:authorids>
+        <cal:authorid source="INSPIRE">INSPIRE-00125803</cal:authorid>
+      </cal:authorids>
+    </foaf:Person>
+    <foaf:Person>
+      <foaf:name>Gerard F. Donald</foaf:name>
+      <cal:authorNameNative/>
+      <foaf:givenName>Gerard F.</foaf:givenName>
+      <foaf:familyName>Donald</foaf:familyName>
+      <cal:authorSuffix/>
+      <cal:authorNamePaper>G.F. Donald</cal:authorNamePaper>
+      <cal:authorNamePaperGiven>G.F.</cal:authorNamePaperGiven>
+      <cal:authorNamePaperFamily>Donald</cal:authorNamePaperFamily>
+      <cal:authorCollaboration collaborationid="c2" position="Spokesperson"/>
+      <cal:authorCollaboration collaborationid="c2" position="Contact Person"/>
+      <cal:authorAffiliations>
+        <cal:authorAffiliation organizationid="a139"/>
+      </cal:authorAffiliations>
+      <cal:authorids>
+        <cal:authorid source="INSPIRE">INSPIRE-00125803</cal:authorid>
+      </cal:authorids>
+    </foaf:Person>
+  </cal:authors>
+</collaborationauthorlist>
