@@ -39,3 +39,5 @@ sometext
 [XML example - minimal file](example-files/example-minimal.xml)
 
 [XML example - full-data file](example-files/example-fulldata.xml)
+
+[XML example - multicollaboration file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-multicollaboration.xml)
