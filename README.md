@@ -15,28 +15,28 @@ When submitting your document, you should also submit a file called author.xml. 
 <a name="partners"></a>
 ## Partners in the author.xml project
 Information Services
-    • arXiv.org
-    • INSPIRE
+ - arXiv.org
+ -  INSPIRE
 Publishers
-    • American Physical Society
+ - American Physical Society
 Collaborations
-    • Pierre Auger Observatory
-    • Brookhaven STAR
-    • CERN ALICE
-    • CERN ATLAS
-    • CERN CMS
-    • CERN LHCb
-    • Daya Bay
-    • DUNE
-    • Fermilab CDF
-    • Fermilab D0
-    • Fermilab LArIAT
-    • Fermilab MicroBooNE
-    • IHEP BESIII
-    • JUNO
-    • KEK T2K
-    • NEMO
-    • ZEUS
+ - Pierre Auger Observatory
+ - Brookhaven STAR
+ - CERN ALICE
+ - CERN ATLAS
+ - CERN CMS
+ - CERN LHCb
+ - Daya Bay
+ - DUNE
+ - Fermilab CDF
+ - Fermilab D0
+ - Fermilab LArIAT
+ - Fermilab MicroBooNE
+ - IHEP BESIII
+ - JUNO
+ - KEK T2K
+ - NEMO
+ - ZEUS
 
 <a name="whyxml"></a>
 ### Why XML for author.xml?
