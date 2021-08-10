@@ -141,7 +141,7 @@ Given the XML file, an auto-generation process using xslt can be used to generat
 <a name="examplefiles"></a>
 ### Examples of author.xml files
 
-[XML example - minimal file](example-files/example-minimal.xml)
+[XML example - minimal file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-minimal.xml)
 
 [XML example - full-data file](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/example-files/example-fulldata.xml)
 
