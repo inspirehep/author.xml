@@ -6,13 +6,21 @@
     - [Why XML for author.xml file?](#whyxml)
     - [How does it work?](#howdoesitwork)
     - [What are the advantages of author.xml file?](#whatadvantages)
-3. [What do I need to get started?](#needtogetstarted)    
+3. [What do I need to get started?](#needtogetstarted)
     - [What is the workflow?](#workflow)
     - [Downloads](#downloads)
     - [Examples of author.xml files](#examplefiles)
-    - [Where do I get the information needed for author.xml](#infoneeded)
+    - [Where do I get the information needed for author.xml?](#infoneeded)
     - [Links](#links)
-4. 
+   
+4.  [The author.xml template - detailed description](#authorxmldetailed") 
+    - [Template author.xml](#template)
+    - [Table of XML elements explained](#tablexmlelements)
+7.  
+8.  template - detailed description
+
+
+
 
 
 
@@ -83,7 +91,7 @@ From the introduction, you will have gathered that the authors' file, author.xml
 XML was designed to store and transport data, and it is both human- and machine-readable. This perfectly satisfies our requirements for the language used to read and write the author.xml files. Note that XML files are data files, the information doesn't do anything on its own.
 
 <a name="howdoesitwork"></a>
-### How does it work?
+### Quick summary of steps
  - You can produce a tailored output from your collaboration’s author data by following the XML template.
  -  Once completed, the file can be tested and validated through the validation files included in the download.
  - When your file passes the test, please submit your file along with your next submission to arXiv in the .tar ball.
@@ -118,6 +126,9 @@ Given the XML file, an auto-generation process using xslt can be used to generat
 ### What is the workflow?
 1. Download package to have necessary template and files
 1. Gather the information that you will need to fill in the author.xml file
+1. Fill in the values for the XML elements in the template
+1. Validate the file, using a 'validator'
+1. You have the option of converting the xml file to another format
 
 <a name="downloads"></a>
 ### Downloads
@@ -126,7 +137,7 @@ Given the XML file, an auto-generation process using xslt can be used to generat
 authors.xsd XML schema defintion file (inluded in tar and zip)
 author.dtd XML document type defintion file (inluded in tar and zip)
 
-<a name="infoneeded>"</a>
+<a name="infoneeded"></a>
 ### Where do I get the information needed for author.xml?
 When you come to fill in some of the XML elements in author.xml, you will need have some information that is obtained elsewhere.
 
@@ -167,7 +178,17 @@ HEPNames
 HEPInstitutes
 FOAF Project
 
+<a name="authorxmldetailed"></a>
+## The author.xml template - detailed description
+The author.xml file has been designed for collaborations with more than 10 authors. An updated author.xml file should be included with each submission to arXiv. The collaboration’s XML file will contain information on each author, such as name, affiliation and INSPIRE ID Number. Descriptions of the template items are listed below the template.
 
+<a name="template"></a>
+### Template author.xml
+
+
+
+<a name="tablexmlelements"></a>
+### Table of XML elements explained
 
 
 
