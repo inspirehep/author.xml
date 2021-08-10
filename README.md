@@ -4,6 +4,7 @@
     - [Partners in the author.xml project](#partners)
 2. [A Brief description of author.xml file](#briefdescription)    
     - [Why XML for author.xml file?](#whyxml)
+    - [How does it work?](#howdoesitwork)
     - [What are the advantages of author.xml file?](#whatadvantages)
 3. [What do I need to get started?](#needtogetstarted)
 4. 
@@ -66,6 +67,14 @@ This information is meant to automate the process of publishing a document elect
 From the introduction, you will have gathered that the authors' file, author.xml, uses the language XML. XML stands for eXtensible Markup Language. Markup implies that there is a specific format structure, hence your content is entered according to that orgnised model. You will enter your data for the XML elements between tags that will help you follow the structure. The term 'eXtensible' means that we decided what the XML elements should be called. The elements in the author.xml schema have been defined and agreed upon by us. 
 
 XML was designed to store and transport data, and it is both human- and machine-readable. This perfectly satisfies our requirements for the language used to read and write the author.xml files. Note that XML files are data files, the information doesn't do anything on its own.
+
+<a name="howdoesitwork"></a>
+### How does it work?
+ - You can produce a tailored output from your collaboration’s author data by following the XML template.
+ -  Once completed, the file can be tested and validated through the validation files included in the download.
+ - When your file passes the test, please submit your file along with your next submission to arXiv in the .tar ball.
+ - If you encounter any problem and need assistance, or if you are unable provide the information required, please contact us:
+authors@inspirehep.net
 
 <a name="whatadvantages"></a>
 ### What are the advantages of author.xml file?
