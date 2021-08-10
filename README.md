@@ -196,8 +196,60 @@ The author.xml file has been designed for collaborations with more than 10 autho
 
 <a name="template"></a>
 ### Template author.xml
+<?xml version="1.0" encoding="UTF-8"?>
 
+<!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
 
+<collaborationauthorlist
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
+   
+   <cal:creationDate></cal:creationDate>
+   <cal:publicationReference></cal:publicationReference>
+   
+   <cal:collaborations>
+      <cal:collaboration id="c1">
+         <foaf:name></foaf:name>
+         <cal:experimentNumber></cal:experimentNumber>
+      </cal:collaboration>
+   </cal:collaborations>
+   
+   <cal:organizations>
+      <foaf:Organization id="a1">
+         <cal:orgDomain>http://</cal:orgDomain>
+         <foaf:name></foaf:name>
+         <cal:orgName source=""></cal:orgName>
+         <cal:orgStatus collaborationid="c1"></cal:orgStatus>
+         <cal:orgAddress></cal:orgAddress>
+         <cal:group with=""/>
+      </foaf:Organization>
+   </cal:organizations>
+   
+   <cal:authors>
+      <foaf:Person>
+         <foaf:name></foaf:name>
+         <foaf:givenName></foaf:givenName>
+         <foaf:familyName></foaf:familyName>
+         <cal:authorNameNative></cal:authorNameNative>
+         <cal:authorSuffix></cal:authorSuffix>
+         <cal:authorStatus></cal:authorStatus>
+         <cal:authorNamePaper></cal:authorNamePaper>
+         <cal:authorNamePaperGiven></cal:authorNamePaperGiven>
+         <cal:authorNamePaperFamily></cal:authorNamePaperFamily>
+         <cal:authorCollaboration collaborationid="c1" position="" />
+         <cal:authorAffiliations>
+            <cal:authorAffiliation organizationid="a1" connection="" />
+         </cal:authorAffiliations>
+         <cal:authorids>
+            <cal:authorid source=""></cal:authorid>
+         </cal:authorids>
+         <cal:authorFunding></cal:authorFunding>
+      </foaf:Person>
+   </cal:authors>
+</collaborationauthorlist>
+
+This is the original [template author.xml](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/template/template-author.xml)
+In order to help you [fill in the XML values](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/template/template-with-my_value_here), those fields are denoted by 'my_value_here'. 
 
 <a name="tablexmlelements"></a>
 ### Table explaining XML elements
