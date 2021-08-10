@@ -11,6 +11,7 @@
     - [Downloads](#downloads)
     - [Examples of author.xml files](#examplefiles)
     - [Where do I get the information needed for author.xml](#infoneeded)
+    - [Links](#links)
 4. 
 
 
@@ -127,6 +128,8 @@ author.dtd XML document type defintion file (inluded in tar and zip)
 
 <a name="infoneeded>"</a>
 ### Where do I get the information needed for author.xml?
+When you come to fill in some of the XML elements in author.xml, you will need have some information that is obtained elsewhere.
+
     • INSPIRE ID Numbers for a list of authors
 In your role as maintainer of the collaboration’s author list, you have two options to acquire INSPIRE ID Numbers for authors:
         1. Send a list of names and email addresses or the xml file without INSPIRE IDs to
@@ -155,6 +158,18 @@ Internet domains provide a unique, universally-understood way to list an institu
 choose the required level of granularity, either at the institutional or departmental level. For example:
         1. damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
         2. cam.ac.uk – for the University of Cambridge in general
+        
+<a name="Links"></a>
+### Links
+ORCID Initiative
+INSPIRE
+HEPNames
+HEPInstitutes
+FOAF Project
+
+
+
+
 
 <a name="usage"></a>
 ## 2. Usage tips
