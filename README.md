@@ -6,10 +6,22 @@
     - [Why XML for author.xml file?](#whyxml)
     - [How does it work?](#howdoesitwork)
     - [What are the advantages of author.xml file?](#whatadvantages)
-3. [What do I need to get started?](#needtogetstarted)
-4. [What is the workflow?](#workflow)
-5. 
-6. 
+3. [What do I need to get started?](#needtogetstarted)    
+    - [What is the workflow?](#workflow)
+    - [Downloads](#downloads)
+    - [Examples of author.xml files](#examplefiles)
+    - [Where do I get the information needed for author.xml](#infoneeded)
+4. 
+
+
+
+
+6.  
+7. 
+8. 
+
+8. 
+9. 
 
 
 
@@ -96,17 +108,53 @@ publication lists and citation counts as well as more comprehensive
 search results.
 
  - Automatic generation
-Given the XML file, an auto-generation process using xslt
-can be used to generate the author list for the paper in
-the desired LaTeX format.
+Given the XML file, an auto-generation process using xslt can be used to generate the author list for the paper in the desired LaTeX format.
 
 <a name="needtogetstarted"></a>
 ## What do I need to get started?
 
 <a name="workflow"></a)
 ### What is the workflow?
+1. Download package to have necessary template and files
+1. Gather the information that you will need to fill in the author.xml file
 
+<a name="downloads"></a>
+### Downloads
+.tar ball (includes the template, an example and a .dtd file for validation)
+.zip file (includes the template, an example and a .dtd file for validation)
+authors.xsd XML schema defintion file (inluded in tar and zip)
+author.dtd XML document type defintion file (inluded in tar and zip)
 
+<a name="infoneeded>"</a>
+### Where do I get the information needed for author.xml?
+    • INSPIRE ID Numbers for a list of authors
+In your role as maintainer of the collaboration’s author list, you have two options to acquire INSPIRE ID Numbers for authors:
+        1. Send a list of names and email addresses or the xml file without INSPIRE IDs to
+authors@inspirehep.net and we will return this list enriched with all the INSPIRE ID Numbers for the authors.
+These INSPIRE IDs can then be integrated into your author database and delivered as part of your next author list.
+        2. Provide the collaboration’s internal ID Numbers of the respective person directly in the author.xml file.
+If you choose this option, please ensure these IDs are persistent and unique within your collaboration.
+This way, no additional information is needed in the collaboration’s author database–we’ll
+match up the internal IDs with INSPIRE ID Numbers and make sure the authors always have the correct ID.
+      Motivation for #1: The INSPIRE IDs will be recognized by publishers and other databases or repositories
+and can also be shared with the authors, who may like to use them for searching and for papers they might write independently.
+Motivation for #2: Easiest approach for the collaboration. However, this will only work for INSPIRE and will not be shared with
+other parties.
+      In any case, once the author.xml is submitted and checked by the INSPIRE service team, missing IDs will be
+assigned accordingly and created if necessary. Additional information on INSPIRE ID numbers can be found at
+INSPIRE ID NUMBERS.
+    • INSPIRE ID Number for an individual
+The HEPNAMES
+database may be utilized to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page.
+If the individual has an entry in HEPNAMES, but not an INSPIRE ID Number, a number will be
+assigned upon  of the record. If the individual is not in HEPNAMES,
+you can simply ask the individual to
+add a record for him/herself. An INSPIRE ID number will be assigned automatically.
+    • Identification of affiliations by their Internet domain
+Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables one to
+choose the required level of granularity, either at the institutional or departmental level. For example:
+        1. damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
+        2. cam.ac.uk – for the University of Cambridge in general
 
 <a name="usage"></a>
 ## 2. Usage tips
