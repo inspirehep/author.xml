@@ -1,6 +1,7 @@
 # INSPIRE Collaboration Author Lists
 ### The author.xml file - introduction, specification, creation
 1. [Introduction](#introduction)
+    - [Partners in the author.xml project](#partners)
     + [Why XML for author.xml file?](#whyxml)
     - [What are the advantages of author.xml file?](#whatadvantages)
 
@@ -10,6 +11,32 @@
 ## 1. Introduction
 Submitting the complete author information with a document can be a daunting feat, especially when there might be hundreds or even thousands of authors. INSPIRE, the American Physical Society and arXiv.org have created a template to guide you when you submit information about the authors. In that way, the information that is communicated will be precise and univerally understood, and, as the saying goes, we will all be "on the same page". 
 When submitting your document, you should also submit a file called author.xml. This file is written in the XML language and should contains all the authors' information. Follow the file schema that is described below, it will aid you to provide your author.xml for the document.
+
+<a name="partners"></a>
+## Partners in the author.xml project
+Information Services
+    • arXiv.org
+    • INSPIRE
+Publishers
+    • American Physical Society
+Collaborations
+    • Pierre Auger Observatory
+    • Brookhaven STAR
+    • CERN ALICE
+    • CERN ATLAS
+    • CERN CMS
+    • CERN LHCb
+    • Daya Bay
+    • DUNE
+    • Fermilab CDF
+    • Fermilab D0
+    • Fermilab LArIAT
+    • Fermilab MicroBooNE
+    • IHEP BESIII
+    • JUNO
+    • KEK T2K
+    • NEMO
+    • ZEUS
 
 <a name="whyxml"></a>
 ### Why XML for author.xml?
