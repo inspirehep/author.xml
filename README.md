@@ -3,16 +3,16 @@
 1. [Introduction](#introduction)    
     - [Partners in the author.xml project](#partners)
 2. [A Brief description of author.xml file](#briefdescription)    
-    - [Why XML for author.xml file?](#whyxml)
+    - [Why XML for the author.xml file?](#whyxml)
     - [Quick summary of steps](#howdoesitwork)
-    - [What are the advantages of author.xml file?](#whatadvantages)
+    - [What are the advantages of an author.xml file?](#whatadvantages)
 3. [What do I need to get started?](#needtogetstarted)
     - [What is the workflow?](#workflow)
     - [Downloads](#downloads)
     - [Examples of author.xml files](#examplefiles)
     - [Where do I get the information needed for my input?](#infoneeded)
     - [Links](#links)
-4.  [How do I fill in the author.xml file](#fillinauthorxml")    
+4.  [**How do I fill in my author.xml file?**](#fillinauthorxml)    
     - [Template author.xml](#template)
     - [Table explaining XML elements](#tablexmlelements) 
 5.  [How do I validate my author.xml file?](#authorxmlvalidate)
@@ -77,7 +77,7 @@ When submitting your document, you should also submit a file called author.xml. 
  - ZEUS
 
 <a name="briefdescription"></a>
-### A Brief description of author.xml file
+### A Brief description of the author.xml file
 The author.xml file contains the following information:
  - Which paper does the author.xml correspond to?
  - The collaboration it represents.
@@ -101,7 +101,7 @@ XML was designed to store and transport data, and it is both human- and machine-
 authors@inspirehep.net
 
 <a name="whatadvantages"></a>
-### What are the advantages of author.xml file?
+### What are the advantages of the author.xml file?
 These are the advantages of using an author.xml file when you submit your document:
  - Paper processing speed
 Using an author.xml file allows INSPIRE to automatically add all authors
@@ -193,7 +193,7 @@ HEPInstitutes
 FOAF Project
 
 <a name="fillinauthorxml"></a>
-## How do I fill in the author.xml file
+## How do I fill in my author.xml file?
 The author.xml file has been designed for collaborations with more than 10 authors. An updated author.xml file should be included with each submission to arXiv. The collaboration’s XML file will contain information on each author, such as name, affiliation and INSPIRE ID Number. Descriptions of the template items are listed below the template.
 
 <a name="template"></a>
