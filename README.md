@@ -12,10 +12,12 @@
     - [Examples of author.xml files](#examplefiles)
     - [Where do I get the information needed for my input?](#infoneeded)
     - [Links](#links)
-   
-4.  [The author.xml template - detailed description](#authorxmldetailed") 
+4.  [How do I fill in the author.xml file](#fillinauthorxml")    
     - [Template author.xml](#template)
-    - [Table explaining XML elements](#tablexmlelements)
+    - [Table explaining XML elements](#tablexmlelements) 
+5.  [How do I validate my author.xml file?](#authorxmlvalidate)
+6.  [Can I convert my author.xml file to another format?](#authorxmlconvert)
+
 7.  
 8.  template - detailed description
 
@@ -190,8 +192,8 @@ HEPNames
 HEPInstitutes
 FOAF Project
 
-<a name="authorxmldetailed"></a>
-## The author.xml template - detailed description
+<a name="fillinauthorxml"></a>
+## How do I fill in the author.xml file
 The author.xml file has been designed for collaborations with more than 10 authors. An updated author.xml file should be included with each submission to arXiv. The collaboration’s XML file will contain information on each author, such as name, affiliation and INSPIRE ID Number. Descriptions of the template items are listed below the template.
 
 <a name="template"></a>
@@ -258,7 +260,11 @@ At the beginning there are XML declaration elements. These are fixed.
 The XML elements for which you have to provide a value are explained in the table.
 
 
+<a name="authorxmlvalidate"></a>
+## How do I validate my author.xml file?
 
+<a name="#authorxmlconvert"></a>
+## Can I convert my author.xml file to another format?
 
 
 ![image](images/Angus-Satigny.jpg)
