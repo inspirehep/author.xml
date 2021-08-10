@@ -5,7 +5,7 @@
 2. [A Brief description of author.xml file](#briefdescription)    
     - [Why XML for author.xml file?](#whyxml)
     - [What are the advantages of author.xml file?](#whatadvantages)
-3. 
+3. [What do I need to get started?](#needtogetstarted)
 4. 
 5. 
 
@@ -58,7 +58,7 @@ The author.xml file contains the following information:
  - The collaboration it represents.
  - The institutions participating in the collaboration.
  - The authors, with their affiliations and ID numbers.
- - 
+
 This information is meant to automate the process of publishing a document electronically, without the need for human intervention.
 
 <a name="whyxml"></a>
@@ -71,10 +71,28 @@ XML was designed to store and transport data, and it is both human- and machine-
 ### What are the advantages of author.xml file?
 These are the advantages of using an author.xml file when you submit your document:
  - Paper processing speed
+Using an author.xml file allows INSPIRE to automatically add all authors
+and affiliations so they show up in the database with minimal delay and
+with as few errors as possible.
 
  - Accurate author information
+attribution of credit
+The author.xml file, with all authors identified by an
+INSPIRE ID number,
+will be used by publishers such as the APS in producing their journal articles.
+It will also be used by other database providers covering the scientific literature.
+Providing accurate information about the authors results in more accurate
+publication lists and citation counts as well as more comprehensive
+search results.
 
  - Automatic generation
+Given the XML file, an auto-generation process using xslt
+can be used to generate the author list for the paper in
+the desired LaTeX format.
+
+<a name="needtogetstarted"></a>
+### What do I need to get started?
+
 
 
 
