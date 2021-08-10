@@ -14,12 +14,12 @@ When submitting your document, you should also submit a file called author.xml. 
 
 <a name="partners"></a>
 ## Partners in the author.xml project
-Information Services
+**Information Services**
  - arXiv.org
  -  INSPIRE
-Publishers
+**Publishers**
  - American Physical Society
-Collaborations
+**Collaborations**
  - Pierre Auger Observatory
  - Brookhaven STAR
  - CERN ALICE
