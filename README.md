@@ -263,7 +263,7 @@ The XML elements for which you have to provide a value are explained in the tabl
 <a name="authorxmlvalidate"></a>
 ## How do I validate my author.xml file?
 
-<a name="#authorxmlconvert"></a>
+<a name="authorxmlconvert"></a>
 ## Can I convert my author.xml file to another format?
 
 
