@@ -18,9 +18,11 @@ When submitting your document, you should also submit a file called author.xml. 
 
  - arXiv.org
  -  INSPIRE
+ -  
 **Publishers**  
 
  - American Physical Society
+ - 
 **Collaborations**  
 
  - Pierre Auger Observatory
