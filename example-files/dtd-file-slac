@@ -1,0 +1,87 @@
+<!-- 
+********************************************
+
+  Collaboration Author Lists - author.dtd
+
+********************************************
+Date: August 2010
+-->
+<!ELEMENT collaborationauthorlist ( cal:creationDate, cal:publicationReference, cal:collaborations, cal:organizations, cal:authors ) >
+<!ATTLIST collaborationauthorlist
+	  xmlns:foaf CDATA #FIXED "http://xmlns.com/foaf/0.1/" 
+	  xmlns:cal  CDATA #FIXED "http://www.slac.stanford.edu/spires/hepnames/authors_xml/"
+>
+
+<!ELEMENT cal:creationDate ( #PCDATA ) >
+<!ELEMENT cal:publicationReference ( #PCDATA ) >
+
+<!-- **************** COLLABORATIONS ********************* -->
+<!ELEMENT cal:collaborations ( cal:collaboration+ ) >
+    <!ELEMENT cal:collaboration ( foaf:name, cal:experimentNumber?, cal:group? ) >
+    <!ATTLIST cal:collaboration 
+	      id ID #REQUIRED 
+    >
+
+    <!ELEMENT cal:experimentNumber ( #PCDATA ) >
+
+    <!ELEMENT cal:group ( #PCDATA ) >
+    <!ATTLIST cal:group 
+	      with IDREF #IMPLIED 
+    >
+<!-- ORGANIZATIONS -->
+<!ELEMENT cal:organizations ( foaf:Organization+ ) >
+    <!ELEMENT foaf:Organization ( cal:orgDomain?, foaf:name, cal:orgName*, cal:orgStatus*, cal:orgAddress?, cal:group? ) >
+    <!ATTLIST foaf:Organization 
+	      id ID #REQUIRED 
+    >
+
+    <!ELEMENT cal:orgAddress ( #PCDATA ) >
+    <!ELEMENT cal:orgDomain ( #PCDATA ) >
+
+    <!ELEMENT cal:orgName ( #PCDATA ) >
+    <!ATTLIST cal:orgName 
+	      source CDATA "INTERNAL" 
+    >
+
+    <!ELEMENT cal:orgStatus ( #PCDATA ) >
+    <!ATTLIST cal:orgStatus 
+	      collaborationid IDREF #IMPLIED 
+    >
+
+<!-- AUTHORS -->
+<!ELEMENT cal:authors ( foaf:Person+ ) >
+    <!ELEMENT foaf:Person ( foaf:name?, cal:authorNameNative?, foaf:givenName?, foaf:familyName, cal:authorSuffix?, cal:authorStatus?, cal:authorNamePaper, cal:authorNamePaperGiven?, cal:authorNamePaperFamily?, cal:authorCollaboration+, cal:authorAffiliations?, cal:authorids?, cal:authorFunding? ) >
+
+    <!ELEMENT foaf:familyName ( #PCDATA ) >
+    <!ELEMENT foaf:givenName ( #PCDATA ) >
+    <!ELEMENT foaf:name ( #PCDATA ) >
+
+    <!ELEMENT cal:authorNameNative ( #PCDATA ) >
+    <!ELEMENT cal:authorNamePaper ( #PCDATA ) >
+    <!ELEMENT cal:authorNamePaperGiven ( #PCDATA ) >
+    <!ELEMENT cal:authorNamePaperFamily ( #PCDATA ) >
+    <!ELEMENT cal:authorStatus ( #PCDATA ) >
+    <!ELEMENT cal:authorSuffix ( #PCDATA ) >
+
+    <!ELEMENT cal:authorCollaboration EMPTY >
+    <!ATTLIST cal:authorCollaboration 
+	      collaborationid IDREF "c1"
+	      position CDATA #IMPLIED 
+    >
+
+    <!ELEMENT cal:authorAffiliations ( cal:authorAffiliation* ) >
+    <!ELEMENT cal:authorAffiliation EMPTY >
+    <!ATTLIST cal:authorAffiliation 
+	      organizationid IDREF #REQUIRED 
+	      connection CDATA "Affiliated with"
+    >
+
+    <!ELEMENT cal:authorids ( cal:authorid* ) >
+    <!ELEMENT cal:authorid ( #PCDATA ) >
+    <!ATTLIST cal:authorid 
+	      source CDATA #REQUIRED 
+    >
+    <!ELEMENT cal:authorFunding ( #PCDATA ) >
+
+
+
