@@ -15,7 +15,7 @@
    
 4.  [The author.xml template - detailed description](#authorxmldetailed") 
     - [Template author.xml](#template)
-    - [Table of XML elements explained](#tablexmlelements)
+    - [Table explaining XML elements](#tablexmlelements)
 7.  
 8.  template - detailed description
 
@@ -138,6 +138,17 @@ Given the XML file, an auto-generation process using xslt can be used to generat
  - authors.xsd XML schema defintion file (inluded in tar and zip)
  - author.dtd XML document type defintion file (inluded in tar and zip)
 
+<a name="examplefiles"></a>
+### Examples of author.xml files
+
+[XML example - minimal file](example-files/example-minimal.xml)
+
+[XML example - full-data file](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/example-files/example-fulldata.xml)
+
+[XML example - multicollaboration file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-multicollaboration.xml)
+
+
+
 <a name="infoneeded"></a>
 ### Where do I get the information needed for my input?
 When you come to fill in some of the XML elements in author.xml, you will need have some information that is obtained elsewhere.
@@ -189,20 +200,15 @@ The author.xml file has been designed for collaborations with more than 10 autho
 
 
 <a name="tablexmlelements"></a>
-### Table of XML elements explained
+### Table explaining XML elements
+At the beginning there are XML declaration elements. These are fixed.
+
+The XML elements for which you have to provide a value are explained in the table.
 
 
 
-<a name="usage"></a>
-## 2. Usage tips
-sometext
-<a name="sponsors"></a>
-## Who sponsors?
-sometext
+
+
 ![image](images/Angus-Satigny.jpg)
 
-[XML example - minimal file](example-files/example-minimal.xml)
 
-[XML example - full-data file](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/example-files/example-fulldata.xml)
-
-[XML example - multicollaboration file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-multicollaboration.xml)
