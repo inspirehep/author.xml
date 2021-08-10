@@ -143,7 +143,7 @@ Given the XML file, an auto-generation process using xslt can be used to generat
 
 [XML example - minimal file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-minimal.xml)
 
-[XML example - full-data file](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/example-files/example-fulldata.xml)
+[XML example - full-data file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-fulldata.xml)
 
 [XML example - multicollaboration file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-multicollaboration.xml)
 
