@@ -4,13 +4,13 @@
     - [Partners in the author.xml project](#partners)
 2. [A Brief description of author.xml file](#briefdescription)    
     - [Why XML for author.xml file?](#whyxml)
-    - [How does it work?](#howdoesitwork)
+    - [Quick summary of steps](#howdoesitwork)
     - [What are the advantages of author.xml file?](#whatadvantages)
 3. [What do I need to get started?](#needtogetstarted)
     - [What is the workflow?](#workflow)
     - [Downloads](#downloads)
     - [Examples of author.xml files](#examplefiles)
-    - [Where do I get the information needed for author.xml?](#infoneeded)
+    - [Where do I get the information needed for my input?](#infoneeded)
     - [Links](#links)
    
 4.  [The author.xml template - detailed description](#authorxmldetailed") 
@@ -138,7 +138,7 @@ authors.xsd XML schema defintion file (inluded in tar and zip)
 author.dtd XML document type defintion file (inluded in tar and zip)
 
 <a name="infoneeded"></a>
-### Where do I get the information needed for author.xml?
+### Where do I get the information needed for my input?
 When you come to fill in some of the XML elements in author.xml, you will need have some information that is obtained elsewhere.
 
     • INSPIRE ID Numbers for a list of authors
