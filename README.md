@@ -7,8 +7,9 @@
     - [How does it work?](#howdoesitwork)
     - [What are the advantages of author.xml file?](#whatadvantages)
 3. [What do I need to get started?](#needtogetstarted)
-4. 
+4. [What is the workflow?](#workflow)
 5. 
+6. 
 
 
 
@@ -100,8 +101,10 @@ can be used to generate the author list for the paper in
 the desired LaTeX format.
 
 <a name="needtogetstarted"></a>
-### What do I need to get started?
+## What do I need to get started?
 
+<a name="workflow"></a)
+### What is the workflow?
 
 
 
