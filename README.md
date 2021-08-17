@@ -138,7 +138,7 @@ Given the XML file, an auto-generation process using xslt can be used to generat
 <a name="downloads"></a>
 ### Downloads
  - .tar ball (includes the template, an example and a .dtd file for validation)
- - [.zip file](raw.downloads/authors_xml.zip) - includes the template, an example and a .dtd file for validation
+ - [.zip file](https://raw.github.com/inspirehep/author.xml/blob/abchan-paragraph/downloads/authors_xml.zip) - includes the template, an example and a .dtd file for validation
  - authors.xsd XML schema defintion file (inluded in tar and zip)
  - author.dtd XML document type defintion file (inluded in tar and zip)
 
