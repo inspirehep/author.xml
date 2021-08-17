@@ -8,6 +8,7 @@
     - [What are the advantages of an author.xml file?](#whatadvantages)
 3. [What do I need to get started?](#needtogetstarted)
     - [What is the workflow?](#workflow)
+    - [What do all the file extensions mean?](#fileextensions)
     - [Downloads](#downloads)
     - [Examples of author.xml files](#examplefiles)
     - [Where do I get the information needed for my input?](#infoneeded)
@@ -134,6 +135,15 @@ Given the XML file, an auto-generation process using xslt can be used to generat
 1. Fill in the values for the XML elements in the template
 1. Validate the file, using a 'validator'
 1. You have the option of converting the xml file to another format
+    
+<a name="fileextensions"></a>
+### What do all the file extensions mean?
+You will come across files with different extensions. Let's go through the types of files you will encounter.
+ - .xml -> A .xml file is an Extensible Markup Language (XML) file. It is just a plain text files that has custom tags to describe the structure and other features of the document.
+ - .dtd -> DTD is an acronym for Document Type Definition. Files that contain the .dtd file extension are text files that specify elements and attributes used in an XML document.
+ - .xsd -> XSD is an acronym for XML Schema Description. Files that contain the .xsd file extension are text files used to determine which attributes and elements will appear in an associated XML document.
+
+Both .dtd and .xsd files are schema files used to specify what elements may be used in an XML document, the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute. .xsd files define more precise grammars than .dtd files; .dtd files support 10 datatypes, mostly for attributes. XML Schema files (.xsd) support 44 datatypes and, in addition, you can define your own.
 
 <a name="downloads"></a>
 ### Downloads
