@@ -137,10 +137,10 @@ Given the XML file, an auto-generation process using xslt can be used to generat
 
 <a name="downloads"></a>
 ### Downloads
- - [.tar ball](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/downloads/authors_xml.tar.gz?raw=true) - includes the template, an example and a .dtd file for validation
- - [.zip file](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/downloads/authors_xml.zip?raw=true) - includes the template, an example and a .dtd file for validation
- - authors.xsd XML schema defintion file (inluded in tar and zip)
- - author.dtd XML document type defintion file (inluded in tar and zip)
+ - [.tar ball](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/downloads/authors_xml.tar.gz?raw=true) - includes 2 files to be used for validation: authors.dtd file, authors.xsd file; 4 examples
+ - [.zip file](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/downloads/authors_xml.zip?raw=true) - includes the template, authors.template.xml, 2 files to be used for validation: authors.dtd file, authors.xsd file; 4 examples
+ - authors.xsd XML schema defintion file (inluded in both the tar ball and zip file above)
+ - author.dtd XML document type defintion file (inluded in both the tar ball and zip file above
 
 <a name="examplefiles"></a>
 ### Examples of author.xml files
