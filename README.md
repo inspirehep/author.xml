@@ -1,3 +1,5 @@
+⚠️ **This documentation is still work-in-progress and shouldn't be relied on**
+
 # INSPIRE Collaboration Author Lists
 ### The author.xml file - introduction, specification, creation
 1. [Introduction](#introduction)    
