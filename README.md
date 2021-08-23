@@ -1,3 +1,5 @@
+⚠️ **This documentation is still work-in-progress and shouldn't be relied on**
+
 # INSPIRE Collaboration Author Lists
 ### The author.xml file - introduction, specification, creation
 1. [Introduction](#introduction)    
@@ -97,9 +99,9 @@ XML was designed to store and transport data, and it is both human- and machine-
 
 <a name="howdoesitwork"></a>
 ### Quick summary of steps
- - You can produce a tailored output from your collaboration’s author data by following the XML template.
- -  Once completed, the file can be tested and validated through the validation files included in the download.
- - When your file passes the test, please submit your file along with your next submission to arXiv in the .tar ball.
+ - You will produce a tailored output for your collaboration’s author data by following the XML template.
+ - Once completed, the file should be tested and validated using the validation files that are included in files that you will have downloaded.
+ - When your file passes the test, submit your file along with your submission to arXiv in a .tar ball.
  - If you encounter any problem and need assistance, or if you are unable provide the information required, please contact us:
 authors@inspirehep.net
 
@@ -107,22 +109,18 @@ authors@inspirehep.net
 ### What are the advantages of the author.xml file?
 These are the advantages of using an author.xml file when you submit your document:
  - Paper processing speed
+ 
 Using an author.xml file allows INSPIRE to automatically add all authors
 and affiliations so they show up in the database with minimal delay and
 with as few errors as possible.
 
- - Accurate author information
-attribution of credit
-The author.xml file, with all authors identified by an
-INSPIRE ID number,
-will be used by publishers such as the APS in producing their journal articles.
-It will also be used by other database providers covering the scientific literature.
-Providing accurate information about the authors results in more accurate
-publication lists and citation counts as well as more comprehensive
-search results.
+ - Accurate author information and attribution of credit
+ 
+The author.xml file, with all authors identified by an INSPIRE ID number, will be used by publishers such as the APS in producing their journal articles. It will also be used by other database providers covering the scientific literature. Providing accurate information about the authors results in more accurate publication lists and citation counts as well as more comprehensive search results.
 
  - Automatic generation
-Given the XML file, an auto-generation process using xslt can be used to generate the author list for the paper in the desired LaTeX format.
+ 
+Given the XML file, an auto-generation process using xslt (stands for Extensible Stylesheet Language Transformations) can be used to generate the author list for the paper in the desired LaTeX format.
 
 <a name="needtogetstarted"></a>
 ## What do I need to get started?
@@ -130,26 +128,26 @@ Given the XML file, an auto-generation process using xslt can be used to generat
 
 <a name="workflow"></a)
 ### What is the workflow?
-1. Download package to have necessary template and files
+1. Download the package to have the necessary template and files
 1. Gather the information that you will need to fill in the author.xml file
 1. Fill in the values for the XML elements in the template
 1. Validate the file, using a 'validator'
-1. You have the option of converting the xml file to another format
+1. You have the option of converting the xml file to another format, should you need a different format in addition
     
 <a name="knowterms"></a>
 ### What terms should I know before starting?
 You will come across files with different extensions. Let's go through the types of files you will encounter.
- - .xml -> A .xml file is an Extensible Markup Language (XML) file. It is just a plain text files that has custom tags to describe the structure and other features of the document. An xml file does not DO anything. The file is used to store and transport data. The information is wrapped in meaningful tags.
+ - **.xml** -> A .xml file is an **Extensible Markup Language** (XML) file. It is just a plain text files that has custom tags to describe the structure and other features of the document. An xml file does not DO anything. The file is used to store and transport data. The information is wrapped in meaningful tags.
 
- - .dtd -> DTD is an acronym for Document Type Definition, and is the original Document Type Definition. Files that contain the .dtd file extension are text files that specify elements and attributes used in an XML document.
- - .xsd -> XSD is an acronym for XML Schema Description (i.e. another type of document type definition file), and an XML-based alternative to DTD. Files that contain the .xsd file extension are text files that specify elements and attributes used in an XML document.
+ - **.dtd** -> DTD is an acronym for **Document Type Definition**, and is the original Document Type Definition. Files that contain the .dtd file extension are text files that specify elements and attributes used in an XML document.
+ - **.xsd** -> XSD is an acronym for **XML Schema Description** (i.e. another type of document type definition file), and an XML-based alternative to DTD. Files that contain the .xsd file extension are text files that specify elements and attributes used in an XML document.
  
-.dtd and .xsd files are two different document type definitions that can be used with .xml files. Both are used to specify what elements may be used in the XML document, the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute. .xsd files define more precise grammars than .dtd files.
+.dtd and .xsd files are two different document type definitions that can be used with .xml files. Both are used to specify what elements may be used in the XML document, the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute. Generally speaking, .xsd files define more precise grammars than .dtd files, but the most appropriate type should be used.
 
 #### Well formed XML document
 An XML document is said to be well formed if it satifies syntax rules. These are:
 
- - XML documents must have a root element
+ - XML documents must have a root element (i.e. one sole parent element for all the XML elements in the document)
  - XML elements must have a start and end tag
  - XML tags are case sensitive
  - XML elements must be properly nested
@@ -163,10 +161,16 @@ A "valid" XML document must be already be well formed. In addition, it must conf
 
 <a name="downloads"></a>
 ### Downloads
- - [.tar ball](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/downloads/authors_xml.tar.gz?raw=true) - includes 2 files to be used for validation: authors.dtd file, authors.xsd file; 4 examples
- - [.zip file](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/downloads/authors_xml.zip?raw=true) - includes the template, authors.template.xml, 2 files to be used for validation: authors.dtd file, authors.xsd file; 4 examples
- - authors.xsd XML schema defintion file (inluded in both the tar ball and zip file above)
- - author.dtd XML document type defintion file (inluded in both the tar ball and zip file above
+Download the .tar or the .zip file, as needed. You will not need to bother with 3. or 4. if you download one of the packages as these files will already be included:
+1. [.tar ball](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/downloads/authors_xml.tar.gz?raw=true) - includes:
+    - 2 files (authors.dtd, authors.xsd) to be used for validation 
+    - 4 examples
+1. [.zip file](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/downloads/authors_xml.zip?raw=true) - includes:
+    - the template (authors.template.xml)
+    -  2 files (authors.dtd, authors.xsd) to be used for validation
+    -  4 examples
+1. authors.xsd XML schema defintion file (included in both the tar ball and zip file above)
+1. author.dtd XML document type defintion file (included in both the tar ball and zip file above)
 
 <a name="examplefiles"></a>
 ### Examples of author.xml files
