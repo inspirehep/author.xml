@@ -141,12 +141,12 @@ Given the XML file, an auto-generation process using xslt can be used to generat
 <a name="knowterms"></a>
 ### What terms should I know before starting?
 You will come across files with different extensions. Let's go through the types of files you will encounter.
- - .xml -> A .xml file is an Extensible Markup Language (XML) file. It is just a plain text files that has custom tags to describe the structure and other features of the document. An xml file does not DO anything. The file is used to store and transport data. The information is wrapped in meaningful tags.
+ - **.xml** -> A .xml file is an **Extensible Markup Language** (XML) file. It is just a plain text files that has custom tags to describe the structure and other features of the document. An xml file does not DO anything. The file is used to store and transport data. The information is wrapped in meaningful tags.
 
- - .dtd -> DTD is an acronym for Document Type Definition, and is the original Document Type Definition. Files that contain the .dtd file extension are text files that specify elements and attributes used in an XML document.
- - .xsd -> XSD is an acronym for XML Schema Description (i.e. another type of document type definition file), and an XML-based alternative to DTD. Files that contain the .xsd file extension are text files that specify elements and attributes used in an XML document.
+ - **.dtd** -> DTD is an acronym for **Document Type Definition**, and is the original Document Type Definition. Files that contain the .dtd file extension are text files that specify elements and attributes used in an XML document.
+ - **.xsd** -> XSD is an acronym for **XML Schema Description** (i.e. another type of document type definition file), and an XML-based alternative to DTD. Files that contain the .xsd file extension are text files that specify elements and attributes used in an XML document.
  
-.dtd and .xsd files are two different document type definitions that can be used with .xml files. Both are used to specify what elements may be used in the XML document, the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute. .xsd files define more precise grammars than .dtd files.
+.dtd and .xsd files are two different document type definitions that can be used with .xml files. Both are used to specify what elements may be used in the XML document, the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute. Generally speaking, .xsd files define more precise grammars than .dtd files, but the most appropriate type should be used.
 
 #### Well formed XML document
 An XML document is said to be well formed if it satifies syntax rules. These are:
