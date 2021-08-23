@@ -46,6 +46,7 @@
 <a name="introduction"></a>
 ## Introduction
 Together, INSPIRE, the American Physical Society and arXiv.org have created a template that you are recommended to use when you provide information about the authors for your paper. In that way, the authors' information will be precise and univerally understood, and, as the saying goes, we will all be "on the same page". 
+
 If your paper has 10 or more authors, we recommend that when submitting your document, you also submit a file called author.xml. This file is written in the XML language and will contain relevant author information. Using an XML template (also known as the file schema) you should enter details for the authors to produce your author.xml file. This file should then be included in  your submission.
 
 Large collaborations with hundreds and even thousands of authors are already using the author.xml file to enable cataloguers to glean complete, accurate information on authors. Get on board so that authors get the exposure they deserve!
