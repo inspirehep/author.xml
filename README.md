@@ -299,7 +299,7 @@ At the beginning of author.xml there are XML declaration elements. These are fix
 The XML elements for which you might have to provide a value are explained in the table.
 
 
-| XML Element container | Description | Required or Optional? |
+| XML Element container | Description | Required or Optional?|
 | ----------- | ----------- |
 | <collaborationauthorlist | collaborationauthorlist’ is the root element |
 |   xmlns:foaf="http://xmlns.com/foaf/0.1/" | prefix 'foaf' is to do with this string. Used only to differentiate element names | Required |
