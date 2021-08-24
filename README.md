@@ -75,7 +75,7 @@ Large collaborations with hundreds and even thousands of authors are already usi
 
 <a name="briefdescription"></a>
 ### A Brief description of the author.xml file
-From [Background and motivation](#background), above, you will have gathered that the author list file, author.xml, uses the language XML. This author.xml file includes the following information:
+From [Background and motivation](#background), above, you will have gathered that the author list file, author.xml, uses the language XML. This author.xml file should include the following information, and is provided by you:
  - Which paper does the author.xml correspond to?
  - The collaboration it represents.
  - The institutions participating in the collaboration.
