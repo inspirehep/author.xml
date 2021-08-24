@@ -128,8 +128,7 @@ Given the XML file, an auto-generation process using xslt (stands for Extensible
 <a name="needtogetstarted"></a>
 ## What do I need to get started?
 
-
-<a name="workflow"></a)
+<a name="workflow"></a>
 ### What is the workflow?
 1. Download the package to have the necessary template and files
 1. Gather the information that you will need to fill in the author.xml file
