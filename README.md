@@ -52,7 +52,7 @@ Together, INSPIRE, the American Physical Society and arXiv.org have created a te
 
 If the author list for your collaboration has 10 or more authors, we recommend that when submitting your document, you also submit a file called author.xml. This template file is obtained from a downloaded package. Using the template file as your guide, you fill in the fields such as the authors' details, collaboration details, and so on. On completion, you pass it through a validator to make sure the file is good to go. Once okayed, your author.xml file is ready for submission. 
 
-Large collaborations with hundreds and even thousands of authors are already using the author.xml file to enable cataloguers to glean complete, accurate information on authors. Get on board so that authors get the appreciation and exposure they deserve!
+Large collaborations with hundreds and even thousands of authors are already using the author.xml file to enable cataloguers and automated processes to glean complete, accurate information on authors. Get on board so that authors get the appreciation and exposure they deserve!
 
 <a name="partners"></a>
 ## Partners in the author.xml project
@@ -93,20 +93,21 @@ The author.xml file contains the following information:
  - The institutions participating in the collaboration.
  - The authors, with their affiliations and ID numbers.
 
-This information is meant to automate the process of publishing a document electronically, without the need for human intervention.
+This information will allow us to automate the process of publishing the document electronically, without the need for human intervention.
 
 <a name="whyxml"></a>
-
 ### Why XML for author.xml?
-From the introduction, you will have gathered that the authors' file, author.xml, uses the language XML. XML stands for eXtensible Markup Language. Markup implies that there is information about the data structure, you should enter your data between tags, and according to a specific format. The term 'eXtensible' means that we decide what the tags should be called - the tags in the author.xml schema have been defined and agreed upon, so don't go adding your own. 
+From the introduction, you will have gathered that the authors' file, author.xml, uses the language XML. XML stands for eXtensible Markup Language. Markup implies that there is information about the data structure i.e. your data (a.k.a XML elements) will be enclosed between tags that describe what type of data it is. You should enter your data between the tags according to a specific format. 
 
+The term 'eXtensible' means that we decide what the tags should be called - the tags in the author.xml have been defined and agreed upon, so don't go adding your own. 
 
 XML was designed to store and transport data, and it is both human- and machine-readable. This perfectly satisfies our requirements for the language used to read and write the author.xml files. Note that XML files are data files, the information doesn't do anything on its own.
 
 <a name="howdoesitwork"></a>
 ### Quick summary of steps
- - You will produce a tailored output for your collaboration’s author data by following the XML template.
- - Once completed, the file should be tested and validated using the validation files that are included in files that you will have downloaded.
+ - You will download a package.
+ - To produce your collaboration’s author list file, author.xml, you complete the xml template file that you obtained.
+ - Once completed, the file should be tested and validated using the validation files that are included in the package.
  - When your file passes the test, submit your file along with your submission to arXiv in a .tar ball.
  - If you encounter any problem and need assistance, or if you are unable provide the information required, please contact us:
 authors@inspirehep.net
@@ -122,7 +123,7 @@ with as few errors as possible.
 
  - Accurate author information and attribution of credit
  
-The author.xml file, with all authors identified by an INSPIRE ID number, will be used by publishers such as the APS in producing their journal articles. It will also be used by other database providers covering the scientific literature. Providing accurate information about the authors results in more accurate publication lists and citation counts as well as more comprehensive search results.
+The author.xml file, with all authors identified by an INSPIRE ID number, will be used by publishers such as the APS in producing their journal articles. It will also be used by other database providers covering the scientific literature. Providing accurate information about the authors will result in more accurate publication lists and citation counts in addition to comprehensive search results.
 
  - Automatic generation
  
@@ -135,9 +136,9 @@ Given the XML file, an auto-generation process using xslt (stands for Extensible
 ### What is the workflow?
 1. Download the package to have the necessary template and files
 1. Gather the information that you will need to fill in the author.xml file
-1. Fill in the values for the XML elements in the template
+1. Input your data for the XML elements in the template
 1. Validate the file, using a 'validator'
-1. You have the option of converting the xml file to another format, should you need a different format in addition
+1. You have the option of converting the xml file to another format, should you also need a different format
     
 <a name="knowterms"></a>
 ### What terms should I know before starting?
@@ -161,8 +162,9 @@ An XML document is said to be well formed if it satifies syntax rules. These are
 #### Valid XML Documents
 A "well formed" XML document is not the same as a "valid" XML document.
 
-A "valid" XML document must be already be well formed. In addition, it must conform to a document type definition (the .dtd, or the .xsd file).
+A "valid" XML document must already be well formed, but in addition, it must conform to a document type definition (the .dtd, or the .xsd file). 
 
+With XML, errors in documents are not tolerated for the simple reason that XML processing programs are foreseen to be small and fast i.e the programs shouldn't be doing error-checking and fixes.
 
 <a name="downloads"></a>
 ### Downloads
