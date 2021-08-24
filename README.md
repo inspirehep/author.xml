@@ -134,7 +134,7 @@ Given the XML file, an auto-generation process using xslt (stands for Extensible
 ### What terms should I know before starting?
 You will come across files with different extensions. Whilst you don't actually need to know what they all mean, if you are interested, let's quickly touch on the types of files that you will encounter.
 
- - **.xml** -> A .xml file is an **Extensible Markup Language** (XML) file. It is just a plain text files that has custom tags to describe the structure and other features of the document. An xml file does not DO anything. The file is used to store and transport data. The information is wrapped in meaningful tags.
+ - **.xml** -> A .xml file is an **Extensible Markup Language** (XML) file. An XML file is just a plain text file containing information wrapped in tags. This information, called XML elements, is wrapped in meaningful, custom tags which describe the structure and other features of the document. An xml file does not DO anything. The file is used to store and transport data. 
 
 .dtd and .xsd files are two different document type definitions that can be used with .xml files. Both are used to specify what elements may be used in the XML document, the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute. Generally speaking, .xsd files define more precise grammars than .dtd files.
  - **.dtd** -> DTD is an acronym for **Document Type Definition**, and is the original Document Type Definition. Files that contain the .dtd file extension are text files that specify elements and attributes used in an XML document.
@@ -182,7 +182,7 @@ Download the .tar or the .zip file, as needed. You will not need to bother with 
 
 [XML example - multicollaboration file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-multicollaboration.xml)
 
-
+[XML example - institutional groups](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-institutional-groups.xml)
 
 <a name="infoneeded"></a>
 ### Where do I get the information needed for my input?
