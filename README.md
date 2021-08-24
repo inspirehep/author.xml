@@ -129,14 +129,15 @@ Given the XML file, an auto-generation process using xslt (stands for Extensible
     
 <a name="knowterms"></a>
 ### What terms should I know before starting?
-You will come across files with different extensions. Whilst you don't actually need to know what they all mean, if you are interested, let's quickly touch on the types of files that you will encounter.
+You might come across these terms, and whilst you don't actually need to know what they all mean, if you are interested, let's quickly touch on some of the XML-related names that you might encounter.
 
  - **.xml** -> A .xml file is an **Extensible Markup Language** (XML) file. An XML file is just a plain text file containing information wrapped in tags. This information, called XML elements, is enclosed in meaningful, custom tags which describe the structure and other features of the document. An xml file does not DO anything. The file is used to store and transport data. 
 
-.dtd and .xsd files are two different document type definitions that can be used with .xml files. Both are used to specify what elements may be used in the XML document, the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute. Generally speaking, .xsd files define more precise grammars than .dtd files.
+ - **XML element** -> XML elements can be defined as the building blocks of an XML file. Elements can behave as containers to hold text, elements, attributes, media objects or all of these. For our purposes, we just need to know that XML elements are the data that we need to input.
+
+A document type definition file, which is provided for you, is used to specify what elements may be used in the XML document, the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute. The .dtd and .xsd files are two different document type definitions that can be used with the .xml file. Generally speaking, .xsd files define more precise grammars than .dtd files.
  - **.dtd** -> DTD is an acronym for **Document Type Definition**, and is the original Document Type Definition. Files that contain the .dtd file extension are text files that specify elements and attributes used in an XML document.
  - **.xsd** -> XSD is an acronym for **XML Schema Description** (i.e. another type of document type definition file), and an XML-based alternative to DTD. Files that contain the .xsd file extension are text files that specify elements and attributes used in an XML document.
-
 
  - **.xsl** -> XSL stands for **eXtensible Stylesheet Language**, and is the stylesheet definition language for XML.  
  - **.xslt** -> XSLT stands for **XSL Transformations**, it is written in XSL, and is used to transform XML documents into other data formats, formats such as HTML, XHTML, PDF, etc.. It can also be used to transform XML documents that comply with one XML schema (a type of ‘data type definition’ file) into documents that comply with another schema. 
@@ -185,6 +186,8 @@ Download the .tar or the .zip file, as needed. You will not need to bother with 
 ### Where do I get the information needed for my input?
 When you come to fill in some of the XML elements in author.xml, you will need have some information that is obtained elsewhere.
 
+**WHAT DO WE WANT TO BE USED HERE?**
+
     • INSPIRE ID Numbers for a list of authors
 In your role as maintainer of the collaboration’s author list, you have two options to acquire INSPIRE ID Numbers for authors:
 1. Send a list of names and email addresses or the xml file without INSPIRE IDs to authors@inspirehep.net and we will return this list enriched with all the INSPIRE ID Numbers for the authors.
@@ -225,6 +228,7 @@ FOAF Project
 
 <a name="fillinauthorxml"></a>
 ## How do I fill in my author.xml file?
+***?? DO WE NEED THIS?? paragraph***
 The author.xml file has been designed for collaborations with more than 10 authors. An updated author.xml file should be included with each submission to arXiv. The collaboration’s XML file will contain information on each author, such as name, affiliation and INSPIRE ID Number. Descriptions of the template items are listed below the template.
 
 <a name="template"></a>
@@ -286,9 +290,21 @@ In order to help you [fill in the XML values](https://raw.githubusercontent.com/
 
 <a name="tablexmlelements"></a>
 ### Table explaining XML elements
-At the beginning there are XML declaration elements. These are fixed.
+At the beginning of author.xml there are XML declaration elements. These are fixed and describe the version, encoding, and declares that the document needs information from an external document type definition (DTD), for its content.
+`
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
+`
 
-The XML elements for which you have to provide a value are explained in the table.
+The XML elements for which you might have to provide a value are explained in the table.
+
+
+| XML Element container | Description | Required or Optional? |
+| ----------- | ----------- |
+| <collaborationauthorlist | collaborationauthorlist’ is the root element |
+|   xmlns:foaf="http://xmlns.com/foaf/0.1/" | prefix 'foaf' is to do with this string. Used only to differentiate element names | Required |
+|   xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"> | prefix 'cal' is to do with this string. Used only to differentiate element names | Required |
+| Paragraph | Text |
 
 
 <a name="authorxmlvalidate"></a>
