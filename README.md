@@ -58,12 +58,12 @@ Large collaborations with hundreds and even thousands of authors are already usi
 ## Partners in the author.xml project
 **Information Services**
 
- - arXiv.org
- -  INSPIRE
+ - [arXiv.org](https://arxiv.org/)
+ - [INSPIRE](https://inspirehep.net/)
  
 **Publishers**  
 
- - American Physical Society
+ - [American Physical Society](https://journals.aps.org/)
 
 **Collaborations**  
 
