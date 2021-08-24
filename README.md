@@ -97,10 +97,7 @@ XML was designed to store and transport data, and it is both human- and machine-
  - To produce your collaboration’s author list file, author.xml, you will complete the xml template file that you obtained.
  - Once completed, the file should be tested and validated using the validation files that are included in the package.
  - When your file passes the validation, you can submit the author.xml file along with your submission to arXiv in a .tar ball.
- - Please contact us at authors@inspirehep.net if you:
-    - encounter problems
-    - need assistance 
-    - are unable provide the information required  
+ - Please contact us at authors@inspirehep.net if you need assistance.  
 
 <a name="whatadvantages"></a>
 ### What are the advantages of the author.xml file?
@@ -134,7 +131,7 @@ Given the XML file, an auto-generation process using xslt (stands for Extensible
 ### What terms should I know before starting?
 You will come across files with different extensions. Whilst you don't actually need to know what they all mean, if you are interested, let's quickly touch on the types of files that you will encounter.
 
- - **.xml** -> A .xml file is an **Extensible Markup Language** (XML) file. An XML file is just a plain text file containing information wrapped in tags. This information, called XML elements, is wrapped in meaningful, custom tags which describe the structure and other features of the document. An xml file does not DO anything. The file is used to store and transport data. 
+ - **.xml** -> A .xml file is an **Extensible Markup Language** (XML) file. An XML file is just a plain text file containing information wrapped in tags. This information, called XML elements, is enclosed in meaningful, custom tags which describe the structure and other features of the document. An xml file does not DO anything. The file is used to store and transport data. 
 
 .dtd and .xsd files are two different document type definitions that can be used with .xml files. Both are used to specify what elements may be used in the XML document, the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute. Generally speaking, .xsd files define more precise grammars than .dtd files.
  - **.dtd** -> DTD is an acronym for **Document Type Definition**, and is the original Document Type Definition. Files that contain the .dtd file extension are text files that specify elements and attributes used in an XML document.
@@ -145,7 +142,7 @@ You will come across files with different extensions. Whilst you don't actually 
  - **.xslt** -> XSLT stands for **XSL Transformations**, it is written in XSL, and is used to transform XML documents into other data formats, formats such as HTML, XHTML, PDF, etc.. It can also be used to transform XML documents that comply with one XML schema (a type of ‘data type definition’ file) into documents that comply with another schema. 
  
 #### Well formed XML document
-An XML document is said to be well formed if it satifies syntax rules. These are:
+An XML document is said to be well formed if it satifies syntax rules. These rules are:
 
  - XML documents must have a root element (i.e. one sole parent element for all the XML elements in the document)
  - XML elements must have a start and end tag
@@ -190,10 +187,9 @@ When you come to fill in some of the XML elements in author.xml, you will need h
 
     • INSPIRE ID Numbers for a list of authors
 In your role as maintainer of the collaboration’s author list, you have two options to acquire INSPIRE ID Numbers for authors:
-        1. Send a list of names and email addresses or the xml file without INSPIRE IDs to
-authors@inspirehep.net and we will return this list enriched with all the INSPIRE ID Numbers for the authors.
-These INSPIRE IDs can then be integrated into your author database and delivered as part of your next author list.
-        2. Provide the collaboration’s internal ID Numbers of the respective person directly in the author.xml file.
+1. Send a list of names and email addresses or the xml file without INSPIRE IDs to authors@inspirehep.net and we will return this list enriched with all the INSPIRE ID Numbers for the authors.
+These INSPIRE IDs can then be integrated into your author database and delivered as part of your author list.
+1. Provide the collaboration’s internal ID Numbers of the respective person directly in the author.xml file.
 If you choose this option, please ensure these IDs are persistent and unique within your collaboration.
 This way, no additional information is needed in the collaboration’s author database–we’ll
 match up the internal IDs with INSPIRE ID Numbers and make sure the authors always have the correct ID.
@@ -204,6 +200,8 @@ other parties.
       In any case, once the author.xml is submitted and checked by the INSPIRE service team, missing IDs will be
 assigned accordingly and created if necessary. Additional information on INSPIRE ID numbers can be found at
 INSPIRE ID NUMBERS.
+
+
     • INSPIRE ID Number for an individual
 The HEPNAMES
 database may be utilized to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page.
