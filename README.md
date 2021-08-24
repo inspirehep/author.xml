@@ -6,7 +6,7 @@
     - [Background and motivation](#background)
     - [Partners in the author.xml project](#partners)
 2. [A Brief description of the author.xml file](#briefdescription)    
-    - [Why XML for the file?](#whyxml)
+    - [Why an XML file for the author list?](#whyxml)
     - [Quick summary of steps](#howdoesitwork)
     - [What are the advantages of an author.xml file?](#whatadvantages)
 3. [What do I need to get started?](#needtogetstarted)
@@ -30,18 +30,6 @@
 
 
 
-
-6.  
-7. 
-8. 
-
-8. 
-9. 
-
-
-
-
-
 3. [ Usage tips](#usage)
 
 <a name="introduction"></a>
@@ -50,7 +38,7 @@
 ## Background and motivation
 Together, INSPIRE, the American Physical Society and arXiv.org have created a template file that you are recommended to use when you provide information about the authors for the submission of your paper. Not only will the authors' information be precise and universally understood, but author information linking to professional information — affiliations, grants, publications, peer review, and more will get exposed. Let's all be "on the same page" and ensure that authors get recognition for their contributions.
 
-If the author list for your collaboration has 10 or more authors, we recommend that when submitting your document, you also submit a file called author.xml. This template file is obtained from a downloaded package. Using the template file as your guide, you fill in the fields such as the authors' details, collaboration details, and so on. On completion, you pass it through a validator to make sure the file is good to go. Once okayed, your author.xml file is ready for submission. 
+If the author list for your collaboration has 10 or more authors, we recommend that when submitting your document, you also submit a file called author.xml. This template file is obtained from a downloaded package. Using the template file as your guide, you fill in the fields such as the authors' details, collaboration details, and so on. On completion, you pass it through a validator to make sure the file is good to go. After validation, your author.xml file is ready for submission. 
 
 Large collaborations with hundreds and even thousands of authors are already using the author.xml file to enable cataloguers and automated processes to glean complete, accurate information on authors. Get on board so that authors get the appreciation and exposure they deserve!
 
@@ -87,30 +75,32 @@ Large collaborations with hundreds and even thousands of authors are already usi
 
 <a name="briefdescription"></a>
 ### A Brief description of the author.xml file
-The author.xml file contains the following information:
+From [Background and motivation](#background), above, you will have gathered that the author list file, author.xml, uses the language XML. This author.xml file includes the following information:
  - Which paper does the author.xml correspond to?
  - The collaboration it represents.
  - The institutions participating in the collaboration.
  - The authors, with their affiliations and ID numbers.
 
-This information will allow us to automate the process of publishing the document electronically, without the need for human intervention.
+The information will allow us to automate the process of publishing the document electronically, without the need for human intervention.
 
 <a name="whyxml"></a>
-### Why XML for author.xml?
-From the introduction, you will have gathered that the authors' file, author.xml, uses the language XML. XML stands for eXtensible Markup Language. Markup implies that there is information about the data structure i.e. your data (a.k.a XML elements) will be enclosed between tags that describe what type of data it is. You should enter your data between the tags according to a specific format. 
+### Why an XML file for the author list?
+XML stands for eXtensible Markup Language. Markup implies that there is information about the data structure i.e. your data (a.k.a. XML elements) will be enclosed between tags that describe what type of data it is. You should enter your data between the tags according to a specific format. 
 
 The term 'eXtensible' means that we decide what the tags should be called - the tags in the author.xml have been defined and agreed upon, so don't go adding your own. 
 
-XML was designed to store and transport data, and it is both human- and machine-readable. This perfectly satisfies our requirements for the language used to read and write the author.xml files. Note that XML files are data files, the information doesn't do anything on its own.
+XML was designed to store and transport data, and it is both human- and machine-readable. Note that XML files are data files, and that the information doesn't do anything on its own.
 
 <a name="howdoesitwork"></a>
 ### Quick summary of steps
  - You will download a package.
- - To produce your collaboration’s author list file, author.xml, you complete the xml template file that you obtained.
+ - To produce your collaboration’s author list file, author.xml, you will complete the xml template file that you obtained.
  - Once completed, the file should be tested and validated using the validation files that are included in the package.
- - When your file passes the test, submit your file along with your submission to arXiv in a .tar ball.
- - If you encounter any problem and need assistance, or if you are unable provide the information required, please contact us:
-authors@inspirehep.net
+ - When your file passes the validation, you can submit the author.xml file along with your submission to arXiv in a .tar ball.
+ - Please contact us at authors@inspirehep.net if you:
+    - encounter problems
+    - need assistance 
+    - are unable provide the information required  
 
 <a name="whatadvantages"></a>
 ### What are the advantages of the author.xml file?
@@ -135,17 +125,16 @@ Given the XML file, an auto-generation process using xslt (stands for Extensible
 <a name="workflow"></a>
 ### What is the workflow?
 1. Download the package to have the necessary template and files
-1. Gather the information that you will need to fill in the author.xml file
-1. Input your data for the XML elements in the template
-1. Validate the file, using a 'validator'
+1. Gather the information that you will need in-order to fill in the author.xml file
+1. Input your data for the XML elements in the template file, and save the file
+1. Validate the completed file, using a 'validator'
 1. You have the option of converting the xml file to another format, should you also need a different format
     
 <a name="knowterms"></a>
 ### What terms should I know before starting?
-You will come across files with different extensions. You don't actually need to know what they all mean, but if you are interested, let's touch on the types of files that you will encounter.
+You will come across files with different extensions. Whilst you don't actually need to know what they all mean, if you are interested, let's quickly touch on the types of files that you will encounter.
 
  - **.xml** -> A .xml file is an **Extensible Markup Language** (XML) file. It is just a plain text files that has custom tags to describe the structure and other features of the document. An xml file does not DO anything. The file is used to store and transport data. The information is wrapped in meaningful tags.
-
 
 .dtd and .xsd files are two different document type definitions that can be used with .xml files. Both are used to specify what elements may be used in the XML document, the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute. Generally speaking, .xsd files define more precise grammars than .dtd files.
  - **.dtd** -> DTD is an acronym for **Document Type Definition**, and is the original Document Type Definition. Files that contain the .dtd file extension are text files that specify elements and attributes used in an XML document.
@@ -153,9 +142,8 @@ You will come across files with different extensions. You don't actually need to
 
 
  - **.xsl** -> XSL stands for **eXtensible Stylesheet Language**, and is the stylesheet definition language for XML.  
- - **.xslt** -> XSLT stands for **XSL Transformations**, it is written XSL, and is used to transform XML documents into other data formats, formats such as HTML, XHTML or PDF. It can also be used to transform XML documents that comply with one XML schema (a type of ‘data type definition’ file) into documents that comply with another schema. 
+ - **.xslt** -> XSLT stands for **XSL Transformations**, it is written in XSL, and is used to transform XML documents into other data formats, formats such as HTML, XHTML, PDF, etc.. It can also be used to transform XML documents that comply with one XML schema (a type of ‘data type definition’ file) into documents that comply with another schema. 
  
-
 #### Well formed XML document
 An XML document is said to be well formed if it satifies syntax rules. These are:
 
