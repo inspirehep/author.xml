@@ -74,7 +74,7 @@ Large collaborations with hundreds and even thousands of authors are already usi
  - [ZEUS](https://www-zeus.desy.de/)
 
 <a name="briefdescription"></a>
-### A Brief description of the author.xml file
+## A Brief description of the author.xml file
 From [Background and motivation](#background), above, you will have gathered that the author list file, author.xml, uses the language XML. This author.xml file should include the following information, and is provided by you:
  - Which paper does the author.xml correspond to?
  - The collaboration it represents.
@@ -298,10 +298,17 @@ At the beginning of author.xml there are XML declaration elements. These are fix
 
 The XML elements for which you might have to provide a value are explained in the table.
 
+|`XML Element container`|`Description`|Required or Optional?|
+|---|---|---|
+|`<collaborationauthorlist`|`'collaborationauthorlist' is the root element`|Required|
+|`xmlns:foaf="http://xmlns.com/foaf/0.1/"`|`prefix 'foaf' is to do with this string. Used only to differentiate element names`|Required|
+|`xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">|`prefix 'cal' is to do with this string. Used only to differentiate element names`|Required|
+
+
 
 | XML Element container | Description | Required or Optional?|
 | ----------- | ----------- |
-| <collaborationauthorlist | collaborationauthorlist’ is the root element |
+| <collaborationauthorlist | 'collaborationauthorlist' is the root element |
 |   xmlns:foaf="http://xmlns.com/foaf/0.1/" | prefix 'foaf' is to do with this string. Used only to differentiate element names | Required |
 |   xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"> | prefix 'cal' is to do with this string. Used only to differentiate element names | Required |
 | Paragraph | Text |
