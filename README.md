@@ -290,7 +290,8 @@ In order to help you [fill in the XML values](https://raw.githubusercontent.com/
 
 <a name="tablexmlelements"></a>
 ### Table explaining XML elements
-At the beginning of author.xml there are XML declaration elements. These are fixed and describe the version, encoding, and declares that the document needs information from an external document type definition (DTD), for its content.
+At the beginning of author.xml there is the XML declaration. This describes the version, encoding, and declares that the document needs information from an external document type definition (DTD), for its content.
+
 `
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
@@ -299,9 +300,9 @@ At the beginning of author.xml there are XML declaration elements. These are fix
 The XML elements for which you might have to provide a value are explained in the table.
 |`XML Element container`|`Description`|Required or Optional?|
 |---|---|---|
-|`<collaborationauthorlist`|`'collaborationauthorlist' is the root element`|Required|
-|`xmlns:foaf="http://xmlns.com/foaf/0.1/"`|`prefix 'foaf' is to do with this string. Used only to differentiate element names`|Required|
-|`xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">`|`prefix 'cal' is to do with this string. Used only to differentiate element names`|Required|
+|`collaborationauthorlist`|'collaborationauthorlist' is the root element|Required|
+|`xmlns:foaf="http://xmlns.com/foaf/0.1/"`|prefix 'foaf' is to do with this string. Used only to differentiate element names|Required|
+|`xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"`|prefix 'cal' is to do with this string. Used only to differentiate element names|Required|
 
 
 
