@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+        elementFormDefault='unqualified'>
+  <xs:element name="authorAffiliation">
+    <xs:complexType>
+      <xs:attribute name="connection" type="xs:string" use="optional" default="Affiliated with"/>
+      <xs:attribute name="organizationid" type="xs:IDREF" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="authorAffiliations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="authorAffiliation" maxOccurs="unbounded" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="authorCollaboration">
+    <xs:complexType>
+      <xs:attribute name="position" use="optional">
+	    <xs:simpleType>
+		  <xs:restriction base="xs:string">
+		    <xs:enumeration value="Spokesperson"/>
+		    <xs:enumeration value="Contact Person"/>
+		    <xs:enumeration value="Speaker"/>
+			<xs:enumeration value="Editor"/>
+		  </xs:restriction>
+	    </xs:simpleType>
+	  </xs:attribute>
+      <xs:attribute name="collaborationid" type="xs:IDREF" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="authorid">
+    <xs:complexType mixed="true">
+      <xs:attribute name="source" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="authorids">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="authorid" maxOccurs="unbounded" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="authorNameNative">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="authorNamePaper">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="authorNamePaperGiven">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="authorNamePaperFamily">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="authors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Person" maxOccurs="unbounded" minOccurs="1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="authorStatus">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="authorSuffix" type="xs:string" />
+
+  <xs:element name="group">
+    <xs:complexType mixed="true">
+      <xs:attribute name="with" type="xs:IDREF" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="collaboration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name" />
+        <xs:element ref="experimentNumber" />
+        <xs:element ref="group" />
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="collaborations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="collaboration" maxOccurs="unbounded" minOccurs="1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="creationDate">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="experimentNumber">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="orgAddress">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="organizations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Organization" maxOccurs="unbounded" minOccurs="1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="orgDomain">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="orgName">
+    <xs:complexType mixed="true">
+      <xs:attribute name="source" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="orgStatus">
+    <xs:complexType mixed="true">
+      <xs:attribute name="collaborationid" type="xs:IDREF" use="optional" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="publicationReference">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="collaborationauthorlist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="creationDate" />
+        <xs:element ref="publicationReference" />
+        <xs:element ref="collaborations" />
+        <xs:element ref="organizations" />
+        <xs:element ref="authors" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="familyName">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="givenName">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="name">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="Organization">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="orgDomain" />
+        <xs:element ref="name" />
+        <xs:element ref="orgName" />
+        <xs:element ref="orgStatus" />
+        <xs:element ref="orgAddress" />
+        <xs:element ref="group" />
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Person">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name" minOccurs="0"/>
+        <xs:element ref="authorNameNative" minOccurs="0" />
+        <xs:element ref="givenName" minOccurs="0" />
+        <xs:element ref="familyName" minOccurs="1" />
+        <xs:element ref="authorSuffix" minOccurs="0" />
+        <xs:element ref="authorStatus" minOccurs="0" />
+        <xs:element ref="authorNamePaper" minOccurs="1" />
+        <xs:element ref="authorNamePaperGiven" minOccurs="1" />
+        <xs:element ref="authorNamePaperFamily" minOccurs="1" />
+        <xs:element ref="authorCollaboration" minOccurs="0" />
+        <xs:element ref="authorAffiliations" />
+        <xs:element ref="authorids" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
