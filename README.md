@@ -297,27 +297,45 @@ At the beginning of author.xml there is the XML declaration. This describes the 
 <!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
 `
 
-The XML elements for which you might have to provide a value are explained in the table.
-|`XML Element/Attribute`|`Description`|Required or Optional?|
-|---|---|---|
-|`collaborationauthorlist`|'collaborationauthorlist' is the root element|Required|
-|`xmlns:foaf="http://xmlns.com/foaf/0.1/"`|prefix 'foaf' is to do with this string. Used only to differentiate element names|Required|
-|`xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"`|prefix 'cal' is to do with this string. Used only to differentiate element names|Required|
-|`cal:CreationDate`|date of creation of this author.xml file|Required|
-|`cal:publicationReference`|
-<td>
-        <ul>
-          <li>item1</li>
-          <li>item2</li>
-        </ul> 
-</td>
-an internal report number an arXiv number; a collaboration’s internal document number;an ISBN; a DOI; a persistant web destination; anything that identifies the referenced document. If no immediate identifier, the title can be used|Required|
+Do not remove any part of the author.xml template. Instead, edit the author.xml template by filling in **your value** for the element or attribute when **REQUIRED** or **OPTIONAL** is shown:
+|`XML Element/Attribute/ContainerElement`|`Description. Required/Optional`|
+|---|---|
+|collaborationauthorlist|'collaborationauthorlist' is the root element [Required]|
+|xmlns:foaf="http://xmlns.com/foaf/0.1/"|prefix 'foaf' is to do with this string. Used only to differentiate element names [Required]|
+|xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"|prefix 'cal' is to do with this string. Used only to differentiate element names [Required]|
+
+|`XML Element/Attribute/ContainerElement`|`Description. Required/Optional`|
+|---|---|
+|`cal:CreationDate`|**REQUIRED** - date of creation of this author.xml file|
+|`cal:publicationReference`|**REQUIRED** - an internal report number an arXiv number </br> **or** a collaboration’s internal document number </br> **or** an ISBN </br> **or** a DOI </br> **or** a persistant web destination </br> **or** anything that identifies the referenced document.</br>If no immediate identifier, the title can be used|
+|`cal:collaboration`|`cal:collaboration` **REQUIRED** - container element with information about the collaboration.</br> Attribute `“id”`: **OPTIONAL** - is only needed if two (2) or more collaborations publish together. Typically, it is a letter+sequential number, starting at “c1”. </br> Element <`foaf:name`>: **REQUIRED** - name of the collaboration. </br> Element `<cal:experimentNumber>`: **OPTIONAL** - number assigned by laboratory to the experiment, if present|
+
+
+
+   
+      <cal:organizations>
+      <foaf:Organization id="a1">
+         <cal:orgDomain>http://</cal:orgDomain>
+         <foaf:name></foaf:name>
+         <cal:orgName source=""></cal:orgName>
+         <cal:orgStatus collaborationid="c1"></cal:orgStatus>
+         <cal:orgAddress></cal:orgAddress>
+         <cal:group with=""/>
+      </foaf:Organization>
+   </cal:organizations>
+   
+|`XML Element/Attribute/ContainerElement`|`Description. Required/Optional`|
+|---|---|
+|`foaf:Organization`|`foaf:Organization` **REQUIRED** - container element with information about an organization with which authors are affiliated. There may be one or more organizations within the <cal:organizations> container, and each organization is identified by the “id” attribute. </br> Attribute `“id”`: **REQUIRED** - typically, it is a letter+sequential number, starting at “a1”, used to denote the author’s institution in this particular author.xml file so as to attach authors to the institution.</br>Element <`cal:orgDomain`>: **OPTIONAL** - internet domain of the institution. The domain should be detailed enough to unambiguously determine the institution if there are distinct locations throughout the nation, e.g., pv.infn.it rather than just infn.it. If desired, this can go to the department/research-group level.</br>Element <`foaf:name`>: **REQUIRED** this is the name of the organization as it will appear on the document.</br>Element <`cal:orgName`>: **OPTIONAL** - this element also defines the name of the organization. Depending on where this name originates from, the source attribute can be used. The element content shall be only the name of the respective institute. Location information, if not part of the name, may be stated in the orgAddress element.</br>Attribute `“source”`: **OPTIONAL** - (Defaults to “INTERNAL”) enables you to use either the INSPIRE (a.k.a. INSPIRE-ICN) form of the institution’s name or your own INTERNAL form.</br> Element <`cal:orgStatus`>: **OPTIONAL** - status of the organization within the collaboration. Typically this would be either “member” or “nonmember.”</br>Attribute `“collaborationid”`: **OPTIONAL** - enables you to specify which exact collaboration this organization is attached to. The collaboration is represented through its ID (e.g. “c1”). This element may be repeated if necessary.</br>Element <`cal:orgAddress`>: **OPTIONAL** - full postal address of the institution as it would be written on a letter head.</br>Element <`cal:group`>: **OPTIONAL** - see group discussion below|
+
 
 
 
 |``||Required|
 |``||Required|
-|``||Required|
+
+
+
 
 
 <a name="authorxmlvalidate"></a>
