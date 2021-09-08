@@ -74,7 +74,7 @@ Large collaborations with hundreds and even thousands of authors are already usi
  - [ZEUS](https://www-zeus.desy.de/)
 
 <a name="briefdescription"></a>
-### A Brief description of the author.xml file
+## A Brief description of the author.xml file
 From [Background and motivation](#background), above, you will have gathered that the author list file, author.xml, uses the language XML. This author.xml file should include the following information, and is provided by you:
  - Which paper does the author.xml correspond to?
  - The collaboration it represents.
@@ -290,21 +290,34 @@ In order to help you [fill in the XML values](https://raw.githubusercontent.com/
 
 <a name="tablexmlelements"></a>
 ### Table explaining XML elements
-At the beginning of author.xml there are XML declaration elements. These are fixed and describe the version, encoding, and declares that the document needs information from an external document type definition (DTD), for its content.
+At the beginning of author.xml there is the XML declaration. This describes the version, encoding, and declares that the document needs information from an external document type definition (DTD), for its content.
+
 `
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
 `
 
 The XML elements for which you might have to provide a value are explained in the table.
+|`XML Element/Attribute`|`Description`|Required or Optional?|
+|---|---|---|
+|`collaborationauthorlist`|'collaborationauthorlist' is the root element|Required|
+|`xmlns:foaf="http://xmlns.com/foaf/0.1/"`|prefix 'foaf' is to do with this string. Used only to differentiate element names|Required|
+|`xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"`|prefix 'cal' is to do with this string. Used only to differentiate element names|Required|
+|`cal:CreationDate`|date of creation of this author.xml file|Required|
+|`cal:publicationReference`|
+<td>
+        <ul>
+          <li>item1</li>
+          <li>item2</li>
+        </ul> 
+</td>
+an internal report number an arXiv number; a collaboration’s internal document number;an ISBN; a DOI; a persistant web destination; anything that identifies the referenced document. If no immediate identifier, the title can be used|Required|
 
 
-| XML Element container | Description | Required or Optional?|
-| ----------- | ----------- |
-| <collaborationauthorlist | collaborationauthorlist’ is the root element |
-|   xmlns:foaf="http://xmlns.com/foaf/0.1/" | prefix 'foaf' is to do with this string. Used only to differentiate element names | Required |
-|   xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"> | prefix 'cal' is to do with this string. Used only to differentiate element names | Required |
-| Paragraph | Text |
+
+|``||Required|
+|``||Required|
+|``||Required|
 
 
 <a name="authorxmlvalidate"></a>
