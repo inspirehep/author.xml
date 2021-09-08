@@ -304,17 +304,7 @@ The XML elements for which you might have to provide a value are explained in th
 |`xmlns:foaf="http://xmlns.com/foaf/0.1/"`|prefix 'foaf' is to do with this string. Used only to differentiate element names|Required|
 |`xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"`|prefix 'cal' is to do with this string. Used only to differentiate element names|Required|
 |`cal:CreationDate`|date of creation of this author.xml file|Required|
-|`cal:publicationReference`|
-<tr>
-   <td>
-        cal:publicationReference
-        <ul>
-          <li>item1</li>
-          <li>item2</li>
-        </ul> 
-   </td>
-</tr>
-an internal report number an arXiv number; a collaboration’s internal document number;an ISBN; a DOI; a persistant web destination; anything that identifies the referenced document. If no immediate identifier, the title can be used|Required|
+|`cal:publicationReference`|an internal report number an arXiv number; a collaboration’s internal document number;an ISBN; a DOI; a persistant web destination; anything that identifies the referenced document. If no immediate identifier, the title can be used|Required|
 
 
 
