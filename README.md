@@ -297,14 +297,14 @@ At the beginning of author.xml there is the XML declaration. This describes the 
 <!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
 `
 
-Do not remove any part of the author.xml template. Instead, edit the author.xml template by filling in **your value** for the element or attribute when `Required` or `Optional` is shown:
-|`XML Element/Attribute`|`Description`|Required or Optional?|
+Do not remove any part of the author.xml template. Instead, edit the author.xml template by filling in **your value** for the element or attribute when **Required** or **Optional** is shown:
+|`XML Element/Attribute`|`Description`|Required/Optional|
 |---|---|---|
 |collaborationauthorlist|'collaborationauthorlist' is the root element|Required|
 |xmlns:foaf="http://xmlns.com/foaf/0.1/"|prefix 'foaf' is to do with this string. Used only to differentiate element names|Required|
 |xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"|prefix 'cal' is to do with this string. Used only to differentiate element names|Required|
-|`cal:CreationDate`|date of creation of this author.xml file|`Required`|
-|`cal:publicationReference`|an internal report number an arXiv number </br> **or** a collaboration’s internal document number </br> **or** an ISBN </br> **or** a DOI </br> **or** a persistant web destination </br> **or** anything that identifies the referenced document.</br>If no immediate identifier, the title can be used|`Required`|
+|`cal:CreationDate`|date of creation of this author.xml file|**Required**|
+|`cal:publicationReference`|an internal report number an arXiv number </br> **or** a collaboration’s internal document number </br> **or** an ISBN </br> **or** a DOI </br> **or** a persistant web destination </br> **or** anything that identifies the referenced document.</br>If no immediate identifier, the title can be used|**Required**|
 
 
 
