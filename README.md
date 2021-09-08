@@ -308,9 +308,26 @@ Do not remove any part of the author.xml template. Instead, edit the author.xml 
 
 
 
+|`cal:collaboration`|This container holds information about the collaboration</br> Attribute “id” **Optional**
+is only needed if two (2) or more collaborations publish together. Typically, it is a sequential number, starting at “c1”. It is used to denote the collaboration in this particular author.xml file for the purpose of attaching authors and/or institutes to the collaboration in a multi-collaboration environment. NOTE: For bizarre historical reasons that few people remember, XML requires that an attribute value declared as being of type ID has the same syntax as an XML name – so it cannot start with a digit..</br>
+        ◦ Element <foaf:name>: **Required** Name of the collaboration.
+        ◦ Element <cal:experimentNumber>: **Optional** Number assigned by laboratory to the experiment, if present.|**Required**|
 |``||Required|
 |``||Required|
-|``||Required|
+
+
+<cal:collaboration>: REQUIRED
+This container holds information about the collaboration.
+One or more collaborations reside within the <cal:collaborations> container.
+        ◦ Attribute “id”: OPTIONAL
+This attribute is only needed if two (2) or more collaborations publish together. It is typically a sequential
+number, starting at “c1”. It is used
+to denote the collaboration in this particular author.xml file for the purpose of
+attaching authors and/or institutes to the collaboration in a multi-collaboration environment. More Information on ID naming conventionsNOTE: For bizarre historical reasons that few people remember, XML requires that an attribute value declared as being of type ID has the same syntax as an XML name – so it cannot start with a digit..
+        ◦ Element <foaf:name>: REQUIREDName of the collaboration.
+        ◦ Element <cal:experimentNumber>: OPTIONAL
+Number assigned by laboratory to the experiment, if present.
+
 
 
 <a name="authorxmlvalidate"></a>
