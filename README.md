@@ -297,7 +297,7 @@ At the beginning of author.xml there is the XML declaration. This describes the 
 <!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
 `
 
-Do not remove any part of the author.xml template. Instead, edit the author.xml template by filling in **your value** for the element or attribute when **REQUIRED** (bold) or **OPTIONAL** (bold) is shown:
+Do not remove any part of the author.xml template. Instead, edit the author.xml template by filling in **your value** for the element or attribute when **REQUIRED** (in bold) or **OPTIONAL** (in bold) is shown:
 |`XML Element/Attribute/ContainerElement`|`Description. Required/Optional`|
 |---|---|
 |collaborationauthorlist|'collaborationauthorlist' is the root element [Required]|
@@ -312,22 +312,62 @@ Do not remove any part of the author.xml template. Instead, edit the author.xml 
 
 
 
-   
-      <cal:organizations>
-      <foaf:Organization id="a1">
-         <cal:orgDomain>http://</cal:orgDomain>
-         <foaf:name></foaf:name>
-         <cal:orgName source=""></cal:orgName>
-         <cal:orgStatus collaborationid="c1"></cal:orgStatus>
-         <cal:orgAddress></cal:orgAddress>
-         <cal:group with=""/>
-      </foaf:Organization>
-   </cal:organizations>
+
    
 |`XML Element/Attribute/ContainerElement`|`Description. Required/Optional`|
 |---|---|
 |`foaf:Organization`|`foaf:Organization` **REQUIRED** - container element with information about an organization with which authors are affiliated. There may be one or more organizations within the <cal:organizations> container, and each organization is identified by the “id” attribute. </br> Attribute `“id”`: **REQUIRED** - typically, it is a letter+sequential number, starting at “a1”, used to denote the author’s institution in this particular author.xml file so as to attach authors to the institution.</br>Element <`cal:orgDomain`>: **OPTIONAL** - internet domain of the institution. The domain should be detailed enough to unambiguously determine the institution if there are distinct locations throughout the nation, e.g., pv.infn.it rather than just infn.it. If desired, this can go to the department/research-group level.</br>Element <`foaf:name`>: **REQUIRED** this is the name of the organization as it will appear on the document.</br>Element <`cal:orgName`>: **OPTIONAL** - this element also defines the name of the organization. Depending on where this name originates from, the source attribute can be used. The element content shall be only the name of the respective institute. Location information, if not part of the name, may be stated in the orgAddress element.</br>Attribute `“source”`: **OPTIONAL** - (Defaults to “INTERNAL”) enables you to use either the INSPIRE (a.k.a. INSPIRE-ICN) form of the institution’s name or your own INTERNAL form.</br> Element <`cal:orgStatus`>: **OPTIONAL** - status of the organization within the collaboration. Typically this would be either “member” or “nonmember.”</br>Attribute `“collaborationid”`: **OPTIONAL** - enables you to specify which exact collaboration this organization is attached to. The collaboration is represented through its ID (e.g. “c1”). This element may be repeated if necessary.</br>Element <`cal:orgAddress`>: **OPTIONAL** - full postal address of the institution as it would be written on a letter head.</br>Element <`cal:group`>: **OPTIONAL** - see group discussion below|
 
+|`<foaf:Person>`|<foaf:Person>: REQUIRED
+This container holds information about the author
+One or more authors reside within the <cal:authors> container.
+Element <foaf:name>: OPTIONAL
+Author's complete name written in the format e.g. "Johannes Diderik van der Waals".
+Element <foaf:givenName>: OPTIONAL
+All first/given names of an author in roman letters, e.g. "Johannes Diderik". You may leave this out in the rare case that a person does not possess a first name.
+Element <foaf:familyName>: REQUIRED
+All sur/family names of an author in roman letters, e.g. "van der Waals".
+Element <cal:authorNameNative>: OPTIONAL
+Name of author as written in his or her native language e.g., "Ле́в Дави́дович Ланда́у" or "張晨光".
+Element <cal:authorSuffix>: OPTIONAL
+Suffiix information for a name E.g. "Jr.", "Sr.", "III"
+Element <cal:authorStatus>: OPTIONAL
+This element describes the vital status of an author. If the author is deceased, please state "Deceased". Otherwise this element shall be empty.
+Element <cal:authorNamePaper>: REQUIRED
+Name of author as it appears on the title page of the paper, e.g. "J. van der Waals".
+This element supports Roman letters only.
+Element <cal:authorNamePaperGiven>: OPTIONAL
+Given name(s) of the author as it appears on the title page of the paper, typically initials, e.g. "J."
+This element supports Roman letters only. As with <foaf:givenName> it is "optional" only in the technical sense that someone may have one name only.
+Element <cal:authorNamePaperFamily>: OPTIONAL
+Family name of author as it appears on the title page of the paper, e.g. "van der Waals".
+This element supports Roman letters only.
+Element <cal:authorCollaboration>: REQUIRED
+In a multi collaboration environment, the author can be attached to a collaboration with the appropriate collaboration ID.
+If the author is a member of more than one collaboration or has more than one position, this element may be repeated.
+Attribute "collaborationid": REQUIRED (defaults to the first collaboration)
+Enables the specification of which exact collaboration this author is attached to. The collaboration is represented through its ID (e.g. "c1").
+Attribute "position": OPTIONAL
+This attribute specifies the position of an author within the collaboration.
+This may be "Spokesperson", "Contact person", "Speaker" or "Editor".
+Element <cal:authorAffiliation>: OPTIONAL
+This element connects the author to his or her institution, through the organization ID attribute.
+All affiliation elements (zero or more) reside within the <cal:authorAffiliations> container.
+Several affiliations may be mentioned by using several of these elements--one line for each affiliation. Please do not use a (comma-separated) list of organization identifiers in the 'organizationid' attribute.
+In cases where multiple affiliations resemble one entity, please mark the organizations with IDs e.g. "o1a", "o1b" and "o1c" to show their relation.
+Attribute "organizationid": REQUIRED
+Connects with one of the organizations from above. The link is established by using the respective ID of the organization here (e.g. "a1").
+Attribute "connection": OPTIONAL (Defaults to "Affiliated with")
+This enables you to list information about the connection such as "Affiliated with", "On leave from", "Also at" or "Visitor"
+Element <cal:authorid>: OPTIONAL
+This element specifies an ID number that identifies an author.
+All ID elements (zero or more) reside within the <cal:authorids> container.
+Attribute "source": REQUIRED (if there is an authorID element present)
+Specifies the origins of the number. This can be an INSPIRE ID number (source="INSPIRE"), a collaboration-internal ID (source="INTERNAL") or other author ID services (e.g. source="ORCID").
+While the use of INSPIRE ID numbers is strongly encouraged, the use of a persistant ID for an author allows the INSPIRE service team to identify the authors and attach the respective identifiers to their INSPIRE ID.
+Please consult the section on "How do I obtain the information needed in author.xml?" for more detailed information about the handling of author ids.
+Element <cal:authorFunding>: OPTIONAL
+This element describes the author's funding source, such as a grant or fellowship, if necessary (e.g., Alfred P. Sloan Fellow). Otherwise this element shall be empty.|
 
 
 
