@@ -297,7 +297,7 @@ At the beginning of author.xml there is the XML declaration. This describes the 
 <!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
 `
 
-Do not remove any part of the author.xml template. Instead, edit the author.xml template by filling in **your value** for the element or attribute when **REQUIRED** or **OPTIONAL** is shown:
+Do not remove any part of the author.xml template. Instead, edit the author.xml template by filling in **your value** for the element or attribute when **REQUIRED** (bold) or **OPTIONAL** (bold) is shown:
 |`XML Element/Attribute/ContainerElement`|`Description. Required/Optional`|
 |---|---|
 |collaborationauthorlist|'collaborationauthorlist' is the root element [Required]|
