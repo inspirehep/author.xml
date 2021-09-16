@@ -300,11 +300,9 @@ At the beginning of author.xml there is the XML declaration. This describes the 
 Do not remove any part of the author.xml template. Instead, edit the author.xml template by filling in **your value** for the element or attribute when you see **REQUIRED** (in bold) or **OPTIONAL** (in bold):
 |`XML Element/ContainerElement`|`Element/Attribute/ContainerElement. **Required/Optional**`|
 |---|---|
-|`<collaborationauthorlist>`|Element `<collaborationauthorlist>` **REQUIRED** - this is the root element |
-|`xmlns:foaf="http://xmlns.com/foaf/0.1/"`| **REQUIRED** - this namespace with prefix 'foaf' is used only to differentiate between identical element/attribute names |
-|`xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"`| **REQUIRED** - this namespace with prefix 'cal' is used only to differentiate between identical element/attribute names |
-|`XML Element/ContainerElement`|`Element/Attribute/ContainerElement. **Required/Optional**`|
-|---|---|
+|`<collaborationauthorlist>`|Element `<collaborationauthorlist>` [required] - this is the root element |
+|`xmlns:foaf="http://xmlns.com/foaf/0.1/"`| [required] - this namespace with prefix 'foaf' is used only to differentiate between identical element/attribute names |
+|`xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"`| [required] - this namespace with prefix 'cal' is used only to differentiate between identical element/attribute names |
 |`<cal:CreationDate>`|Element `<cal:CreationDate>` **REQUIRED** - date of creation of this author.xml file|
 |`<cal:publicationReference>`|Element `<cal:publicationReference>` **REQUIRED** - an internal report number an arXiv number </br> **or** a collaboration’s internal document number </br> **or** an ISBN </br> **or** a DOI </br> **or** a persistant web destination </br> **or** anything that identifies the referenced document.</br>If no immediate identifier, the title can be used|
 |`<cal:collaboration>`|`<cal:collaboration>` **REQUIRED** - container element with information about the collaboration.</br> Attribute `“id”`: **OPTIONAL** - is only needed if two (2) or more collaborations publish together. Typically, it is a letter+sequential number, starting at “c1”. </br> Element `<foaf:name>`: **REQUIRED** - name of the collaboration. </br> Element `<cal:experimentNumber>` **OPTIONAL** - number assigned by laboratory to the experiment, if present|
