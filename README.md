@@ -93,7 +93,7 @@ The term 'eXtensible' means that we decide what the tags should be called - the 
 XML was designed to store and transport data, and it is both human- and machine-readable. Note that XML files are data files, and that the information doesn't do anything on its own.
 
 <a name="howdoesitwork"></a>
-### Quick summary of steps
+### Quick summary of steps [TO BE REMOVED]
  - You will download a package.
  - To produce your collaboration’s author list file, author.xml, you will complete the xml template file that you obtained.
  - Once completed, the file should be tested and validated using the validation files that are included in the package.
@@ -119,7 +119,11 @@ Given the XML file, an auto-generation process using xslt (stands for Extensible
 
 <a name="needtogetstarted"></a>
 ## What do I need to get started?
-1. Get the file author.dtd. This is file contains the rules that your author.xml file will be checked ("validated") against.
+1. Get the file author.dtd [How do I get the author.dtd file?](#getauthordtd). This is file contains the rules that your author.xml file will be checked ("validated") against.
+1. Get the template file author.xml. You will fill this author.xml template file with the details of your collaboration's authors.
+1. Once completed, your author.xml file should be validated against the author.dtd file (mentioned in 1.).
+1. Following validation, you can submit the author.xml file along with your submission to arXiv in a .tar ball.
+1. Please contact us at authors@inspirehep.net if you need assistance.  
 
 <a name="getauthordtd"></a>
 ### How do I get the author.dtd file?
