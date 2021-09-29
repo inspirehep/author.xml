@@ -313,8 +313,8 @@ Do not remove any part of the author.xml template. Instead, edit the author.xml 
 
 
 + `<foaf:Person>`**REQUIRED** - container element with information about the author. One or more authors reside within the <cal:authors> container.
-    - Element `<foaf:name>` **optional** - Author's complete name written in the format e.g. "Johannes Diderik van der Waals".
-    - Element `<foaf:givenName>` **optional** - all first/given names of an author in roman letters, e.g. "Johannes Diderik". You may leave this out in the rare case that a person does not possess a first name.
+    - Element `<foaf:name>` *OPTIONAL* - Author's complete name written in the format e.g. "Johannes Diderik van der Waals".
+    - Element `<foaf:givenName>` *optional* - all first/given names of an author in roman letters, e.g. "Johannes Diderik". You may leave this out in the rare case that a person does not possess a first name.
     - Element `<foaf:familyName>` **REQUIRED** - all sur/family names of an author in roman letters, e.g. "van der Waals".
     - Element `<cal:authorNameNative>` **optional** - name of author as written in his or her native language e.g., "Ле́в Дави́дович Ланда́у" or "張晨光".
     - Element `<cal:authorSuffix>` **optional** - suffiix information for a name E.g. "Jr.", "Sr.", "III".
