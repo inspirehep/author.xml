@@ -321,7 +321,12 @@ Do not remove any part of the author.xml template. Instead, edit the author.xml 
      - Element <`cal:orgName`> **OPTIONAL** - this element also defines the name of the organization. Depending on where this name originates from, the source attribute can be used. The element content shall be only the name of the respective institute. Location information, if not part of the name, may be stated in the orgAddress element.</br>Attribute `“source”` **OPTIONAL** - (Defaults to “INTERNAL”) enables you to use either the INSPIRE (a.k.a. INSPIRE-ICN) form of the institution’s name or your own INTERNAL form.</br> Element `<cal:orgStatus>` **OPTIONAL** - status of the organization within the collaboration. Typically this would be either “member” or “nonmember.”</br>Attribute `“collaborationid”` **OPTIONAL** - enables you to specify which exact collaboration this organization is attached to. The collaboration is represented through its ID (e.g. “c1”). This element may be repeated if necessary.</br>Element <`cal:orgAddress`> **OPTIONAL** - full postal address of the institution as it would be written on a letter head.</br>Element <`cal:group`> **OPTIONAL** - see group discussion below|
 
 
-
++ One
++ Two
++ Three
+    - Nested One
+    - Nested Two
+    
 
 
 
