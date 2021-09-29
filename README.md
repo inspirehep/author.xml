@@ -7,14 +7,11 @@
     - [Partners in the author.xml project](#partners)
 2. [A Brief description of the author.xml file](#briefdescription)    
     - [Why an XML file for the author list?](#whyxml)
-    - [Quick summary of steps](#howdoesitwork)
     - [What are the advantages of an author.xml file?](#whatadvantages)
 3. [What do I need to get started?](#needtogetstarted)
     - [How do I get the author.dtd file?](#getauthordtd)
     - [How do I get the author.xml template file?](#getauthorxml)
-    - [What is the workflow?[TO BE REMOVED]](#workflow)
     - [What terms should I know before starting?](#knowterms)
-    - [Downloads](#downloads)
     - [Examples of author.xml files](#examplefiles)
     - [Where do I get the information needed for my input?](#infoneeded)
     - [Links](#links)
@@ -93,13 +90,7 @@ The term 'eXtensible' means that we decide what the tags should be called - the 
 
 XML was designed to store and transport data, and it is both human- and machine-readable. Note that XML files are data files, and that the information doesn't do anything on its own.
 
-<a name="howdoesitwork"></a>
-### Quick summary of steps [TO BE REMOVED]
- - You will download a package.
- - To produce your collaboration’s author list file, author.xml, you will complete the xml template file that you obtained.
- - Once completed, the file should be tested and validated using the validation files that are included in the package.
- - When your file passes the validation, you can submit the author.xml file along with your submission to arXiv in a .tar ball.
- - Please contact us at authors@inspirehep.net if you need assistance.  
+ 
 
 <a name="whatadvantages"></a>
 ### What are the advantages of the author.xml file?
@@ -139,14 +130,6 @@ Given the XML file, an auto-generation process using xslt (stands for Extensible
 <a name="validate"></a>
 ### How do I validate my author.xml file?
 
-
-<a name="workflow"></a>
-### What is the workflow? [TO BE REMOVED]
-1. Download the package to have the necessary template and files
-1. Gather the information that you will need in-order to fill in the author.xml file
-1. Input your data for the XML elements in the template file, and save the file
-1. Validate the completed file, using a 'validator'
-1. You have the option of converting the xml file to another format, should you also need a different format
     
 <a name="knowterms"></a>
 ### What terms should I know before starting?
@@ -156,15 +139,11 @@ You might come across these terms, and whilst you don't actually need to know wh
 
  - **XML element** -> XML elements can be defined as the building blocks of an XML file. Elements can behave as containers to hold text, elements, attributes, media objects or all of these. For our purposes, we just need to know that XML elements are the data that we need to input.
 
-A document type definition file, which is provided for you, is used to specify what elements may be used in the XML document, the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute. The .dtd and .xsd files are two different document type definitions that can be used with the .xml file. Generally speaking, .xsd files define more precise grammars than .dtd files.
- - **.dtd** -> DTD is an acronym for **Document Type Definition**, and is the original Document Type Definition. Files that contain the .dtd file extension are text files that specify elements and attributes used in an XML document.
- - **.xsd** -> XSD is an acronym for **XML Schema Description** (i.e. another type of document type definition file), and an XML-based alternative to DTD. Files that contain the .xsd file extension are text files that specify elements and attributes used in an XML document.
-
- - **.xsl** -> XSL stands for **eXtensible Stylesheet Language**, and is the stylesheet definition language for XML.  
- - **.xslt** -> XSLT stands for **XSL Transformations**, it is written in XSL, and is used to transform XML documents into other data formats, formats such as HTML, XHTML, PDF, etc.. It can also be used to transform XML documents that comply with one XML schema (a type of ‘data type definition’ file) into documents that comply with another schema. 
+A document type definition file (.dtd), which is provided for you, is used to specify what elements may be used in the XML document, the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute.
+ - **.dtd** -> DTD is an acronym for **Document Type Definition**. A .dtd file is a text file that specifies the rules governing the elements and attributes used in the corresponding XML document. 
  
 #### Well formed XML document
-An XML document is said to be well formed if it satifies syntax rules. These rules are:
+An XML document is said to be well formed if it satifies the syntax rules. These rules are:
 
  - XML documents must have a root element (i.e. one sole parent element for all the XML elements in the document)
  - XML elements must have a start and end tag
@@ -177,20 +156,7 @@ A "well formed" XML document is not the same as a "valid" XML document.
 
 A "valid" XML document must already be well formed, but in addition, it must conform to a document type definition (the .dtd, or the .xsd file). 
 
-With XML, errors in documents are not tolerated for the simple reason that XML processing programs are foreseen to be small and fast i.e the programs shouldn't be doing error-checking and fixes.
-
-<a name="downloads"></a>
-### Downloads
-Download the .tar or the .zip file, as needed. You will not need to bother with 3. or 4. if you download one of the packages as these files will already be included:
-1. [.tar ball](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/downloads/authors_xml.tar.gz?raw=true) - includes:
-    - 2 files (authors.dtd, authors.xsd) to be used for validation 
-    - 4 examples
-1. [.zip file](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/downloads/authors_xml.zip?raw=true) - includes:
-    - the template (authors.template.xml)
-    -  2 files (authors.dtd, authors.xsd) to be used for validation
-    -  4 examples
-1. authors.xsd XML schema defintion file (included in both the tar ball and zip file above)
-1. author.dtd XML document type defintion file (included in both the tar ball and zip file above)
+With XML, errors in documents are not tolerated for the simple reason that XML processing programs are foreseen to be small and fast i.e the programs should not be doing error-checking and fixes.
 
 <a name="examplefiles"></a>
 ### Examples of author.xml files
