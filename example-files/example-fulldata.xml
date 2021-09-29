@@ -1,6 +1,5 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
+<!DOCTYPE collaborationauthorlist SYSTEM "author.dtd">
 <!-- 
 	Example of an authors.xml file holding a full set of data.
 	It includes examples for people with multiple affiliations and/or author IDs.
