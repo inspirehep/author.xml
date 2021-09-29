@@ -11,6 +11,7 @@
     - [What are the advantages of an author.xml file?](#whatadvantages)
 3. [What do I need to get started?](#needtogetstarted)
     - [How do I get the author.dtd file?](#getauthordtd)
+    - [How do I get the author.xml template file?](#getauthorxml)
     - [What is the workflow?[TO BE REMOVED]](#workflow)
     - [What terms should I know before starting?](#knowterms)
     - [Downloads](#downloads)
@@ -119,14 +120,25 @@ Given the XML file, an auto-generation process using xslt (stands for Extensible
 
 <a name="needtogetstarted"></a>
 ## What do I need to get started?
-1. Get the file author.dtd [How do I get the author.dtd file?](#getauthordtd). This is file contains the rules that your author.xml file will be checked ("validated") against.
-1. Get the template file author.xml. You will fill this author.xml template file with the details of your collaboration's authors.
-1. Once completed, your author.xml file should be validated against the author.dtd file (mentioned in 1.).
+1. Get the file author.dtd, go to [How do I get the author.dtd file?](#getauthordtd). This file contains the rules that your author.xml file will be checked ("validated") against.
+1. Get the template file author.xml, go to [How do I get the author.xml template file?](#getauthorxml). This is the template file in which you will fill in the meta-data for the authors in your collaboration.
+1. Gather the information needed for some of the data fields for your author.xml file, go to [Where do I get the information needed for some of the fields?](#infoneeded).
+1. Once completed, you should validate your author.xml file against the author.dtd file (mentioned in 1.). Go to [How do I validate my author.xml file?](#validate).
 1. Following validation, you can submit the author.xml file along with your submission to arXiv in a .tar ball.
 1. Please contact us at authors@inspirehep.net if you need assistance.  
 
 <a name="getauthordtd"></a>
 ### How do I get the author.dtd file?
+
+<a name="getauthorxml"></a>
+### How do I get the author.xml template file?
+
+<a name="infoneeded"></a>
+### Where do I get the information needed for some of the fields?
+
+<a name="validate"></a>
+### How do I validate my author.xml file?
+
 
 <a name="workflow"></a>
 ### What is the workflow? [TO BE REMOVED]
