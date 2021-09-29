@@ -10,7 +10,8 @@
     - [Quick summary of steps](#howdoesitwork)
     - [What are the advantages of an author.xml file?](#whatadvantages)
 3. [What do I need to get started?](#needtogetstarted)
-    - [What is the workflow?](#workflow)
+    - [How do I get the author.dtd file?](#getauthordtd)
+    - [What is the workflow?[TO BE REMOVED]](#workflow)
     - [What terms should I know before starting?](#knowterms)
     - [Downloads](#downloads)
     - [Examples of author.xml files](#examplefiles)
@@ -118,9 +119,13 @@ Given the XML file, an auto-generation process using xslt (stands for Extensible
 
 <a name="needtogetstarted"></a>
 ## What do I need to get started?
+1. Get the file author.dtd. This is file contains the rules that your author.xml file will be checked ("validated") against.
+
+<a name="getauthordtd"></a>
+### How do I get the author.dtd file?
 
 <a name="workflow"></a>
-### What is the workflow?
+### What is the workflow? [TO BE REMOVED]
 1. Download the package to have the necessary template and files
 1. Gather the information that you will need in-order to fill in the author.xml file
 1. Input your data for the XML elements in the template file, and save the file
