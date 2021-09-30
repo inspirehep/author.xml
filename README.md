@@ -13,7 +13,7 @@
     - [How do I get the author.xml template file?](#getauthorxml)
     - [What terms should I know before starting?](#knowterms)
     - [Examples of author.xml files](#examplefiles)
-    - [Where do I get the information needed for my input?](#infoneeded)
+    - [Where do I get the information needed for my data values?](#infoneeded)
     - [Links](#links)
 4.  [**How do I fill in my author.xml file?**](#fillinauthorxml)    
     - [Template author.xml](#template)
@@ -111,10 +111,12 @@ Given the XML file, an auto-generation process using xslt (stands for Extensible
 
 <a name="needtogetstarted"></a>
 ## What do I need to get started?
-1. Get the file author.dtd, go to [How do I get the author.dtd file?](#getauthordtd). This file contains the rules that your author.xml file will be checked ("validated") against.
-1. Get the template file author.xml, go to [How do I get the author.xml template file?](#getauthorxml). This is the template file in which you will fill in the meta-data for the authors in your collaboration.
-1. Gather the information needed for some of the data fields for your author.xml file, go to [Where do I get the information needed for some of the fields?](#infoneeded) to see how to get the ORCID identifier, etc
-1. After you have filled in the fields of your author.xml, you should validate the file against the author.dtd file (mentioned in 1.). Go to [How do I validate my author.xml file?](#validate).
+Let's go! You will need to get 2 files (author.xml, author.dtd), fill in your values in author.xml, then validate this against author.dtd.
+
+1. To get the file author.dtd, go to [How do I get the author.dtd file?](#getauthordtd). This file contains the rules that your author.xml file will be checked ("validated") against.
+1. To get the template file author.xml, go to [How do I get the author.xml template file?](#getauthorxml). This is the template file in which you will fill in the meta-data for the authors in your collaboration.
+1. To get the information needed for some of the data values for your author.xml file, go to [Where do I get the information needed for some of the data values?](#infoneeded) to see how to get the ORCID identifier, etc
+1. After you have filled in the data values of your author.xml, you should validate the file against the author.dtd file (mentioned in 1.). Go to [How do I validate my author.xml file?](#validate).
 1. Following validation, you will submit the author.xml file as part of your submission to arXiv in a .tar ball. The instructions are in [arxiv.org](https://arxiv.org/help/tar). 
 1. Please contact us at authors@inspirehep.net if you need assistance.  
 
@@ -170,7 +172,7 @@ With XML, errors in documents are not tolerated for the simple reason that XML p
 [XML example - institutional groups](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-institutional-groups.xml)
 
 <a name="infoneeded"></a>
-### Where do I get the information needed for my input?
+### Where do I get the information needed for my data values?
 When you come to fill in some of the XML elements in author.xml, you will need have some information that is obtained elsewhere.
 
 **WHAT DO WE WANT TO BE USED HERE?**
