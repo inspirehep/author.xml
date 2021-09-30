@@ -118,8 +118,8 @@ Let's go! You will need to
 + fill in your values in author.xml
 + validate this against author.dtd.
 
-1. To get the template file author.xml, go to the [author.xml file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.xml), and save "author.xml" to your own local folder. You can follow the instructions at [How do I get the author.xml template file?](#getauthorxml). 
-1. To get the file author.dtd, go to the [author.dtd file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.dtd), and save "author.dtd" to your own local folder. You can follow the instructions at [How do I get the author.dtd file?](#getauthordtd). 
+1. To get the template file author.xml, go to the [author.xml file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.xml), and save "author.xml" to your own local folder. Follow the picture instructions at [How do I see and save the file?](#getauthorxml). 
+1. To get the file author.dtd, go to the [author.dtd file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.dtd), and save "author.dtd" to your own local folder. You can do something similar to the instructions at [How do I see and save the file?](#getauthorxml). 
 1. To get the information needed for some of the data values for your author.xml file, go to [Where do I get the information needed for some of the data values?](#infoneeded) to see how to get the ORCID identifier, etc
 1. After you have filled in the data values of your author.xml, you should validate the file against the author.dtd file (mentioned in 1.). Go to [How do I validate my author.xml file?](#validate).
 1. Following validation, you will submit the author.xml file as part of your submission to arXiv in a .tar ball. The instructions are in [arxiv.org](https://arxiv.org/help/tar). 
@@ -168,6 +168,7 @@ With XML, errors in documents are not tolerated for the simple reason that XML p
 
 <a name="examplefiles"></a>
 ### Examples of author.xml files
+The links below go to individual example author.xml files. If you want to have a local copy, go to each file and do save as "[filename].xml". Picture instructions for saving a file displayed in your Web browser are at [How do I see and save the file?](#getauthorxml).
 
 [XML example - minimal file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-minimal.xml)
 
