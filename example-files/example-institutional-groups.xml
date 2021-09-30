@@ -1,7 +1,6 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
+<!DOCTYPE collaborationauthorlist SYSTEM "author.dtd">
 <!-- 
 	Example of an authors.xml file holding groups of collaborations and institutions.
 !-->

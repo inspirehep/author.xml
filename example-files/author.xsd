@@ -1,3 +1,8 @@
+<!--
+See https://inspirehep.zulipchat.com/#narrow/stream/195298-experts/topic/author.2Exml, which says:
+"the schema is incorrect and should not be used or posted"
+-->
+
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"

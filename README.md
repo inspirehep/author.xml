@@ -7,14 +7,13 @@
     - [Partners in the author.xml project](#partners)
 2. [A Brief description of the author.xml file](#briefdescription)    
     - [Why an XML file for the author list?](#whyxml)
-    - [Quick summary of steps](#howdoesitwork)
     - [What are the advantages of an author.xml file?](#whatadvantages)
 3. [What do I need to get started?](#needtogetstarted)
-    - [What is the workflow?](#workflow)
+    - [How do I get the author.dtd file?](#getauthordtd)
+    - [How do I get the author.xml template file?](#getauthorxml)
     - [What terms should I know before starting?](#knowterms)
-    - [Downloads](#downloads)
     - [Examples of author.xml files](#examplefiles)
-    - [Where do I get the information needed for my input?](#infoneeded)
+    - [Where do I get the information needed for my data values?](#infoneeded)
     - [Links](#links)
 4.  [**How do I fill in my author.xml file?**](#fillinauthorxml)    
     - [Template author.xml](#template)
@@ -91,13 +90,7 @@ The term 'eXtensible' means that we decide what the tags should be called - the 
 
 XML was designed to store and transport data, and it is both human- and machine-readable. Note that XML files are data files, and that the information doesn't do anything on its own.
 
-<a name="howdoesitwork"></a>
-### Quick summary of steps
- - You will download a package.
- - To produce your collaboration’s author list file, author.xml, you will complete the xml template file that you obtained.
- - Once completed, the file should be tested and validated using the validation files that are included in the package.
- - When your file passes the validation, you can submit the author.xml file along with your submission to arXiv in a .tar ball.
- - Please contact us at authors@inspirehep.net if you need assistance.  
+ 
 
 <a name="whatadvantages"></a>
 ### What are the advantages of the author.xml file?
@@ -118,14 +111,27 @@ Given the XML file, an auto-generation process using xslt (stands for Extensible
 
 <a name="needtogetstarted"></a>
 ## What do I need to get started?
+Let's go! You will need to get 2 files (author.xml, author.dtd), fill in your values in author.xml, then validate this against author.dtd.
 
-<a name="workflow"></a>
-### What is the workflow?
-1. Download the package to have the necessary template and files
-1. Gather the information that you will need in-order to fill in the author.xml file
-1. Input your data for the XML elements in the template file, and save the file
-1. Validate the completed file, using a 'validator'
-1. You have the option of converting the xml file to another format, should you also need a different format
+1. To get the file author.dtd, go to [How do I get the author.dtd file?](#getauthordtd). This file contains the rules that your author.xml file will be checked ("validated") against.
+1. To get the template file author.xml, go to [How do I get the author.xml template file?](#getauthorxml). This is the template file in which you will fill in the meta-data for the authors in your collaboration.
+1. To get the information needed for some of the data values for your author.xml file, go to [Where do I get the information needed for some of the data values?](#infoneeded) to see how to get the ORCID identifier, etc
+1. After you have filled in the data values of your author.xml, you should validate the file against the author.dtd file (mentioned in 1.). Go to [How do I validate my author.xml file?](#validate).
+1. Following validation, you will submit the author.xml file as part of your submission to arXiv in a .tar ball. The instructions are in [arxiv.org](https://arxiv.org/help/tar). 
+1. Please contact us at authors@inspirehep.net if you need assistance.  
+
+<a name="getauthordtd"></a>
+### How do I get the author.dtd file?
+
+<a name="getauthorxml"></a>
+### How do I get the author.xml template file?
+
+<a name="infoneeded"></a>
+### Where do I get the information needed for some of the fields?
+
+<a name="validate"></a>
+### How do I validate my author.xml file?
+
     
 <a name="knowterms"></a>
 ### What terms should I know before starting?
@@ -135,15 +141,11 @@ You might come across these terms, and whilst you don't actually need to know wh
 
  - **XML element** -> XML elements can be defined as the building blocks of an XML file. Elements can behave as containers to hold text, elements, attributes, media objects or all of these. For our purposes, we just need to know that XML elements are the data that we need to input.
 
-A document type definition file, which is provided for you, is used to specify what elements may be used in the XML document, the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute. The .dtd and .xsd files are two different document type definitions that can be used with the .xml file. Generally speaking, .xsd files define more precise grammars than .dtd files.
- - **.dtd** -> DTD is an acronym for **Document Type Definition**, and is the original Document Type Definition. Files that contain the .dtd file extension are text files that specify elements and attributes used in an XML document.
- - **.xsd** -> XSD is an acronym for **XML Schema Description** (i.e. another type of document type definition file), and an XML-based alternative to DTD. Files that contain the .xsd file extension are text files that specify elements and attributes used in an XML document.
-
- - **.xsl** -> XSL stands for **eXtensible Stylesheet Language**, and is the stylesheet definition language for XML.  
- - **.xslt** -> XSLT stands for **XSL Transformations**, it is written in XSL, and is used to transform XML documents into other data formats, formats such as HTML, XHTML, PDF, etc.. It can also be used to transform XML documents that comply with one XML schema (a type of ‘data type definition’ file) into documents that comply with another schema. 
+A document type definition file (.dtd), which is provided for you, is used to specify what elements may be used in the XML document, the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute.
+ - **.dtd** -> DTD is an acronym for **Document Type Definition**. A .dtd file is a text file that specifies the rules governing the elements and attributes used in the corresponding XML document. 
  
 #### Well formed XML document
-An XML document is said to be well formed if it satifies syntax rules. These rules are:
+An XML document is said to be well formed if it satifies the syntax rules. These rules are:
 
  - XML documents must have a root element (i.e. one sole parent element for all the XML elements in the document)
  - XML elements must have a start and end tag
@@ -156,20 +158,7 @@ A "well formed" XML document is not the same as a "valid" XML document.
 
 A "valid" XML document must already be well formed, but in addition, it must conform to a document type definition (the .dtd, or the .xsd file). 
 
-With XML, errors in documents are not tolerated for the simple reason that XML processing programs are foreseen to be small and fast i.e the programs shouldn't be doing error-checking and fixes.
-
-<a name="downloads"></a>
-### Downloads
-Download the .tar or the .zip file, as needed. You will not need to bother with 3. or 4. if you download one of the packages as these files will already be included:
-1. [.tar ball](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/downloads/authors_xml.tar.gz?raw=true) - includes:
-    - 2 files (authors.dtd, authors.xsd) to be used for validation 
-    - 4 examples
-1. [.zip file](https://github.com/inspirehep/author.xml/blob/abchan-paragraph/downloads/authors_xml.zip?raw=true) - includes:
-    - the template (authors.template.xml)
-    -  2 files (authors.dtd, authors.xsd) to be used for validation
-    -  4 examples
-1. authors.xsd XML schema defintion file (included in both the tar ball and zip file above)
-1. author.dtd XML document type defintion file (included in both the tar ball and zip file above)
+With XML, errors in documents are not tolerated for the simple reason that XML processing programs are foreseen to be small and fast i.e the programs should not be doing error-checking and fixes.
 
 <a name="examplefiles"></a>
 ### Examples of author.xml files
@@ -183,7 +172,7 @@ Download the .tar or the .zip file, as needed. You will not need to bother with 
 [XML example - institutional groups](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-institutional-groups.xml)
 
 <a name="infoneeded"></a>
-### Where do I get the information needed for my input?
+### Where do I get the information needed for my data values?
 When you come to fill in some of the XML elements in author.xml, you will need have some information that is obtained elsewhere.
 
 **WHAT DO WE WANT TO BE USED HERE?**
@@ -297,44 +286,73 @@ At the beginning of author.xml there is the XML declaration. This describes the 
 <!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
 `
 
-Do not remove any part of the author.xml template. Instead, edit the author.xml template by filling in **your value** for the element or attribute when **REQUIRED** or **OPTIONAL** is shown:
-|`XML Element/Attribute/ContainerElement`|`Description. Required/Optional`|
+Do not remove any part of the author.xml template. Instead, edit the author.xml template by filling in **your value** for the element or attribute when you see **REQUIRED** (in bold) or **OPTIONAL** (in bold):
+|`XML Element/ContainerElement`|`Element/Attribute/ContainerElement. **Required/Optional**`|
 |---|---|
-|collaborationauthorlist|'collaborationauthorlist' is the root element [Required]|
-|xmlns:foaf="http://xmlns.com/foaf/0.1/"|prefix 'foaf' is to do with this string. Used only to differentiate element names [Required]|
-|xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"|prefix 'cal' is to do with this string. Used only to differentiate element names [Required]|
-
-|`XML Element/Attribute/ContainerElement`|`Description. Required/Optional`|
-|---|---|
-|`cal:CreationDate`|**REQUIRED** - date of creation of this author.xml file|
-|`cal:publicationReference`|**REQUIRED** - an internal report number an arXiv number </br> **or** a collaboration’s internal document number </br> **or** an ISBN </br> **or** a DOI </br> **or** a persistant web destination </br> **or** anything that identifies the referenced document.</br>If no immediate identifier, the title can be used|
-|`cal:collaboration`|`cal:collaboration` **REQUIRED** - container element with information about the collaboration.</br> Attribute `“id”`: **OPTIONAL** - is only needed if two (2) or more collaborations publish together. Typically, it is a letter+sequential number, starting at “c1”. </br> Element <`foaf:name`>: **REQUIRED** - name of the collaboration. </br> Element `<cal:experimentNumber>`: **OPTIONAL** - number assigned by laboratory to the experiment, if present|
+|`<collaborationauthorlist>`|Element `<collaborationauthorlist>` [required] - this is the root element |
+|`xmlns:foaf="http://xmlns.com/foaf/0.1/"`| [required] - this namespace with prefix 'foaf' is used only to differentiate between identical element/attribute names |
+|`xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"`| [required] - this namespace with prefix 'cal' is used only to differentiate between identical element/attribute names |
 
 
-
-   
-      <cal:organizations>
-      <foaf:Organization id="a1">
-         <cal:orgDomain>http://</cal:orgDomain>
-         <foaf:name></foaf:name>
-         <cal:orgName source=""></cal:orgName>
-         <cal:orgStatus collaborationid="c1"></cal:orgStatus>
-         <cal:orgAddress></cal:orgAddress>
-         <cal:group with=""/>
-      </foaf:Organization>
-   </cal:organizations>
-   
-|`XML Element/Attribute/ContainerElement`|`Description. Required/Optional`|
-|---|---|
-|`foaf:Organization`|`foaf:Organization` **REQUIRED** - container element with information about an organization with which authors are affiliated. There may be one or more organizations within the <cal:organizations> container, and each organization is identified by the “id” attribute. </br> Attribute `“id”`: **REQUIRED** - typically, it is a letter+sequential number, starting at “a1”, used to denote the author’s institution in this particular author.xml file so as to attach authors to the institution.</br>Element <`cal:orgDomain`>: **OPTIONAL** - internet domain of the institution. The domain should be detailed enough to unambiguously determine the institution if there are distinct locations throughout the nation, e.g., pv.infn.it rather than just infn.it. If desired, this can go to the department/research-group level.</br>Element <`foaf:name`>: **REQUIRED** this is the name of the organization as it will appear on the document.</br>Element <`cal:orgName`>: **OPTIONAL** - this element also defines the name of the organization. Depending on where this name originates from, the source attribute can be used. The element content shall be only the name of the respective institute. Location information, if not part of the name, may be stated in the orgAddress element.</br>Attribute `“source”`: **OPTIONAL** - (Defaults to “INTERNAL”) enables you to use either the INSPIRE (a.k.a. INSPIRE-ICN) form of the institution’s name or your own INTERNAL form.</br> Element <`cal:orgStatus`>: **OPTIONAL** - status of the organization within the collaboration. Typically this would be either “member” or “nonmember.”</br>Attribute `“collaborationid”`: **OPTIONAL** - enables you to specify which exact collaboration this organization is attached to. The collaboration is represented through its ID (e.g. “c1”). This element may be repeated if necessary.</br>Element <`cal:orgAddress`>: **OPTIONAL** - full postal address of the institution as it would be written on a letter head.</br>Element <`cal:group`>: **OPTIONAL** - see group discussion below|
++ Element `<cal:CreationDate>` **REQUIRED** - date of creation of this author.xml file
++ Element `<cal:publicationReference>` **REQUIRED**
+    - an internal report number an arXiv number, or 
+    - a collaboration’s internal document number, or
+    - an ISBN, or
+    - a DOI </br>, or
+    - a persistant web destination, or
+    - anything that identifies the referenced document.
+    If no immediate identifier, the title can be used|
++ `<cal:collaboration>` **REQUIRED** - container element with information about the collaboration.
+    - Attribute `“id”`: OPTIONAL - is only needed if two (2) or more collaborations publish together. Typically, it is a letter+sequential number, starting at “c1”. </br> Element `<foaf:name>`: **REQUIRED** - name of the collaboration. 
+    - Element `<cal:experimentNumber>` OPTIONAL - number assigned by laboratory to the experiment, if present.
 
 
 
 
-|``||Required|
-|``||Required|
+
++ `<foaf:Organization` **REQUIRED** - container element with information about an organization with which authors are affiliated. There may be one or more organizations within the <cal:organizations> container, and each organization is identified by the “id” attribute.
+    - Attribute `“id”` **REQUIRED** - typically, it is a letter+sequential number, starting at “a1”, used to denote the author’s institution in this particular author.xml file so as to attach authors to the institution.
+    - Element <`cal:orgDomain`> OPTIONAL - internet domain of the institution. The domain should be detailed enough to unambiguously determine the institution if there are distinct locations throughout the nation, e.g., pv.infn.it rather than just infn.it. If desired, this can go to the department/research-group level.
+    - Element <`foaf:name`> **REQUIRED** this is the name of the organization as it will appear on the document.
+    - Element <`cal:orgName`> OPTIONAL - this element also defines the name of the organization. Depending on where this name originates from, the source attribute can be used. The element content shall be only the name of the respective institute. Location information, if not part of the name, may be stated in the orgAddress element.
+    - Attribute `“source”` OPTIONAL - (Defaults to “INTERNAL”) enables you to use either the INSPIRE (a.k.a. INSPIRE-ICN) form of the institution’s name or your own INTERNAL form.
+    - Element `<cal:orgStatus>` OPTIONAL - status of the organization within the collaboration. Typically this would be either “member” or “nonmember.”
+    - Attribute `“collaborationid”` OPTIONAL - enables you to specify which exact collaboration this organization is attached to. The collaboration is represented through its ID (e.g. “c1”). This element may be repeated if necessary.
+    - Element <`cal:orgAddress`> OPTIONAL - full postal address of the institution as it would be written on a letter head.
+    - Element <`cal:group`> OPTIONAL - see group discussion below|
 
 
+
+
++ One
++ Two
++ Three
+    - Nested One
+    - Nested Two
+
+
++ `<foaf:Person>`**REQUIRED** - container element with information about the author. One or more authors reside within the <cal:authors> container.
+    - Element `<foaf:name>` OPTIONAL - author's complete name written in the format e.g. "Johannes Diderik van der Waals".
+    - Element `<foaf:givenName>` OPTIONAL - all first/given names of an author in roman letters, e.g. "Johannes Diderik". You may leave this out in the rare case that a person does not possess a first name.
+    - Element `<foaf:familyName>` **REQUIRED** - all sur/family names of an author in roman letters, e.g. "van der Waals".
+    - Element `<cal:authorNameNative>` OPTIONAL - name of author as written in his or her native language e.g., "Ле́в Дави́дович Ланда́у" or "張晨光".
+    - Element `<cal:authorSuffix>` OPTIONAL - suffiix information for a name E.g. "Jr.", "Sr.", "III".
+    - Element `<cal:authorStatus>` OPTIONAL - this element describes the vital status of an author. If the author is deceased, please state "Deceased". This element can be left empty.
+    - Element `<cal:authorNamePaper>` **REQUIRED** - name of author as it appears on the title page of the paper, e.g. "J. van der Waals". This element supports Roman letters only.
+    - Element `<cal:authorNamePaperGiven>` OPTIONAL - given name(s) of the author, as it appears on the title page of the paper, typically initials, e.g. "J." This element supports Roman letters only. As with <foaf:givenName>, it is "optional" in that someone may only have one name.
+    - Element `<cal:authorNamePaperFamily>` OPTIONAL - family name of author as it appears on the title page of the paper, e.g. "van der Waals". This element supports Roman letters only.
+    - Element `<cal:authorCollaboration>` **REQUIRED** - in a multi collaboration environment, the author can be attached to a collaboration with the appropriate collaboration ID. If the author is a member of more than one collaborations or has more than one position, this element may be repeated. 
+        - Attribute `"collaborationid"` **REQUIRED** - (defaults to the first collaboration). Enables the specification of exactly which collaboration this author is attached to. The collaboration is represented through its ID (e.g. "c1").
+        - Attribute `"position"` OPTIONAL - this attribute specifies the position of an author within the collaboration. This may be "Spokesperson", "Contact person", "Speaker" or "Editor".
+    - Element `<cal:authorAffiliation>` OPTIONAL - this element connects the author to his or her institution, through the organization ID attribute. All affiliation elements (zero or more) reside within the <cal:authorAffiliations> container. Several affiliations may be mentioned by using several of these elements - one line for each affiliation. Please do not use a (comma-separated) list of organization identifiers in the 'organizationid' attribute. In cases where multiple affiliations resemble one entity, please mark the organizations with IDs e.g. "o1a", "o1b" and "o1c" to show their relation.
+        - Attribute `"organizationid"` **REQUIRED** - connects with one of the organizations from above. The link is established by using the respective ID of the organization here (e.g. "a1").
+        - Attribute `"connection"` OPTIONAL - (Defaults to "Affiliated with"). Here, you can list information about the connection such as "Affiliated with", "On leave from", "Also at" or "Visitor".
+    - Element `<cal:authorid>` OPTIONAL - this element specifies an ID number that identifies an author.</br>All ID elements (zero or more) reside within the <cal:authorids> container.
+        - Attribute `"source"` **REQUIRED** - (if there is an authorID element present) specifies the origins of the number. This can be an INSPIRE ID number (source="INSPIRE"), a collaboration-internal ID (source="INTERNAL") or other author ID services (e.g. source="ORCID"). Using INSPIRE ID numbers is strongly encouraged. A persistant ID for an author allows the INSPIRE service team to identify the authors and attach the respective identifiers to their INSPIRE ID. Please consult the section on "How do I obtain the information needed in author.xml?" for more detailed information about the handling of author ids.
+    - Element `<cal:authorFunding>` OPTIONAL - this element describes the author's funding source, such as a grant or fellowship, if necessary (e.g., Alfred P. Sloan Fellow). This element can be left empty|
+
+    
 
 
 
