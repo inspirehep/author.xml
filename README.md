@@ -125,6 +125,7 @@ Let's go! You will need to get 2 files (author.xml, author.dtd), fill in your va
 
 <a name="getauthorxml"></a>
 ### How do I get the author.xml template file?
+Go to the [author.xml file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.xml), and save it to your own local folder. All Web browsers have a "Save as" option and you should be able to save the file as follows:
 
 <a name="infoneeded"></a>
 ### Where do I get the information needed for some of the fields?
@@ -222,9 +223,10 @@ The author.xml file has been designed for collaborations with more than 10 autho
 
 <a name="template"></a>
 ### Template author.xml
+```
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
+<!DOCTYPE collaborationauthorlist SYSTEM "author.dtd">
 
 <collaborationauthorlist
    xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -273,6 +275,7 @@ The author.xml file has been designed for collaborations with more than 10 autho
       </foaf:Person>
    </cal:authors>
 </collaborationauthorlist>
+```
 
 This is the original [template author.xml](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/template/template-author.xml)
 In order to help you [fill in the XML values](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/template/template-with-my_value_here), those fields are denoted by 'my_value_here'. 
