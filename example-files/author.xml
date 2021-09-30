@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE collaborationauthorlist SYSTEM "author.dtd">
+<collaborationauthorlist xmlns:foaf="http://xmlns.com/foaf/0.1/"
+                         xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
+	<cal:creationDate/>
+	<cal:publicationReference/>
+	<cal:collaborations>
+		<cal:collaboration id="c1">
+			<foaf:name/>
+			<cal:experimentNumber/>
+		</cal:collaboration>
+	</cal:collaborations>
+	<cal:organizations>
+		<foaf:Organization id="a1">
+			<cal:orgDomain>http://</cal:orgDomain>
+			<foaf:name source=""/>
+			<cal:orgName source=""/>
+			<cal:orgStatus collaborationid="c1"/>
+			<cal:orgAddress/>
+			<cal:group with=""/>
+		</foaf:Organization>
+	</cal:organizations>
+	<cal:authors>
+		<foaf:Person>
+			<foaf:name/>
+			<foaf:givenName/>
+			<foaf:familyName/>
+			<cal:authorNameNative/>
+			<cal:authorSuffix/>
+			<cal:authorStatus/>
+			<cal:authorNamePaper/>
+			<cal:authorNamePaperGiven/>
+			<cal:authorNamePaperFamily/>
+			<cal:authorCollaboration collaborationid="c1"
+			                         position=""/>
+			<cal:authorAffiliations>
+				<cal:authorAffiliation organizationid="a1"
+				                       connection=""/>
+			</cal:authorAffiliations>
+			<cal:authorids>
+				<cal:authorid source=""/>
+			</cal:authorids>
+		</foaf:Person>
+	</cal:authors>
+</collaborationauthorlist>
