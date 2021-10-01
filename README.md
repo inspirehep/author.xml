@@ -308,13 +308,14 @@ Do not remove any part of the author.xml template. Instead, edit the author.xml 
     - an internal report number an arXiv number, or 
     - a collaboration’s internal document number, or
     - an ISBN, or
-    - a DOI </br>, or
+    - a DOI, or
     - a persistant web destination, or
     - anything that identifies the referenced document.
-    If no immediate identifier, the title can be used|
-+ `<cal:collaboration>` **REQUIRED** - container element with information about the collaboration.
-    - Attribute `“id”`: OPTIONAL - is only needed if two (2) or more collaborations publish together. Typically, it is a letter+sequential number, starting at “c1”. </br> Element `<foaf:name>`: **REQUIRED** - name of the collaboration. 
-    - Element `<cal:experimentNumber>` OPTIONAL - number assigned by laboratory to the experiment, if present.
+    If no immediate identifier, the title can be used
++ `<cal:collaborations>` **REQUIRED** - container element holding element(s) `<cal:collaboration>`.
+    - `<cal:collaboration>` **REQUIRED** - container element with information about the collaboration.
+        - Attribute `“id”`: OPTIONAL - is only needed if two (2) or more collaborations publish together. Typically, it is a letter+sequential number, starting at “c1”. </br> Element `<foaf:name>`: **REQUIRED** - name of the collaboration. 
+        - Element `<cal:experimentNumber>` OPTIONAL - number assigned by laboratory to the experiment, if present.
 
 
 
