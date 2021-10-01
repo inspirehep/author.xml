@@ -203,6 +203,7 @@ The author.xml file has been designed for collaborations with more than 10 autho
 
 <a name="template"></a>
 ### Template author.xml
+![author-xml-template](images/author-template-1.png)
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 
