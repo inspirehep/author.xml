@@ -34,12 +34,14 @@
 <a name="introduction"></a>
 ## Introduction
 <a name="background"></a>
+Get on board so that authors get the appreciation and exposure they deserve!
 ## Background and motivation
-Together, INSPIRE, the American Physical Society and arXiv.org have created a template file that you are recommended to use when you provide information about the authors for the submission of your paper. Not only will the authors' information be precise and universally understood, but author information linking to professional information — affiliations, grants, publications, peer review, and more will get exposed. Let's all be "on the same page" and ensure that authors get recognition for their contributions.
+Together, INSPIRE, the American Physical Society and arXiv.org have created a template file that you are recommended to use when you provide information about the authors for the submission of your paper. Not only will the authors' information be precise and universally understood, but author information linking to professional information — affiliations, grants, publications, peer review, and more will get exposed. 
 
-If the author list for your collaboration has 10 or more authors, we recommend that when submitting your document, you also submit a file called author.xml. This template file is obtained from a downloaded package. Using the template file as your guide, you fill in the fields such as the authors' details, collaboration details, and so on. On completion, you pass it through a validator to make sure the file is good to go. After validation, your author.xml file is ready for submission. 
+If the author list for your collaboration has 10 or more authors, we recommend that when submitting your document, you also submit a file called author.xml. A template author.xml file is provided, see [What do I need to get started?](#needtogetstarted). Using this file as your guide, you fill in the fields such as the authors' details, collaboration details, etc. On completion, you pass it through a validator to make sure the file is good to go. After validation, your author.xml file is ready for submission.
 
-Large collaborations with hundreds and even thousands of authors are already using the author.xml file to enable cataloguers and automated processes to glean complete, accurate information on authors. Get on board so that authors get the appreciation and exposure they deserve!
+Large collaborations with hundreds and even thousands of authors are already using the author.xml file to enable cataloguers and automated processes to glean complete, accurate information on authors. Let's all be "on the same page" and ensure that **authors get recognition for their contributions**.
+
 
 <a name="partners"></a>
 ## Partners in the author.xml project
