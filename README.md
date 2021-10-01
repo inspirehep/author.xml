@@ -7,10 +7,10 @@
     - [Partners in the author.xml project](#partners)
 2. [Why an XML file for the author list?](#whyxml)
     - [What are the advantages of an author.xml file?](#whatadvantages)
+    - [What terms should I know before starting?](#knowterms)
 3. [**What do I need to get started?**](#needtogetstarted)
     - [How do I get the author.dtd file?](#getauthordtd)
     - [How do I get the author.xml template file?](#getauthorxml)
-    - [What terms should I know before starting?](#knowterms)
     - [Examples of author.xml files](#examplefiles)
     - [Where do I get the information needed for my data values?](#infoneeded)
     - [Links](#links)
@@ -96,6 +96,32 @@ The author.xml file, with all authors identified by an INSPIRE ID or ORCID numbe
  - Automatic generation
  
 Given the XML file, an auto-generation process using xslt (stands for Extensible Stylesheet Language Transformations) can be used to generate the author list for the paper in the desired LaTeX format.
+    
+<a name="knowterms"></a>
+### What terms should I know before starting?
+You don't need to know these terms. However, you will come across them; if you are interested, let's quickly touch on some of the XML-related terms that you might encounter.
+
+ - **.xml** -> A .xml file is an eXtensible Markup Language** (XML) file. An XML file is just a plain text file containing information wrapped in tags. This information, called XML elements, is enclosed in meaningful, custom tags which describe the structure and other features of the document. **An xml file does not DO anything**. The file is used to store and transport data. 
+
+ - **XML element** -> XML elements are the building blocks of an XML file. Elements can behave as containers to hold text, elements, attributes, media objects or all of these. For our purposes, we just need to know that XML elements are the data that we need to input.
+
+ - **.dtd** -> DTD is an acronym for **Document Type Definition**. A .dtd file is a text file that specifies the rules governing the elements and attributes used in the corresponding XML document. This includes the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute.
+
+#### Well formed XML document
+An XML document is said to be well formed if it satifies the syntax rules. These rules are:
+
+ - XML documents must have a root element (i.e. one sole parent element for all the XML elements in the document)
+ - XML elements must have a start and end tag
+ - XML tags are case sensitive
+ - XML elements must be properly nested
+ - XML attribute values must be quoted
+
+#### Valid XML Documents
+A "well formed" XML document is not the same as a "valid" XML document.
+
+A "valid" XML document must already be well formed, but in addition, it must conform to a document type definition (the .dtd file). 
+
+With XML, errors in documents are not tolerated for the simple reason that XML processing programs are foreseen to be small and fast i.e the programs should not be doing error-checking and fixes.
 
 <a name="needtogetstarted"></a>
 ## What do I need to get started?
@@ -123,32 +149,7 @@ Go to the [author.xml file](https://raw.githubusercontent.com/inspirehep/author.
 <a name="validate"></a>
 ### How do I validate my author.xml file?
 
-    
-<a name="knowterms"></a>
-### What terms should I know before starting?
-You don't need to know these terms, however you will come across them. So, whilst you don't actually need to know what they all mean, if you are interested, let's quickly touch on some of the XML-related terms that you might encounter.
 
- - **.xml** -> A .xml file is an eXtensible Markup Language** (XML) file. An XML file is just a plain text file containing information wrapped in tags. This information, called XML elements, is enclosed in meaningful, custom tags which describe the structure and other features of the document. **An xml file does not DO anything**. The file is used to store and transport data. 
-
- - **XML element** -> XML elements are the building blocks of an XML file. Elements can behave as containers to hold text, elements, attributes, media objects or all of these. For our purposes, we just need to know that XML elements are the data that we need to input.
-
- - **.dtd** -> DTD is an acronym for **Document Type Definition**. A .dtd file is a text file that specifies the rules governing the elements and attributes used in the corresponding XML document. This includes the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute.
-
-#### Well formed XML document
-An XML document is said to be well formed if it satifies the syntax rules. These rules are:
-
- - XML documents must have a root element (i.e. one sole parent element for all the XML elements in the document)
- - XML elements must have a start and end tag
- - XML tags are case sensitive
- - XML elements must be properly nested
- - XML attribute values must be quoted
-
-#### Valid XML Documents
-A "well formed" XML document is not the same as a "valid" XML document.
-
-A "valid" XML document must already be well formed, but in addition, it must conform to a document type definition (the .dtd file). 
-
-With XML, errors in documents are not tolerated for the simple reason that XML processing programs are foreseen to be small and fast i.e the programs should not be doing error-checking and fixes.
 
 <a name="examplefiles"></a>
 ### Examples of author.xml files
