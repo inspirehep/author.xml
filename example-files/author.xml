@@ -1,45 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE collaborationauthorlist SYSTEM "author.dtd">
-<collaborationauthorlist xmlns:foaf="http://xmlns.com/foaf/0.1/"
-                         xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
-	<cal:creationDate/>
-	<cal:publicationReference/>
-	<cal:collaborations>
-		<cal:collaboration id="c1">
-			<foaf:name/>
-			<cal:experimentNumber/>
-		</cal:collaboration>
-	</cal:collaborations>
-	<cal:organizations>
-		<foaf:Organization id="a1">
-			<cal:orgDomain>http://</cal:orgDomain>
-			<foaf:name source=""/>
-			<cal:orgName source=""/>
-			<cal:orgStatus collaborationid="c1"/>
-			<cal:orgAddress/>
-			<cal:group with=""/>
-		</foaf:Organization>
-	</cal:organizations>
-	<cal:authors>
-		<foaf:Person>
-			<foaf:name/>
-			<foaf:givenName/>
-			<foaf:familyName/>
-			<cal:authorNameNative/>
-			<cal:authorSuffix/>
-			<cal:authorStatus/>
-			<cal:authorNamePaper/>
-			<cal:authorNamePaperGiven/>
-			<cal:authorNamePaperFamily/>
-			<cal:authorCollaboration collaborationid="c1"
-			                         position=""/>
-			<cal:authorAffiliations>
-				<cal:authorAffiliation organizationid="a1"
-				                       connection=""/>
-			</cal:authorAffiliations>
-			<cal:authorids>
-				<cal:authorid source=""/>
-			</cal:authorids>
-		</foaf:Person>
-	</cal:authors>
+
+<collaborationauthorlist
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
+   
+   <cal:creationDate></cal:creationDate>
+   <cal:publicationReference></cal:publicationReference>
+   
+   <cal:collaborations>
+      <cal:collaboration id="c1">
+         <foaf:name></foaf:name>
+         <cal:experimentNumber></cal:experimentNumber>
+      </cal:collaboration>
+   </cal:collaborations>
+   
+   <cal:organizations>
+      <foaf:Organization id="a1">
+         <cal:orgDomain>http://</cal:orgDomain>
+         <foaf:name></foaf:name>
+         <cal:orgName source=""></cal:orgName>
+         <cal:orgStatus collaborationid="c1"></cal:orgStatus>
+         <cal:orgAddress></cal:orgAddress>
+         <cal:group with=""/>
+      </foaf:Organization>
+   </cal:organizations>
+   
+   <cal:authors>
+      <foaf:Person>
+         <foaf:name></foaf:name>
+         <foaf:givenName></foaf:givenName>
+         <foaf:familyName></foaf:familyName>
+         <cal:authorNameNative></cal:authorNameNative>
+         <cal:authorSuffix></cal:authorSuffix>
+         <cal:authorStatus></cal:authorStatus>
+         <cal:authorNamePaper></cal:authorNamePaper>
+         <cal:authorNamePaperGiven></cal:authorNamePaperGiven>
+         <cal:authorNamePaperFamily></cal:authorNamePaperFamily>
+         <cal:authorCollaboration collaborationid="c1" position="" />
+         <cal:authorAffiliations>
+            <cal:authorAffiliation organizationid="a1" connection="" />
+         </cal:authorAffiliations>
+         <cal:authorids>
+            <cal:authorid source=""></cal:authorid>
+         </cal:authorids>
+         <cal:authorFunding></cal:authorFunding>
+      </foaf:Person>
+   </cal:authors>
 </collaborationauthorlist>
