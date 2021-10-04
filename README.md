@@ -7,7 +7,7 @@
     - [Partners in the author.xml project](#partners)
 2. [Why an XML file for the author list?](#whyxml)
     - [What are the advantages of an author.xml file?](#whatadvantages)
-    - [What terms should I know before starting?](#knowterms)
+    - [Which terms should I know before starting?](#knowterms)
 3. [**What do I need to get started?**](#needtogetstarted)
     - [How do I get author.dtd and author.xml?](#getauthordtd)
     - [Examples of author.xml files](#examplefiles)
@@ -97,8 +97,8 @@ The author.xml file, with all authors identified by an INSPIRE ID or ORCID numbe
 Given the XML file, an auto-generation process using xslt (stands for Extensible Stylesheet Language Transformations) can be used to generate the author list for the paper in the desired LaTeX format.
     
 <a name="knowterms"></a>
-### What terms should I know before starting?
-You don't need to know these terms. However, you will come across them; if you are interested, let's quickly touch on some of the XML-related terms that you might encounter.
+### Which XML terms should I know before starting?
+You don't need to know any specific terms. However, as you will come across the ones below we can touch on some of the XML-related terms that you might encounter.
 
  - **.xml** -> A .xml file is an eXtensible Markup Language** (XML) file. An XML file is just a plain text file containing information wrapped in tags. This information, called XML elements, is enclosed in meaningful, custom tags which describe the structure and other features of the document. **An xml file does not DO anything**. The file is used to store and transport data. 
 
