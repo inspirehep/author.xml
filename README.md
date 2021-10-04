@@ -143,11 +143,11 @@ Let's go! You will need to
 
 <a name="getauthorxml"></a>
 ### How do I save the file to my folder?
-As an example, if you want to save the [author.xml file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.xml), to your own folder, open the file in your Web browsers. Browsers should have a "Save as" option (try to right-click), and you will be able to save the file as follows:
+As an example, if you want to save the [author.xml file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.xml), to your own folder, open the file in your Web browsers. Browsers should have a "Save as" option (try to right-click), and you will be able to save the file as shown below (used: Google Chrome Web browser on Windows desktop):
 
-
-
-
+![author-xml-file-1](images/author-xml-file-1.png)
+![author-xml-file-2](images/author-xml-file-2.png)
+![author-xml-file-3](images/author-xml-file-3.png)
 
 <a name="infoneeded"></a>
 ### Where do I get the information needed for some of the fields?
