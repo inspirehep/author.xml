@@ -198,13 +198,13 @@ Internet domains provide a unique, universally-understood way to list an institu
 ### Examples of author.xml files
 The links below go to individual example author.xml files. To save a copy in your own folder, go to each file and do save as "[filename].xml". Picture instructions for saving a file that is displayed in your Web browser are at [How do I save the file to my folder?](#getauthorxml).
 
-[XML example - minimal file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-minimal.xml)
+[XML example - minimal file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_minimal.xml)
 
-[XML example - full-data file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-fulldata.xml)
+[XML example - full-data file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_fulldata.xml)
 
-[XML example - multicollaboration file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-multicollaboration.xml)
+[XML example - multicollaboration file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_multicollaboration.xml)
 
-[XML example - institutional groups](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example-institutional-groups.xml)
+[XML example - institutional groups](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_institutional_groups.xml)
 
         
 <a name="Links"></a>
