@@ -9,8 +9,7 @@
     - [What are the advantages of an author.xml file?](#whatadvantages)
     - [What terms should I know before starting?](#knowterms)
 3. [**What do I need to get started?**](#needtogetstarted)
-    - [How do I get the author.dtd file?](#getauthordtd)
-    - [How do I get the author.xml template file?](#getauthorxml)
+    - [How do I get author.dtd and author.xml?](#getauthordtd)
     - [Examples of author.xml files](#examplefiles)
     - [Where do I get the information needed for my data values?](#infoneeded)
     - [Links](#links)
@@ -127,24 +126,32 @@ With XML, errors in documents are not tolerated for the simple reason that XML p
 ## What do I need to get started?
 Let's go! You will need to 
 + get 2 files
-    - author.xml (meta-data for the authors of your collaboration)
+    - author.xml (file for meta-data for the authors of your collaboration)
     - author.dtd (rules file)
 + fill in your values in author.xml
 + validate this against author.dtd.
 
+<a name="getauthordtd"></a>
+### How do I get author.dtd and author.xml?
 1. To get the template file author.xml, go to the [author.xml file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.xml), and save "author.xml" to your own local folder. If necessary, follow the picture instructions at [How do I see and save the file?](#getauthorxml). 
-1. To get the file author.dtd, go to the [author.dtd file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.dtd), and save "author.dtd" to your own local folder. If necessary, you can do something similar to the picture instructions at [How do I see and save the file?](#getauthorxml). 
+1. To get the file author.dtd, go to the [author.dtd file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.dtd), and save "author.dtd" to your own local folder. If necessary, you can do something similar to the picture instructions at [How do I save the file to my folder?](#getauthorxml). 
+
 1. To get the information needed for some of the data values for your author.xml file, go to [Where do I get the information needed for some of the data values?](#infoneeded) to see how to get the ORCID identifier, etc.
 1. After you have filled in the data values of your author.xml, you should validate the file against the author.dtd file (mentioned in 1.). Go to [How do I validate my author.xml file?](#validate).
 1. Following validation, you will submit the author.xml file as part of your submission to arXiv in a .tar ball. The instructions are in [arxiv.org](https://arxiv.org/help/tar). 
 1. Please contact us at authors@inspirehep.net if you need assistance.  
 
 <a name="getauthorxml"></a>
-### How do I see and save the file?
-Go to the [author.xml file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.xml), and save it to your own local folder. All Web browsers have a "Save as" option and you should be able to save the file as follows:
+### How do I save the file to my folder?
+As an example, if you want to save the [author.xml file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.xml), to your own folder, open the file in your Web browsers. Browsers should have a "Save as" option (try to right-click), and you will be able to save the file as follows:
+
+
+
+
 
 <a name="infoneeded"></a>
 ### Where do I get the information needed for some of the fields?
+
 
 <a name="validate"></a>
 ### How do I validate my author.xml file?
