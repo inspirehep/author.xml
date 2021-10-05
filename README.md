@@ -207,7 +207,7 @@ In that directory, the command to validate your author.xml file against the auth
  xmllint --dtdvalid ./author.dtd author.xml
 ```
 
-![linux-command-xmllint-2](images/linux-command-xmllint-2.png)
+![linux-command-xmllint-22](images/linux-command-xmllint-2.png)
 
 
 <a name="examplefiles"></a>
