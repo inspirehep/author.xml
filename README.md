@@ -255,7 +255,7 @@ At the beginning of author.xml there is the XML declaration. This describes the 
    xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
 ```
 
-Here is what you need to do - in the author.xml template enter **your value** for the element or attribute when you see **REQUIRED** (in bold) or **OPTIONAL** (in bold):
+Here is what you need to do - in the author.xml template enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**:
 
 + Element `<cal:CreationDate>` **REQUIRED** - date of creation of this author.xml file
 + Element `<cal:publicationReference>` **REQUIRED**
@@ -302,7 +302,11 @@ Here is what you need to do - in the author.xml template enter **your value** fo
             - Attribute `"connection"` OPTIONAL - (Defaults to "Affiliated with"). Here, you can list information about the connection such as "Affiliated with", "On leave from", "Also at" or "Visitor".
         - `<cal:authorids>` is the container element holding element(s) `<cal:authorid>`. 
             - Element `<cal:authorid>` OPTIONAL - this element specifies an ID number that identifies an author.All ID elements (zero or more) reside within the <cal:authorids> container.
-            - Attribute `"source"` **REQUIRED** - (if there is an authorID element present) specifies the origins of the number. This can be an INSPIRE ID number (source="INSPIRE"), a collaboration-internal ID (source="INTERNAL") or other author ID services (e.g. source="ORCID"). Using INSPIRE ID numbers is strongly encouraged. A persistant ID for an author allows the INSPIRE service team to identify the authors and attach the respective identifiers to their INSPIRE ID. Please consult the section on "How do I obtain the information needed in author.xml?" for more detailed information about the handling of author ids.
+            - Attribute `"source"` **REQUIRED** - only if there is an authorID element present, specify the origins of the number. This can be: 
+                - an INSPIRE ID number (source="INSPIRE"), or
+                - a collaboration-internal ID (source="INTERNAL"), or 
+                - other author ID services (e.g. source="ORCID"). 
+              Using INSPIRE ID numbers is strongly encouraged. With a persistant ID for an author the INSPIRE service team can identify authors and attach the respective identifiers to their INSPIRE ID. Please consult the section on [Where do I get the information needed for some of the data values?](#infoneeded) for more detailed information about the handling of author ids.
         - Element `<cal:authorFunding>` OPTIONAL - this element describes the author's funding source, such as a grant or fellowship, if necessary (e.g., Alfred P. Sloan Fellow). This element can be left empty|
 
     
