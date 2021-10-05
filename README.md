@@ -115,10 +115,8 @@ You don't need to know any specific terms. However, as you will come across the 
      - XML attribute values must be quoted
 
  - **Valid XML Documents** -> A "well formed" XML document is not the same as a "valid" XML document.
-
-A "valid" XML document must already be well formed, but in addition, it must conform to a document type definition (the .dtd file). 
-
-With XML, errors in documents are not tolerated for the simple reason that XML processing programs are foreseen to be small and fast i.e the programs should not be doing error-checking and fixes.
+ A "valid" XML document must already be well formed, but in addition, it must conform to a document type definition (the .dtd file). 
+ With XML, errors in documents are not tolerated for the simple reason that XML processing programs are foreseen to be small and fast i.e the programs should not be doing error-checking and fixes.
 
 <a name="needtogetstarted"></a>
 ## What do I need to get started?
