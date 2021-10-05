@@ -240,6 +240,7 @@ The author.xml file has been designed for collaborations with more than 10 autho
 ### Template author.xml
 You should already have the author.xml template from [How do I get author.dtd and author.xml?](<#getauthordtd)
 The parts you will have to fill in are shown in this diagram:
+
 ![author-xml-template](images/author-template-1.png)
 
 <a name="tablexmlelements"></a>
@@ -254,7 +255,7 @@ At the beginning of author.xml there is the XML declaration. This describes the 
    xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
 ```
 
-Do not remove any part of the author.xml template. Instead, edit the author.xml template by entering **your value** for the element or attribute when you see **REQUIRED** (in bold) or **OPTIONAL** (in bold):
+Here is what you need to do - in the author.xml template enter **your value** for the element or attribute when you see **REQUIRED** (in bold) or **OPTIONAL** (in bold):
 
 + Element `<cal:CreationDate>` **REQUIRED** - date of creation of this author.xml file
 + Element `<cal:publicationReference>` **REQUIRED**
@@ -306,18 +307,17 @@ Do not remove any part of the author.xml template. Instead, edit the author.xml 
 
     
 
-
-
 <a name="authorxmlvalidate"></a>
 ## How do I validate my author.xml file?
 
 <a name="authorxmlconvert"></a>
 ## Can I convert my author.xml file to another format?
 
+
+
 <a name="contact"></a>
 [Who can I contact for assistance?]
 Send an email to authors@inspirehep.net if you need assistance. 
 
-![image](images/Angus-Satigny.jpg)
 
 
