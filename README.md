@@ -301,6 +301,7 @@ Here is what you need to do - in the author.xml template enter **your value** fo
                 - an INSPIRE ID number (source="INSPIRE"), or
                 - a collaboration-internal ID (source="INTERNAL"), or 
                 - other author ID services (e.g. source="ORCID"). 
+                
               Using INSPIRE ID numbers is strongly encouraged. With a persistant ID for an author the INSPIRE service team can identify authors and attach the respective identifiers to their INSPIRE ID. Please consult the section on [Where do I get the information needed for some of the data values?](#infoneeded) for more detailed information about the handling of author ids.
         - Element `<cal:authorFunding>` OPTIONAL - this element describes the author's funding source, such as a grant or fellowship, if necessary (e.g., Alfred P. Sloan Fellow). This element can be left empty|
 
