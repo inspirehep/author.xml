@@ -185,6 +185,9 @@ Motivation for #2: Easiest approach for the collaboration. However, this will on
 The HEPNAMES database may be utilized to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. If the individual has an entry in HEPNAMES, but not an INSPIRE ID Number, a number will be assigned upon 'update' of the record. If the individual is not in HEPNAMES, you can simply ask the individual to
 add a record for him/herself. An INSPIRE ID number will be assigned automatically.
 
+### ORCID number
+See [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/) to get information about author profiles in ORCID, a persistent digital identifier that distinguishes a researcher from every other researcher.
+
 ### Identification of affiliations by their Internet domain
 Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
 - damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
