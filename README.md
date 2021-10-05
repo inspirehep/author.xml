@@ -192,8 +192,8 @@ add a record for him/herself. An INSPIRE ID number will be assigned automatical
 
 ### Identification of affiliations by their Internet domain
 Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
-        1. damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
-        1. cam.ac.uk – for the University of Cambridge in general
+- damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
+- cam.ac.uk – for the University of Cambridge in general
 
 
 <a name="validate"></a>
