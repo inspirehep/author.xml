@@ -200,7 +200,7 @@ Validation of your author.xml file is done in Linux. Your directory needs to con
 - your author.xml
 - the given author.dtd
 
-In that directory, the command to validate your author.xml file against the author.dtd file is:
+In the directory, run the command to validate your author.xml file against the author.dtd file:
 ```
  xmllint --dtdvalid ./author.dtd author.xml
 ```
@@ -308,20 +308,17 @@ Here is what you need to do - in the author.xml template enter **your value** fo
               Using INSPIRE ID numbers is strongly encouraged. With a persistant ID for an author the INSPIRE service team can identify authors and attach the respective identifiers to their INSPIRE ID. Please consult the section on [Where do I get the information needed for some of the data values?](#infoneeded) for more detailed information about the handling of author ids.
         - Element `<cal:authorFunding>` OPTIONAL - this element describes the author's funding source, such as a grant or fellowship, if necessary (e.g., Alfred P. Sloan Fellow). This element can be left empty|
 
-    
 
-<a name="authorxmlvalidate"></a>
-## How do I validate my author.xml file?
 
 <a name="authorxmlconvert"></a>
 ## Can I convert my author.xml file to another format?
 ### Convert XML to MARCXML
-Get [authorlist2marcxml.xsl], save it to your directory on Linux, and run the command:
+Seeing your XML file formatted as MARCXML can help you see your data fields more easily. Get [authorlist2marcxml.xsl], save it to your directory on Linux, and run the command:
 ```
  xsltproc authorlist2marcxml.xsl [filename].xml
 ```
 As an example, for file example_multicollaboration.xml:
-
+![linux-command-xmllint-44](images/linux-command-xmllint-44.png)
 
 
 <a name="contact"></a>
