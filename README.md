@@ -315,6 +315,12 @@ Here is what you need to do - in the author.xml template enter **your value** fo
 
 <a name="authorxmlconvert"></a>
 ## Can I convert my author.xml file to another format?
+### Convert XML to MARCXML
+Get [authorlist2marcxml.xsl], save it to your directory on Linux, and run the command:
+```
+ xsltproc authorlist2marcxml.xsl [filename].xml
+```
+As an example, for file example_multicollaboration.xml:
 
 
 
