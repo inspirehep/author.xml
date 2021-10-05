@@ -206,9 +206,10 @@ In that directory, the command to validate your author.xml file against the auth
 ```
  xmllint --dtdvalid ./author.dtd author.xml
 ```
-
+You can do a validation trial run by using one of the example files:
 ![linux-command-xmllint-22](images/linux-command-xmllint-2.png)
 
+If the output contains 'fail' or 'error', then there is a problem with the .xml file, i.e. it is not adhering to the .dtd file. 
 
 <a name="examplefiles"></a>
 ### Examples of author.xml files
@@ -237,76 +238,23 @@ The author.xml file has been designed for collaborations with more than 10 autho
 
 <a name="template"></a>
 ### Template author.xml
+You should already have the author.xml template from [How do I get author.dtd and author.xml?](<#getauthordtd)
+The parts you will have to fill in are shown in this diagram:
 ![author-xml-template](images/author-template-1.png)
+
+<a name="tablexmlelements"></a>
+### Explanation of data value fields in author.xml
+At the beginning of author.xml there is the XML declaration. This describes the version, encoding, and declares that this XML file will follow the rules in document type definition file author.dtd. The file 'author.dtd' needs to be in the same directory. The root element and namespaces are also defined. Do not modify these:
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!DOCTYPE collaborationauthorlist SYSTEM "author.dtd">
-
 <collaborationauthorlist
    xmlns:foaf="http://xmlns.com/foaf/0.1/"
    xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
-   
-   <cal:creationDate></cal:creationDate>
-   <cal:publicationReference></cal:publicationReference>
-   
-   <cal:collaborations>
-      <cal:collaboration id="c1">
-         <foaf:name></foaf:name>
-         <cal:experimentNumber></cal:experimentNumber>
-      </cal:collaboration>
-   </cal:collaborations>
-   
-   <cal:organizations>
-      <foaf:Organization id="a1">
-         <cal:orgDomain>http://</cal:orgDomain>
-         <foaf:name></foaf:name>
-         <cal:orgName source=""></cal:orgName>
-         <cal:orgStatus collaborationid="c1"></cal:orgStatus>
-         <cal:orgAddress></cal:orgAddress>
-         <cal:group with=""/>
-      </foaf:Organization>
-   </cal:organizations>
-   
-   <cal:authors>
-      <foaf:Person>
-         <foaf:name></foaf:name>
-         <foaf:givenName></foaf:givenName>
-         <foaf:familyName></foaf:familyName>
-         <cal:authorNameNative></cal:authorNameNative>
-         <cal:authorSuffix></cal:authorSuffix>
-         <cal:authorStatus></cal:authorStatus>
-         <cal:authorNamePaper></cal:authorNamePaper>
-         <cal:authorNamePaperGiven></cal:authorNamePaperGiven>
-         <cal:authorNamePaperFamily></cal:authorNamePaperFamily>
-         <cal:authorCollaboration collaborationid="c1" position="" />
-         <cal:authorAffiliations>
-            <cal:authorAffiliation organizationid="a1" connection="" />
-         </cal:authorAffiliations>
-         <cal:authorids>
-            <cal:authorid source=""></cal:authorid>
-         </cal:authorids>
-         <cal:authorFunding></cal:authorFunding>
-      </foaf:Person>
-   </cal:authors>
-</collaborationauthorlist>
 ```
-<a name="tablexmlelements"></a>
-### Explanation of data value fields in author.xml
-At the beginning of author.xml there is the XML declaration. This describes the version, encoding, and declares that the document needs information from an external document type definition (DTD), for its content.
 
-`
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
-`
-
-Do not remove any part of the author.xml template. Instead, edit the author.xml template by filling in **your value** for the element or attribute when you see **REQUIRED** (in bold) or **OPTIONAL** (in bold):
-|`XML Element/ContainerElement`|`Element/Attribute/ContainerElement. **Required/Optional**`|
-|---|---|
-|`<collaborationauthorlist>`|Element `<collaborationauthorlist>` [required] - this is the root element |
-|`xmlns:foaf="http://xmlns.com/foaf/0.1/"`| [required] - this namespace with prefix 'foaf' is used only to differentiate between identical element/attribute names |
-|`xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"`| [required] - this namespace with prefix 'cal' is used only to differentiate between identical element/attribute names |
-
+Do not remove any part of the author.xml template. Instead, edit the author.xml template by entering **your value** for the element or attribute when you see **REQUIRED** (in bold) or **OPTIONAL** (in bold):
 
 + Element `<cal:CreationDate>` **REQUIRED** - date of creation of this author.xml file
 + Element `<cal:publicationReference>` **REQUIRED**
