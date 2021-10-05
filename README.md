@@ -12,23 +12,13 @@
     - [How do I get author.dtd and author.xml?](#getauthordtd)
     - [Examples of author.xml files](#examplefiles)
     - [Where do I get the information needed for my data values?](#infoneeded)
-    - [Links](#links)
 4.  [**How do I fill in my author.xml file?**](#fillinauthorxml)    
     - [Template author.xml](#template)
     - [Explanation of data value fields in author.xml](#tablexmlelements) 
 5.  [How do I validate my author.xml file?](#authorxmlvalidate)
 6.  [Can I convert my author.xml file to another format?](#authorxmlconvert)
 7.  [Who can I contact for assistance?](#contact)
-
-7.  
-8.  template - detailed description
-
-
-
-
-
-
-3. [ Usage tips](#usage)
+8.  [Links](#links)
 
 <a name="introduction"></a>
 ## Introduction
@@ -64,7 +54,7 @@ Large collaborations with hundreds and even thousands of authors are already usi
  - [DUNE](https://www.dunescience.org/)
  - [Fermilab CDF](https://www.fnal.gov/pub/tevatron/experiments/cdf.html)
  - [Fermilab D0](https://www.fnal.gov/pub/tevatron/experiments/dzero.html)
- - Fermilab LArIAT()
+ - Fermilab LArIAT() 
  - [Fermilab MicroBooNE](https://microboone.fnal.gov/)
  - [IHEP BESIII](http://bes3.ihep.ac.cn/)
  - [JUNO](http://juno.ihep.cas.cn/)
@@ -146,8 +136,6 @@ You can test an XML validation by using one of the given example files. You need
 ```
 xmllint --dtdvalid ./author.dtd example_institutional_groups.xml
 ```
-
-
 Following validation, you can submit the author.xml file as part of your submission to arXiv in a .tar ball. The instructions are in [arxiv.org](https://arxiv.org/help/tar). 
 
 Send an email to authors@inspirehep.net if you need assistance.   
@@ -159,7 +147,6 @@ As an example, if you want to save the [author.xml file](https://raw.githubuserc
 ![author-xml-file-11](images/author-xml-file-11.png)
 ![author-xml-file-22](images/author-xml-file-22.png)
 ![author-xml-file-33](images/author-xml-file-33.png)
-
 
 <a name="infoneeded"></a>
 ## Where do I get the information needed for my data values?
@@ -193,7 +180,6 @@ Internet domains provide a unique, universally-understood way to list an institu
 - damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
 - cam.ac.uk – for the University of Cambridge in general
 
-
 <a name="validate"></a>
 ### How do I validate my author.xml file?
 Validation of your author.xml file is done in Linux. Your directory needs to contain:
@@ -220,15 +206,6 @@ The links below go to individual example author.xml files. To save a copy in you
 [XML example - multicollaboration file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_multicollaboration.xml)
 
 [XML example - institutional groups](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_institutional_groups.xml)
-
-        
-<a name="Links"></a>
-### Links
-ORCID Initiative
-INSPIRE
-HEPNames
-HEPInstitutes
-FOAF Project
 
 <a name="fillinauthorxml"></a>
 ## How do I fill in my author.xml file?
@@ -325,5 +302,12 @@ As an example, for file example_multicollaboration.xml:
 [Who can I contact for assistance?]
 Send an email to authors@inspirehep.net if you need assistance. 
 
-
+        
+<a name="Links"></a>
+### Links
+[ORCID](https://orcid.org/)
+[INSPIRE](https://inspirehep.net/)
+HEPNames
+[HEPInstitutes](https://inspirehep.net/institutions?sort=mostrecent&size=25&page=1)
+[FOAF Project](http://www.foaf-project.org/)
 
