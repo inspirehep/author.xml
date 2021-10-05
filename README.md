@@ -207,6 +207,9 @@ In that directory, the command to validate your author.xml file against the auth
  xmllint --dtdvalid ./author.dtd author.xml
 ```
 
+![linux-command-xmllint-2](image/linux-command-xmllint-2.png)
+
+
 <a name="examplefiles"></a>
 ### Examples of author.xml files
 The links below go to individual example author.xml files. To save a copy in your own folder, go to each file and do save as "[filename].xml". Picture instructions for saving a file that is displayed in your Web browser are at [How do I save the file to my folder?](#getauthorxml).
