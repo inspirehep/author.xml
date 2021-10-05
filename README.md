@@ -146,6 +146,13 @@ Some of the data values may have to be obtained from elsewhere. Go to [Where do 
 ### How do I validate against author.dtd?
 After you have filled in all the data values of your author.xml, you should validate the file against the author.dtd file. Go to [How do I validate my author.xml file?](#validate).
 
+#### Example of validation 
+You can test an XML validation by using one of the given example files. You need to be in a Linux directory, and run, for example: 
+```
+xmllint --dtdvalid ./author.dtd example_institutional_groups.xml
+```
+
+
 Following validation, you can submit the author.xml file as part of your submission to arXiv in a .tar ball. The instructions are in [arxiv.org](https://arxiv.org/help/tar). 
 
 Send an email to authors@inspirehep.net if you need assistance.   
@@ -191,8 +198,14 @@ Internet domains provide a unique, universally-understood way to list an institu
 
 <a name="validate"></a>
 ### How do I validate my author.xml file?
+Validation of your author.xml file is done in Linux. Your directory needs to contain:
+- your author.xml
+- the given author.dtd
 
-
+In that directory, the command to validate your author.xml file against the author.dtd file is:
+```
+ xmllint --dtdvalid ./author.dtd author.xml
+```
 
 <a name="examplefiles"></a>
 ### Examples of author.xml files
