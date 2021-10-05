@@ -12,23 +12,13 @@
     - [How do I get author.dtd and author.xml?](#getauthordtd)
     - [Examples of author.xml files](#examplefiles)
     - [Where do I get the information needed for my data values?](#infoneeded)
-    - [Links](#links)
 4.  [**How do I fill in my author.xml file?**](#fillinauthorxml)    
     - [Template author.xml](#template)
     - [Explanation of data value fields in author.xml](#tablexmlelements) 
 5.  [How do I validate my author.xml file?](#authorxmlvalidate)
 6.  [Can I convert my author.xml file to another format?](#authorxmlconvert)
 7.  [Who can I contact for assistance?](#contact)
-
-7.  
-8.  template - detailed description
-
-
-
-
-
-
-3. [ Usage tips](#usage)
+8.  [Links](#links)
 
 <a name="introduction"></a>
 ## Introduction
@@ -64,7 +54,7 @@ Large collaborations with hundreds and even thousands of authors are already usi
  - [DUNE](https://www.dunescience.org/)
  - [Fermilab CDF](https://www.fnal.gov/pub/tevatron/experiments/cdf.html)
  - [Fermilab D0](https://www.fnal.gov/pub/tevatron/experiments/dzero.html)
- - Fermilab LArIAT()
+ - Fermilab LArIAT() 
  - [Fermilab MicroBooNE](https://microboone.fnal.gov/)
  - [IHEP BESIII](http://bes3.ihep.ac.cn/)
  - [JUNO](http://juno.ihep.cas.cn/)
@@ -107,21 +97,16 @@ You don't need to know any specific terms. However, as you will come across the 
 
  - **.dtd** -> DTD is an acronym for **Document Type Definition**. A .dtd file is a text file that specifies the rules governing the elements and attributes used in the corresponding XML document. This includes the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute.
 
-#### Well formed XML document
-An XML document is said to be well formed if it satifies the syntax rules. These rules are:
+ - **Well formed XML document** -> An XML document is said to be well formed if it satifies the syntax rules. These rules are:
+     - XML documents must have a root element (i.e. one sole parent element for all the XML elements in the document)
+     - XML elements must have a start and end tag
+     - XML tags are case sensitive
+     - XML elements must be properly nested
+     - XML attribute values must be quoted
 
- - XML documents must have a root element (i.e. one sole parent element for all the XML elements in the document)
- - XML elements must have a start and end tag
- - XML tags are case sensitive
- - XML elements must be properly nested
- - XML attribute values must be quoted
-
-#### Valid XML Documents
-A "well formed" XML document is not the same as a "valid" XML document.
-
-A "valid" XML document must already be well formed, but in addition, it must conform to a document type definition (the .dtd file). 
-
-With XML, errors in documents are not tolerated for the simple reason that XML processing programs are foreseen to be small and fast i.e the programs should not be doing error-checking and fixes.
+ - **Valid XML Documents** -> A "well formed" XML document is not the same as a "valid" XML document.
+ A "valid" XML document must already be well formed, but in addition, it must conform to a document type definition (the .dtd file). 
+ With XML, errors in documents are not tolerated for the simple reason that XML processing programs are foreseen to be small and fast i.e the programs should not be doing error-checking and fixes.
 
 <a name="needtogetstarted"></a>
 ## What do I need to get started?
@@ -146,6 +131,11 @@ Some of the data values may have to be obtained from elsewhere. Go to [Where do 
 ### How do I validate against author.dtd?
 After you have filled in all the data values of your author.xml, you should validate the file against the author.dtd file. Go to [How do I validate my author.xml file?](#validate).
 
+#### Example of validation 
+You can test an XML validation by using one of the given example files. You need to be in a Linux directory, and run, for example: 
+```
+xmllint --dtdvalid ./author.dtd example_institutional_groups.xml
+```
 Following validation, you can submit the author.xml file as part of your submission to arXiv in a .tar ball. The instructions are in [arxiv.org](https://arxiv.org/help/tar). 
 
 Send an email to authors@inspirehep.net if you need assistance.   
@@ -157,7 +147,6 @@ As an example, if you want to save the [author.xml file](https://raw.githubuserc
 ![author-xml-file-11](images/author-xml-file-11.png)
 ![author-xml-file-22](images/author-xml-file-22.png)
 ![author-xml-file-33](images/author-xml-file-33.png)
-
 
 <a name="infoneeded"></a>
 ## Where do I get the information needed for my data values?
@@ -183,16 +172,28 @@ Motivation for #2: Easiest approach for the collaboration. However, this will on
 The HEPNAMES database may be utilized to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. If the individual has an entry in HEPNAMES, but not an INSPIRE ID Number, a number will be assigned upon 'update' of the record. If the individual is not in HEPNAMES, you can simply ask the individual to
 add a record for him/herself. An INSPIRE ID number will be assigned automatically.
 
+### ORCID number
+See [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/) to get information about author profiles in ORCID, a persistent digital identifier that distinguishes a researcher from every other researcher.
+
 ### Identification of affiliations by their Internet domain
 Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
-        1. damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
-        1. cam.ac.uk – for the University of Cambridge in general
-
+- damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
+- cam.ac.uk – for the University of Cambridge in general
 
 <a name="validate"></a>
 ### How do I validate my author.xml file?
+Validation of your author.xml file is done in Linux. Your directory needs to contain:
+- your author.xml
+- the given author.dtd
 
+In the directory, run the command to validate your author.xml file against the author.dtd file:
+```
+ xmllint --dtdvalid ./author.dtd author.xml
+```
+You can do a validation trial run by using one of the example files:
+![linux-command-xmllint-22](images/linux-command-xmllint-2.png)
 
+If the output contains 'fail' or 'error', then there is a problem with the .xml file, i.e. it is not adhering to the .dtd file. 
 
 <a name="examplefiles"></a>
 ### Examples of author.xml files
@@ -206,91 +207,30 @@ The links below go to individual example author.xml files. To save a copy in you
 
 [XML example - institutional groups](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_institutional_groups.xml)
 
-        
-<a name="Links"></a>
-### Links
-ORCID Initiative
-INSPIRE
-HEPNames
-HEPInstitutes
-FOAF Project
-
 <a name="fillinauthorxml"></a>
 ## How do I fill in my author.xml file?
 The author.xml file has been designed for collaborations with more than 10 authors. An updated author.xml file should be included with each submission to arXiv. The collaboration’s author.xml file should be filled in according to the descriptions of the template items listed below.
 
 <a name="template"></a>
 ### Template author.xml
+You should already have the author.xml template from [How do I get author.dtd and author.xml?](<#getauthordtd)
+The parts you will have to fill in are shown in this diagram:
+
 ![author-xml-template](images/author-template-1.png)
+
+<a name="tablexmlelements"></a>
+### Explanation of data value fields in author.xml
+At the beginning of author.xml there is the XML declaration. This describes the version, encoding, and declares that this XML file will follow the rules in document type definition file author.dtd. The file 'author.dtd' needs to be in the same directory. The root element and namespaces are also defined. Do not modify these:
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!DOCTYPE collaborationauthorlist SYSTEM "author.dtd">
-
 <collaborationauthorlist
    xmlns:foaf="http://xmlns.com/foaf/0.1/"
    xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
-   
-   <cal:creationDate></cal:creationDate>
-   <cal:publicationReference></cal:publicationReference>
-   
-   <cal:collaborations>
-      <cal:collaboration id="c1">
-         <foaf:name></foaf:name>
-         <cal:experimentNumber></cal:experimentNumber>
-      </cal:collaboration>
-   </cal:collaborations>
-   
-   <cal:organizations>
-      <foaf:Organization id="a1">
-         <cal:orgDomain>http://</cal:orgDomain>
-         <foaf:name></foaf:name>
-         <cal:orgName source=""></cal:orgName>
-         <cal:orgStatus collaborationid="c1"></cal:orgStatus>
-         <cal:orgAddress></cal:orgAddress>
-         <cal:group with=""/>
-      </foaf:Organization>
-   </cal:organizations>
-   
-   <cal:authors>
-      <foaf:Person>
-         <foaf:name></foaf:name>
-         <foaf:givenName></foaf:givenName>
-         <foaf:familyName></foaf:familyName>
-         <cal:authorNameNative></cal:authorNameNative>
-         <cal:authorSuffix></cal:authorSuffix>
-         <cal:authorStatus></cal:authorStatus>
-         <cal:authorNamePaper></cal:authorNamePaper>
-         <cal:authorNamePaperGiven></cal:authorNamePaperGiven>
-         <cal:authorNamePaperFamily></cal:authorNamePaperFamily>
-         <cal:authorCollaboration collaborationid="c1" position="" />
-         <cal:authorAffiliations>
-            <cal:authorAffiliation organizationid="a1" connection="" />
-         </cal:authorAffiliations>
-         <cal:authorids>
-            <cal:authorid source=""></cal:authorid>
-         </cal:authorids>
-         <cal:authorFunding></cal:authorFunding>
-      </foaf:Person>
-   </cal:authors>
-</collaborationauthorlist>
 ```
-<a name="tablexmlelements"></a>
-### Explanation of data value fields in author.xml
-At the beginning of author.xml there is the XML declaration. This describes the version, encoding, and declares that the document needs information from an external document type definition (DTD), for its content.
 
-`
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE collaborationauthorlist SYSTEM "http://inspirehep.net/info/HepNames/tools/authors_xml/author.dtd">
-`
-
-Do not remove any part of the author.xml template. Instead, edit the author.xml template by filling in **your value** for the element or attribute when you see **REQUIRED** (in bold) or **OPTIONAL** (in bold):
-|`XML Element/ContainerElement`|`Element/Attribute/ContainerElement. **Required/Optional**`|
-|---|---|
-|`<collaborationauthorlist>`|Element `<collaborationauthorlist>` [required] - this is the root element |
-|`xmlns:foaf="http://xmlns.com/foaf/0.1/"`| [required] - this namespace with prefix 'foaf' is used only to differentiate between identical element/attribute names |
-|`xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/"`| [required] - this namespace with prefix 'cal' is used only to differentiate between identical element/attribute names |
-
+Here is what you need to do - in the author.xml template enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**:
 
 + Element `<cal:CreationDate>` **REQUIRED** - date of creation of this author.xml file
 + Element `<cal:publicationReference>` **REQUIRED**
@@ -337,23 +277,37 @@ Do not remove any part of the author.xml template. Instead, edit the author.xml 
             - Attribute `"connection"` OPTIONAL - (Defaults to "Affiliated with"). Here, you can list information about the connection such as "Affiliated with", "On leave from", "Also at" or "Visitor".
         - `<cal:authorids>` is the container element holding element(s) `<cal:authorid>`. 
             - Element `<cal:authorid>` OPTIONAL - this element specifies an ID number that identifies an author.All ID elements (zero or more) reside within the <cal:authorids> container.
-            - Attribute `"source"` **REQUIRED** - (if there is an authorID element present) specifies the origins of the number. This can be an INSPIRE ID number (source="INSPIRE"), a collaboration-internal ID (source="INTERNAL") or other author ID services (e.g. source="ORCID"). Using INSPIRE ID numbers is strongly encouraged. A persistant ID for an author allows the INSPIRE service team to identify the authors and attach the respective identifiers to their INSPIRE ID. Please consult the section on "How do I obtain the information needed in author.xml?" for more detailed information about the handling of author ids.
+            - Attribute `"source"` **REQUIRED** - only if there is an authorID element present, specify the origins of the number. This can be: 
+                - an INSPIRE ID number (source="INSPIRE"), or
+                - a collaboration-internal ID (source="INTERNAL"), or 
+                - other author ID services (e.g. source="ORCID"). 
+                
+              Using INSPIRE ID numbers is strongly encouraged. With a persistant ID for an author the INSPIRE service team can identify authors and attach the respective identifiers to their INSPIRE ID. Please consult the section on [Where do I get the information needed for some of the data values?](#infoneeded) for more detailed information about the handling of author ids.
         - Element `<cal:authorFunding>` OPTIONAL - this element describes the author's funding source, such as a grant or fellowship, if necessary (e.g., Alfred P. Sloan Fellow). This element can be left empty|
 
-    
 
-
-
-<a name="authorxmlvalidate"></a>
-## How do I validate my author.xml file?
 
 <a name="authorxmlconvert"></a>
 ## Can I convert my author.xml file to another format?
+### Convert XML to MARCXML
+Seeing your XML file formatted as MARCXML can help you see your data fields more easily. Get [authorlist2marcxml.xsl], save it to your directory on Linux, and run the command:
+```
+ xsltproc authorlist2marcxml.xsl [filename].xml
+```
+As an example, for file example_multicollaboration.xml:
+![linux-command-xmllint-44](images/linux-command-xmllint-44.png)
+
 
 <a name="contact"></a>
 [Who can I contact for assistance?]
 Send an email to authors@inspirehep.net if you need assistance. 
 
-![image](images/Angus-Satigny.jpg)
-
+        
+<a name="Links"></a>
+### Links
+[ORCID](https://orcid.org/)
+[INSPIRE](https://inspirehep.net/)
+HEPNames
+[HEPInstitutes](https://inspirehep.net/institutions?sort=mostrecent&size=25&page=1)
+[FOAF Project](http://www.foaf-project.org/)
 
