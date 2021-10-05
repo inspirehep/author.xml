@@ -107,17 +107,14 @@ You don't need to know any specific terms. However, as you will come across the 
 
  - **.dtd** -> DTD is an acronym for **Document Type Definition**. A .dtd file is a text file that specifies the rules governing the elements and attributes used in the corresponding XML document. This includes the order of the elements, the number of occurrences of each element, and finally the content and datatype of each element and attribute.
 
- - **Well formed XML document**
-An XML document is said to be well formed if it satifies the syntax rules. These rules are:
-
+ - **Well formed XML document** -> An XML document is said to be well formed if it satifies the syntax rules. These rules are:
      - XML documents must have a root element (i.e. one sole parent element for all the XML elements in the document)
      - XML elements must have a start and end tag
      - XML tags are case sensitive
      - XML elements must be properly nested
      - XML attribute values must be quoted
 
- - **Valid XML Documents**
-A "well formed" XML document is not the same as a "valid" XML document.
+ - **Valid XML Documents** -> A "well formed" XML document is not the same as a "valid" XML document.
 
 A "valid" XML document must already be well formed, but in addition, it must conform to a document type definition (the .dtd file). 
 
