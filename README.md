@@ -23,11 +23,13 @@
 8. [Who can I contact for assistance?](#contact)
 9. [Links](#links)
 
+
 <a name="introduction"></a>
 ## Introduction
 <a name="background"></a>
-Get on board so that authors get the appreciation and exposure they deserve!
-## Background and motivation
+This user guide will help you to produce an author.xml file for the authors in your collaboration. For collaborations with more than 10 authors, be sure to include your author.xml file with each submission to arXiv. Get on board so that authors get the appreciation and exposure they deserve!
+
+### Background and motivation
 Together, INSPIRE, the American Physical Society and arXiv.org have created a template file that you are recommended to use when you provide information about the authors for the submission of your paper. By utilizing unique ID's for authors and organizations (e.g. INSPIRE ID, [ORCID](https://orcid.org/), [ROR](https://ror.org/)), not only will your authors' information be precise and universally understood, but author information linking to professional information — affiliations, grants, publications, peer review, and more will get exposed. 
 
 If the author list for your collaboration has 10 or more authors, we recommend that when submitting your document, you also submit a file called author.xml. A template author.xml file is provided, see [What do I need to get started?](#needtogetstarted) Using this file as your guide, you fill in data value fields such as the authors' details, collaboration details, etc. Once completed and passed through a validator, the file is then deemed ready for submission.
@@ -35,7 +37,7 @@ If the author list for your collaboration has 10 or more authors, we recommend t
 Large collaborations with hundreds and even thousands of authors are already using the author.xml file to enable cataloguers and automated processes to glean complete, accurate information on authors. So, let's all be "on the same page" and ensure that **authors get recognition for their contributions**.
 
 <a name="partners"></a>
-## Partners in the author.xml project
+### Partners in the author.xml project
 **Information Services**
 
  - [arXiv.org](https://arxiv.org/)
@@ -209,23 +211,22 @@ Motivation for #1: The INSPIRE IDs will be recognized by publishers and other da
 
 Motivation for #2: Easiest approach for the collaboration. However, this will only work for INSPIRE and will not be shared with other parties. In any case, once the author.xml is submitted and checked by the INSPIRE service team, missing IDs will be assigned accordingly, or created, if necessary. 
 
+The value is used to populate the element `<foaf:Person><cal:authorids><cal:authorid source="INSPIRE">` in author.xml.
+
 ### INSPIRE ID Number for an individual
 The HEPNAMES database may be utilized to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. If the individual has an entry in HEPNAMES, but not an INSPIRE ID Number, a number will be assigned upon 'update' of the record. If the individual is not in HEPNAMES, you can simply ask the individual to
 add a record for him/herself. An INSPIRE ID number will be assigned automatically.
 
 ### ORCID number
-See [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/) to get information about author profiles in ORCID, a persistent digital identifier that distinguishes a researcher from every other researcher.
+See [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/) to get information about author profiles in ORCID. This persistent digital identifier distinguishes a researcher from every other researcher. The value is used to populate the element at `<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
+
+### ROR
+This is the unique identifier for every research organization in the world. The value is used to populate the element at <foaf:Organization><cal:orgDomain><foaf:name><cal:orgName source="ROR">.
 
 ### Identification of affiliations by their Internet domain
-Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
+This is for use with element at `<foaf:Organization id=""><cal:orgDomain>`. Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
 - damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
 - cam.ac.uk – for the University of Cambridge in general
-
-
-
-
-
-
 
 
 <a name="fillinauthorxml"></a>
@@ -273,7 +274,10 @@ Here is what you need to do - in the author.xml template enter **your value** fo
         - Element <`cal:orgDomain`> OPTIONAL - internet domain of the institution. The domain should be detailed enough to unambiguously determine the institution if there are distinct locations throughout the nation, e.g., pv.infn.it rather than just infn.it. If desired, this can go to the department/research-group level.
         - Element <`foaf:name`> **REQUIRED** this is the name of the organization as it will appear on the document.
         - Element <`cal:orgName`> OPTIONAL - this element also defines the name of the organization. Depending on where this name originates from, the source attribute can be used. The element content shall be only the name of the respective institute. Location information, if not part of the name, may be stated in the orgAddress element.
-        - Attribute `“source”` OPTIONAL - (Defaults to “INTERNAL”) enables you to use either the INSPIRE (a.k.a. INSPIRE-ICN) form of the institution’s name or your own INTERNAL form.
+        - Attribute `“source”` OPTIONAL - (Defaults to “INTERNAL”) enables you to use the following for the institution’s name:
+            - the INSPIRE (a.k.a. INSPIRE-ICN) form  
+            - the ROR form 
+            - your own INTERNAL form
         - Element `<cal:orgStatus>` OPTIONAL - status of the organization within the collaboration. Typically this would be either “member” or “nonmember.”
         - Attribute `“collaborationid”` OPTIONAL - enables you to specify which exact collaboration this organization is attached to. The collaboration is represented through its ID (e.g. “c1”). This element may be repeated if necessary.
         - Element <`cal:orgAddress`> OPTIONAL - full postal address of the institution as it would be written on a letter head.
