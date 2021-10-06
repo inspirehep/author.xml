@@ -297,7 +297,7 @@ add a record for him/herself. An INSPIRE ID number will be assigned automatical
 See [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/) to get information about author profiles in ORCID. This persistent digital identifier distinguishes a researcher from every other researcher. The value is used to populate the element at `<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
 
 ### ROR
-This is the unique identifier for every research organization in the world. The value is used to populate the element at <foaf:Organization><cal:orgDomain><foaf:name><cal:orgName source="ROR">.
+This is the unique identifier for every research organization in the world. The value is used to populate the element at `<foaf:Organization><cal:orgDomain><foaf:name><cal:orgName source="ROR">`.
 
 ### Identification of affiliations by their Internet domain
 This is for use with element at `<foaf:Organization id=""><cal:orgDomain>`. Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
