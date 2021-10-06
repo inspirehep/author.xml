@@ -11,15 +11,17 @@
 3. [Examples of author.xml files](#examplefiles)
     - [How do I save the file to my folder?](#getauthorxml)
 4. [**What do I need to get started?**](#needtogetstarted)
-    - [How do I get author.dtd and author.xml?](#getauthordtd)   
+    - [How do I get author.dtd and author.xml?](#getauthordtd)  
+    - [How do I fill in the values in author.xml?] 
     - [Where do I get the information needed for my data values?](#infoneeded)
-5. [How do I fill in my author.xml file?](#fillinauthorxml)    
+    - [How do I validate my author.xml file?](#authorxmlvalidate)
+5. [Filling in author.xml file](#fillinauthorxml)    
     - [Template author.xml](#template)
     - [Explanation of data value fields in author.xml](#tablexmlelements) 
-5.  [How do I validate my author.xml file?](#authorxmlvalidate)
-6.  [Can I convert my author.xml file to another format?](#authorxmlconvert)
-7.  [Who can I contact for assistance?](#contact)
-8.  [Links](#links)
+6. [Validating author.xml file?](#authorxmlvalidate)
+7. [Can I convert my author.xml file to another format?](#authorxmlconvert)
+8. [Who can I contact for assistance?](#contact)
+9. [Links](#links)
 
 <a name="introduction"></a>
 ## Introduction
