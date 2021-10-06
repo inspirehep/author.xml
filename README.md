@@ -18,10 +18,10 @@
     - [Template author.xml](#template)
     - [Explanation of data value fields in author.xml](#tablexmlelements) 
     - [Data values obtained elsewhere](#infoneeded)
-6. [Validating author.xml file?](#authorxmlvalidate)
-7. [Can I convert my author.xml file to another format?](#authorxmlconvert)
-8. [Who can I contact for assistance?](#contact)
-9. [Links](#links)
+6. [Can I convert my author.xml file to another format?](#authorxmlconvert)
+7. [Who can I contact for assistance?](#contact)
+8. [Links](#links)  
+
 
 
 <a name="introduction"></a>
@@ -113,8 +113,6 @@ You don't need to know any specific terms. However, as you will come across the 
  A "valid" XML document must already be well formed, but in addition, it must conform to a document type definition (the .dtd file). 
  With XML, errors in documents are not tolerated for the simple reason that XML processing programs are foreseen to be small and fast i.e the programs should not be doing error-checking and fixes.
 
-
-
 <a name="examplefiles"></a>
 ## Examples of author.xml files
 The links below go to individual example author.xml files. To save a copy in your own folder, go to each file and do save as "[filename].xml". We recommend that you save some of these files for browsing/testing later on. Picture instructions for saving a file that is displayed in your Web browser are at [How do I save the file to my folder?](#getauthorxml), just below.
@@ -134,8 +132,6 @@ As an example, if you want to save the [author.xml file](https://raw.githubuserc
 ![author-xml-file-11](images/author-xml-file-11.png)
 ![author-xml-file-22](images/author-xml-file-22.png)
 ![author-xml-file-33](images/author-xml-file-33.png)
-
-
 
 
 <a name="needtogetstarted"></a>
@@ -159,7 +155,7 @@ The author.xml file has been designed for collaborations with more than 10 autho
 
 Some of the data values may have to be obtained from elsewhere. Go to [Data values obtained elsewhere](#infoneeded) to see how to get the ORCID identifier, collaboration ID, etc.
 
-<a name=authorxmlvalidate></a>
+<a name="authorxmlvalidate"></a>
 ### How do I validate my author.xml?
 After you have filled in all the data values of your author.xml, you should validate the file against the author.dtd file. Validation of your author.xml file is done in Linux.
 Your directory needs to contain:
@@ -181,18 +177,16 @@ You can test an XML validation by using one of the example files. You need to be
 xmllint --dtdvalid ./author.dtd example_institutional_groups.xml
 ```
 
+<a name="submitarxiv"></a>
+## Submitting my author.xml to arXiv
+Congratualations if your author.xml validated successfully!
 
+Following validation, you can now submit the author.xml file as part of your submission to arXiv in a .tar ball. The instructions to do this are in [arxiv.org](https://arxiv.org/help/tar). 
 
-Following validation, you can submit the author.xml file as part of your submission to arXiv in a .tar ball. The instructions are in [arxiv.org](https://arxiv.org/help/tar). 
-
-Send an email to authors@inspirehep.net if you need assistance.   
-
-
-
-
+Send an email to authors@inspirehep.net if you are stuck and need assistance.   
 
 <a name="infoneeded"></a>
-## Where do I get the information needed for my data values?
+## Data values obtained elsewhere
 When you come to fill in some of the XML elements in author.xml, you will need have some information that is obtained somewhere else. 
 
 ### INSPIRE ID Numbers for a list of authors
@@ -230,7 +224,7 @@ This is for use with element at `<foaf:Organization id=""><cal:orgDomain>`. Inte
 
 
 <a name="fillinauthorxml"></a>
-## How do I fill in my author.xml file?
+## Filling in author.xml file
 The author.xml file has been designed for collaborations with more than 10 authors. An updated author.xml file should be included with each submission to arXiv. The collaboration’s author.xml file should be filled in according to the descriptions of the template items listed below.
 
 <a name="template"></a>
@@ -325,7 +319,7 @@ As an example, for file example_multicollaboration.xml:
 
 <a name="contact"></a>
 [Who can I contact for assistance?]
-Send an email to authors@inspirehep.net if you need assistance. 
+Send an email to authors@inspirehep.net if you are stuck and need assistance. 
 
         
 <a name="Links"></a>
