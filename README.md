@@ -7,24 +7,29 @@
     - [Partners in the author.xml project](#partners)
 2. [Why an XML file for the author list?](#whyxml)
     - [What are the advantages of an author.xml file?](#whatadvantages)
-    - [Which terms should I know before starting?](#knowterms)
-3. [**What do I need to get started?**](#needtogetstarted)
-    - [How do I get author.dtd and author.xml?](#getauthordtd)
-    - [Examples of author.xml files](#examplefiles)
-    - [Where do I get the information needed for my data values?](#infoneeded)
-4.  [**How do I fill in my author.xml file?**](#fillinauthorxml)    
+    - [Which XML terms should I know before starting?](#knowterms)
+3. [Examples of author.xml files](#examplefiles)
+    - [How do I save the file to my folder?](#getauthorxml)
+4. [**What do I need to get started?**](#needtogetstarted)
+    - [How do I get author.dtd and author.xml?](#getauthordtd)  
+    - [How do I fill in the values in author.xml?](#fillinauthorxml)
+    - [How do I validate my author.xml file?](#authorxmlvalidate)
+5. [Filling in author.xml file](#fillinauthorxml)    
     - [Template author.xml](#template)
     - [Explanation of data value fields in author.xml](#tablexmlelements) 
-5.  [How do I validate my author.xml file?](#authorxmlvalidate)
-6.  [Can I convert my author.xml file to another format?](#authorxmlconvert)
-7.  [Who can I contact for assistance?](#contact)
-8.  [Links](#links)
+    - [Data values obtained elsewhere](#infoneeded)
+6. [Can I convert my author.xml file to another format?](#authorxmlconvert)
+7. [Who can I contact for assistance?](#contact)
+8. [Links](#links)  
+
+
 
 <a name="introduction"></a>
 ## Introduction
 <a name="background"></a>
-Get on board so that authors get the appreciation and exposure they deserve!
-## Background and motivation
+This user guide will help you to produce an author.xml file for the authors in your collaboration. For collaborations with more than 10 authors, be sure to include your author.xml file with each submission to arXiv. Get on board so that authors get the appreciation and exposure they deserve!
+
+### Background and motivation
 Together, INSPIRE, the American Physical Society and arXiv.org have created a template file that you are recommended to use when you provide information about the authors for the submission of your paper. By utilizing unique ID's for authors and organizations (e.g. INSPIRE ID, [ORCID](https://orcid.org/), [ROR](https://ror.org/)), not only will your authors' information be precise and universally understood, but author information linking to professional information — affiliations, grants, publications, peer review, and more will get exposed. 
 
 If the author list for your collaboration has 10 or more authors, we recommend that when submitting your document, you also submit a file called author.xml. A template author.xml file is provided, see [What do I need to get started?](#needtogetstarted) Using this file as your guide, you fill in data value fields such as the authors' details, collaboration details, etc. Once completed and passed through a validator, the file is then deemed ready for submission.
@@ -32,7 +37,7 @@ If the author list for your collaboration has 10 or more authors, we recommend t
 Large collaborations with hundreds and even thousands of authors are already using the author.xml file to enable cataloguers and automated processes to glean complete, accurate information on authors. So, let's all be "on the same page" and ensure that **authors get recognition for their contributions**.
 
 <a name="partners"></a>
-## Partners in the author.xml project
+### Partners in the author.xml project
 **Information Services**
 
  - [arXiv.org](https://arxiv.org/)
@@ -108,6 +113,27 @@ You don't need to know any specific terms. However, as you will come across the 
  A "valid" XML document must already be well formed, but in addition, it must conform to a document type definition (the .dtd file). 
  With XML, errors in documents are not tolerated for the simple reason that XML processing programs are foreseen to be small and fast i.e the programs should not be doing error-checking and fixes.
 
+<a name="examplefiles"></a>
+## Examples of author.xml files
+The links below go to individual example author.xml files. To save a copy in your own folder, go to each file and do save as "[filename].xml". We recommend that you save some of these files for browsing/testing later on. Picture instructions for saving a file that is displayed in your Web browser are at [How do I save the file to my folder?](#getauthorxml), just below.
+
+[XML example - minimal file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_minimal.xml)
+
+[XML example - full-data file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_fulldata.xml)
+
+[XML example - multicollaboration file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_multicollaboration.xml)
+
+[XML example - institutional groups](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_institutional_groups.xml)
+
+<a name="getauthorxml"></a>
+### How do I save the file to my folder?
+As an example, if you want to save the [author.xml file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.xml) to your own folder, open the file in your Web browser. All Web browsers have a "Save as" option (try to right-click to get the pop-up menu), and you will be able to save the file. Below is our demo using Google Chrome Web browser on a Windows desktop:
+
+![author-xml-file-11](images/author-xml-file-11.png)
+![author-xml-file-22](images/author-xml-file-22.png)
+![author-xml-file-33](images/author-xml-file-33.png)
+
+
 <a name="needtogetstarted"></a>
 ## What do I need to get started?
 Let's go! You will need to 
@@ -123,66 +149,16 @@ To get the template file author.xml, go to the [author.xml file](https://raw.git
 
 To get the file author.dtd, go to the [author.dtd file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.dtd), and save "author.dtd" to your own local folder. If necessary, you can do something similar to the picture instructions at [How do I save the file to my folder?](#getauthorxml). 
 
+<a name="fillinauthorxml"></a>
 ### How do I fill in the values in author.xml?
-The author.xml file has been designed for collaborations with more than 10 authors. For each author and collaboration, you should input the data values for the XML elements according to [Explanation of data value fields in author.xml](#tablexmlelements)
+The author.xml file has been designed for collaborations with more than 10 authors. For each author and collaboration, you should input the data values for the XML elements as described in the section below, [Filling in author.xml file](#fillinauthorxml)
 
-Some of the data values may have to be obtained from elsewhere. Go to [Where do I get the information needed for some of the data values?](#infoneeded) to see how to get the ORCID identifier, collaboration ID, etc.
+Some of the data values may have to be obtained from elsewhere. Go to [Data values obtained elsewhere](#infoneeded) to see how to get the ORCID identifier, collaboration ID, etc.
 
-### How do I validate against author.dtd?
-After you have filled in all the data values of your author.xml, you should validate the file against the author.dtd file. Go to [How do I validate my author.xml file?](#validate).
-
-#### Example of validation 
-You can test an XML validation by using one of the given example files. You need to be in a Linux directory, and run, for example: 
-```
-xmllint --dtdvalid ./author.dtd example_institutional_groups.xml
-```
-Following validation, you can submit the author.xml file as part of your submission to arXiv in a .tar ball. The instructions are in [arxiv.org](https://arxiv.org/help/tar). 
-
-Send an email to authors@inspirehep.net if you need assistance.   
-
-<a name="getauthorxml"></a>
-### How do I save the file to my folder?
-As an example, if you want to save the [author.xml file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.xml), to your own folder, open the file in your Web browsers. Browsers should have a "Save as" option (try to right-click), and you will be able to save the file as shown below (used: Google Chrome Web browser on Windows desktop):
-
-![author-xml-file-11](images/author-xml-file-11.png)
-![author-xml-file-22](images/author-xml-file-22.png)
-![author-xml-file-33](images/author-xml-file-33.png)
-
-<a name="infoneeded"></a>
-## Where do I get the information needed for my data values?
-When you come to fill in some of the XML elements in author.xml, you will need have some information that is obtained somewhere else. 
-
-### INSPIRE ID Numbers for a list of authors
-In your role as maintainer of the collaboration’s author list, you have two options to acquire INSPIRE ID Numbers for authors:
-1. Send a list of 
-    - names and email addresses, or
-    - the xml file without INSPIRE IDs 
-to authors@inspirehep.net. 
-
-We will return this list enriched with all the INSPIRE ID Numbers for the authors. These INSPIRE IDs can then be integrated into your author database and delivered as part of your author list.
-
-1. Provide the collaboration’s internal ID Numbers of the respective person directly in the author.xml file. 
-If you choose this option, please ensure these IDs are persistent and unique within your collaboration. This way, no additional information will be needed in the collaboration’s author database – we will match up the internal IDs with INSPIRE ID Numbers and make sure the authors always have the correct ID.
-
-Motivation for #1: The INSPIRE IDs will be recognized by publishers and other databases or repositories and can also be shared with the authors, who may like to use them for searching and for papers they might write independently.
-
-Motivation for #2: Easiest approach for the collaboration. However, this will only work for INSPIRE and will not be shared with other parties. In any case, once the author.xml is submitted and checked by the INSPIRE service team, missing IDs will be assigned accordingly, or created, if necessary. 
-
-### INSPIRE ID Number for an individual
-The HEPNAMES database may be utilized to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. If the individual has an entry in HEPNAMES, but not an INSPIRE ID Number, a number will be assigned upon 'update' of the record. If the individual is not in HEPNAMES, you can simply ask the individual to
-add a record for him/herself. An INSPIRE ID number will be assigned automatically.
-
-### ORCID number
-See [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/) to get information about author profiles in ORCID, a persistent digital identifier that distinguishes a researcher from every other researcher.
-
-### Identification of affiliations by their Internet domain
-Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
-- damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
-- cam.ac.uk – for the University of Cambridge in general
-
-<a name="validate"></a>
-### How do I validate my author.xml file?
-Validation of your author.xml file is done in Linux. Your directory needs to contain:
+<a name="authorxmlvalidate"></a>
+### How do I validate my author.xml?
+After you have filled in all the data values of your author.xml, you should validate the file against the author.dtd file. Validation of your author.xml file is done in Linux.
+Your directory needs to contain:
 - your author.xml
 - the given author.dtd
 
@@ -195,20 +171,23 @@ You can do a validation trial run by using one of the example files:
 
 If the output contains 'fail' or 'error', then there is a problem with the .xml file, i.e. it is not adhering to the .dtd file. 
 
-<a name="examplefiles"></a>
-### Examples of author.xml files
-The links below go to individual example author.xml files. To save a copy in your own folder, go to each file and do save as "[filename].xml". Picture instructions for saving a file that is displayed in your Web browser are at [How do I save the file to my folder?](#getauthorxml).
+#### An example of XML validation 
+You can test an XML validation by using one of the example files. You need to be in a Linux directory, and run, for example: 
+```
+xmllint --dtdvalid ./author.dtd example_institutional_groups.xml
+```
 
-[XML example - minimal file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_minimal.xml)
+<a name="submitarxiv"></a>
+## Submitting my author.xml to arXiv
+Congratulations if your author.xml validated successfully!
 
-[XML example - full-data file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_fulldata.xml)
+Following validation, you can now submit the author.xml file as part of your submission to arXiv in a .tar ball. The instructions to do this are in [arxiv.org](https://arxiv.org/help/tar). 
 
-[XML example - multicollaboration file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_multicollaboration.xml)
+Send an email to authors@inspirehep.net if you are stuck and need assistance.   
 
-[XML example - institutional groups](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_institutional_groups.xml)
 
 <a name="fillinauthorxml"></a>
-## How do I fill in my author.xml file?
+## Filling in author.xml file
 The author.xml file has been designed for collaborations with more than 10 authors. An updated author.xml file should be included with each submission to arXiv. The collaboration’s author.xml file should be filled in according to the descriptions of the template items listed below.
 
 <a name="template"></a>
@@ -252,7 +231,10 @@ Here is what you need to do - in the author.xml template enter **your value** fo
         - Element <`cal:orgDomain`> OPTIONAL - internet domain of the institution. The domain should be detailed enough to unambiguously determine the institution if there are distinct locations throughout the nation, e.g., pv.infn.it rather than just infn.it. If desired, this can go to the department/research-group level.
         - Element <`foaf:name`> **REQUIRED** this is the name of the organization as it will appear on the document.
         - Element <`cal:orgName`> OPTIONAL - this element also defines the name of the organization. Depending on where this name originates from, the source attribute can be used. The element content shall be only the name of the respective institute. Location information, if not part of the name, may be stated in the orgAddress element.
-        - Attribute `“source”` OPTIONAL - (Defaults to “INTERNAL”) enables you to use either the INSPIRE (a.k.a. INSPIRE-ICN) form of the institution’s name or your own INTERNAL form.
+        - Attribute `“source”` OPTIONAL - (Defaults to “INTERNAL”) enables you to use the following for the institution’s name:
+            - the INSPIRE (a.k.a. INSPIRE-ICN) form  
+            - the ROR form 
+            - your own INTERNAL form
         - Element `<cal:orgStatus>` OPTIONAL - status of the organization within the collaboration. Typically this would be either “member” or “nonmember.”
         - Attribute `“collaborationid”` OPTIONAL - enables you to specify which exact collaboration this organization is attached to. The collaboration is represented through its ID (e.g. “c1”). This element may be repeated if necessary.
         - Element <`cal:orgAddress`> OPTIONAL - full postal address of the institution as it would be written on a letter head.
@@ -285,6 +267,42 @@ Here is what you need to do - in the author.xml template enter **your value** fo
               Using INSPIRE ID numbers is strongly encouraged. With a persistant ID for an author the INSPIRE service team can identify authors and attach the respective identifiers to their INSPIRE ID. Please consult the section on [Where do I get the information needed for some of the data values?](#infoneeded) for more detailed information about the handling of author ids.
         - Element `<cal:authorFunding>` OPTIONAL - this element describes the author's funding source, such as a grant or fellowship, if necessary (e.g., Alfred P. Sloan Fellow). This element can be left empty|
 
+<a name="infoneeded"></a>
+## Data values obtained elsewhere
+When you come to fill in some of the XML elements in author.xml, you will need to refer to some information that is obtained somewhere else. 
+
+### INSPIRE ID Numbers for a list of authors
+In your role as maintainer of the collaboration’s author list, you have two options to acquire INSPIRE ID Numbers for authors:
+1. Send a list of 
+    - names and email addresses, or
+    - the xml file without INSPIRE IDs 
+to authors@inspirehep.net. 
+
+We will return this list enriched with all the INSPIRE ID Numbers for the authors. These INSPIRE IDs can then be integrated into your author database and delivered as part of your author list.
+
+1. Provide the collaboration’s internal ID Numbers of the respective person directly in the author.xml file. 
+If you choose this option, please ensure these IDs are persistent and unique within your collaboration. This way, no additional information will be needed in the collaboration’s author database – we will match up the internal IDs with INSPIRE ID Numbers and make sure the authors always have the correct ID.
+
+Motivation for #1: The INSPIRE IDs will be recognized by publishers and other databases or repositories and can also be shared with the authors, who may like to use them for searching and for papers they might write independently.
+
+Motivation for #2: Easiest approach for the collaboration. However, this will only work for INSPIRE and will not be shared with other parties. In any case, once the author.xml is submitted and checked by the INSPIRE service team, missing IDs will be assigned accordingly, or created, if necessary. 
+
+The value is used to populate the element `<foaf:Person><cal:authorids><cal:authorid source="INSPIRE">` in author.xml.
+
+### INSPIRE ID Number for an individual
+The HEPNAMES database may be utilized to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. If the individual has an entry in HEPNAMES, but not an INSPIRE ID Number, a number will be assigned upon 'update' of the record. If the individual is not in HEPNAMES, you can simply ask the individual to
+add a record for him/herself. An INSPIRE ID number will be assigned automatically.
+
+### ORCID number
+See [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/) to get information about author profiles in ORCID. This persistent digital identifier distinguishes a researcher from every other researcher. The value is used to populate the element at `<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
+
+### ROR
+This is the unique identifier for every research organization in the world. The value is used to populate the element at `<foaf:Organization><cal:orgDomain><foaf:name><cal:orgName source="ROR">`.
+
+### Identification of affiliations by their Internet domain
+This is for use with element at `<foaf:Organization id=""><cal:orgDomain>`. Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
+- damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
+- cam.ac.uk – for the University of Cambridge in general
 
 
 <a name="authorxmlconvert"></a>
@@ -300,14 +318,14 @@ As an example, for file example_multicollaboration.xml:
 
 <a name="contact"></a>
 [Who can I contact for assistance?]
-Send an email to authors@inspirehep.net if you need assistance. 
+Send an email to authors@inspirehep.net if you are stuck and need assistance. 
 
         
 <a name="Links"></a>
-### Links
-[ORCID](https://orcid.org/)
-[INSPIRE](https://inspirehep.net/)
-HEPNames
-[HEPInstitutes](https://inspirehep.net/institutions?sort=mostrecent&size=25&page=1)
-[FOAF Project](http://www.foaf-project.org/)
+## Links
+ - [ORCID](https://orcid.org/)
+ - [INSPIRE](https://inspirehep.net/)
+ - HEPNames
+ - [HEPInstitutes](https://inspirehep.net/institutions?sort=mostrecent&size=25&page=1)
+ - [FOAF Project](http://www.foaf-project.org/)
 
