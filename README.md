@@ -324,12 +324,8 @@ Send an email to authors@inspirehep.net if you are stuck and need assistance.
 <a name="Links"></a>
 ## Links
 [ORCID](https://orcid.org/)
-
 [INSPIRE](https://inspirehep.net/)
-
 HEPNames
-
 [HEPInstitutes](https://inspirehep.net/institutions?sort=mostrecent&size=25&page=1)
-
 [FOAF Project](http://www.foaf-project.org/)
 
