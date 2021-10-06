@@ -179,48 +179,11 @@ xmllint --dtdvalid ./author.dtd example_institutional_groups.xml
 
 <a name="submitarxiv"></a>
 ## Submitting my author.xml to arXiv
-Congratualations if your author.xml validated successfully!
+Congratulations if your author.xml validated successfully!
 
 Following validation, you can now submit the author.xml file as part of your submission to arXiv in a .tar ball. The instructions to do this are in [arxiv.org](https://arxiv.org/help/tar). 
 
 Send an email to authors@inspirehep.net if you are stuck and need assistance.   
-
-<a name="infoneeded"></a>
-## Data values obtained elsewhere
-When you come to fill in some of the XML elements in author.xml, you will need have some information that is obtained somewhere else. 
-
-### INSPIRE ID Numbers for a list of authors
-In your role as maintainer of the collaboration’s author list, you have two options to acquire INSPIRE ID Numbers for authors:
-1. Send a list of 
-    - names and email addresses, or
-    - the xml file without INSPIRE IDs 
-to authors@inspirehep.net. 
-
-We will return this list enriched with all the INSPIRE ID Numbers for the authors. These INSPIRE IDs can then be integrated into your author database and delivered as part of your author list.
-
-1. Provide the collaboration’s internal ID Numbers of the respective person directly in the author.xml file. 
-If you choose this option, please ensure these IDs are persistent and unique within your collaboration. This way, no additional information will be needed in the collaboration’s author database – we will match up the internal IDs with INSPIRE ID Numbers and make sure the authors always have the correct ID.
-
-Motivation for #1: The INSPIRE IDs will be recognized by publishers and other databases or repositories and can also be shared with the authors, who may like to use them for searching and for papers they might write independently.
-
-Motivation for #2: Easiest approach for the collaboration. However, this will only work for INSPIRE and will not be shared with other parties. In any case, once the author.xml is submitted and checked by the INSPIRE service team, missing IDs will be assigned accordingly, or created, if necessary. 
-
-The value is used to populate the element `<foaf:Person><cal:authorids><cal:authorid source="INSPIRE">` in author.xml.
-
-### INSPIRE ID Number for an individual
-The HEPNAMES database may be utilized to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. If the individual has an entry in HEPNAMES, but not an INSPIRE ID Number, a number will be assigned upon 'update' of the record. If the individual is not in HEPNAMES, you can simply ask the individual to
-add a record for him/herself. An INSPIRE ID number will be assigned automatically.
-
-### ORCID number
-See [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/) to get information about author profiles in ORCID. This persistent digital identifier distinguishes a researcher from every other researcher. The value is used to populate the element at `<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
-
-### ROR
-This is the unique identifier for every research organization in the world. The value is used to populate the element at <foaf:Organization><cal:orgDomain><foaf:name><cal:orgName source="ROR">.
-
-### Identification of affiliations by their Internet domain
-This is for use with element at `<foaf:Organization id=""><cal:orgDomain>`. Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
-- damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
-- cam.ac.uk – for the University of Cambridge in general
 
 
 <a name="fillinauthorxml"></a>
@@ -304,6 +267,42 @@ Here is what you need to do - in the author.xml template enter **your value** fo
               Using INSPIRE ID numbers is strongly encouraged. With a persistant ID for an author the INSPIRE service team can identify authors and attach the respective identifiers to their INSPIRE ID. Please consult the section on [Where do I get the information needed for some of the data values?](#infoneeded) for more detailed information about the handling of author ids.
         - Element `<cal:authorFunding>` OPTIONAL - this element describes the author's funding source, such as a grant or fellowship, if necessary (e.g., Alfred P. Sloan Fellow). This element can be left empty|
 
+<a name="infoneeded"></a>
+## Data values obtained elsewhere
+When you come to fill in some of the XML elements in author.xml, you will need to refer to some information that is obtained somewhere else. 
+
+### INSPIRE ID Numbers for a list of authors
+In your role as maintainer of the collaboration’s author list, you have two options to acquire INSPIRE ID Numbers for authors:
+1. Send a list of 
+    - names and email addresses, or
+    - the xml file without INSPIRE IDs 
+to authors@inspirehep.net. 
+
+We will return this list enriched with all the INSPIRE ID Numbers for the authors. These INSPIRE IDs can then be integrated into your author database and delivered as part of your author list.
+
+1. Provide the collaboration’s internal ID Numbers of the respective person directly in the author.xml file. 
+If you choose this option, please ensure these IDs are persistent and unique within your collaboration. This way, no additional information will be needed in the collaboration’s author database – we will match up the internal IDs with INSPIRE ID Numbers and make sure the authors always have the correct ID.
+
+Motivation for #1: The INSPIRE IDs will be recognized by publishers and other databases or repositories and can also be shared with the authors, who may like to use them for searching and for papers they might write independently.
+
+Motivation for #2: Easiest approach for the collaboration. However, this will only work for INSPIRE and will not be shared with other parties. In any case, once the author.xml is submitted and checked by the INSPIRE service team, missing IDs will be assigned accordingly, or created, if necessary. 
+
+The value is used to populate the element `<foaf:Person><cal:authorids><cal:authorid source="INSPIRE">` in author.xml.
+
+### INSPIRE ID Number for an individual
+The HEPNAMES database may be utilized to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. If the individual has an entry in HEPNAMES, but not an INSPIRE ID Number, a number will be assigned upon 'update' of the record. If the individual is not in HEPNAMES, you can simply ask the individual to
+add a record for him/herself. An INSPIRE ID number will be assigned automatically.
+
+### ORCID number
+See [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/) to get information about author profiles in ORCID. This persistent digital identifier distinguishes a researcher from every other researcher. The value is used to populate the element at `<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
+
+### ROR
+This is the unique identifier for every research organization in the world. The value is used to populate the element at <foaf:Organization><cal:orgDomain><foaf:name><cal:orgName source="ROR">.
+
+### Identification of affiliations by their Internet domain
+This is for use with element at `<foaf:Organization id=""><cal:orgDomain>`. Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
+- damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
+- cam.ac.uk – for the University of Cambridge in general
 
 
 <a name="authorxmlconvert"></a>
