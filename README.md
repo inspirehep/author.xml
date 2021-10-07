@@ -140,8 +140,8 @@ Let's go! You will need to
 + get 2 files
     - author.xml (file for meta-data for the authors of your collaboration)
     - author.dtd (rules file)
-+ fill in your values in author.xml
-+ validate this against author.dtd.
++ fill in your values in the author.xml
++ validate this against author.dtd
 
 <a name="getauthordtd"></a>
 ### How do I get author.dtd and author.xml?
