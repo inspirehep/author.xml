@@ -162,6 +162,8 @@ Your directory needs to contain:
 - your author.xml
 - the given author.dtd
 
+![linux-XML-directory](images/linux-xml-directory-2.png)
+
 In the directory, run the command to validate your author.xml file against the author.dtd file:
 ```
  xmllint --dtdvalid ./author.dtd author.xml
