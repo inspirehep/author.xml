@@ -133,7 +133,6 @@ As an example, if you want to save the [author.xml file](https://raw.githubuserc
 ![author-xml-file-22](images/author-xml-file-22.png)
 ![author-xml-file-33](images/author-xml-file-33.png)
 
-
 <a name="needtogetstarted"></a>
 ## What do I need to get started?
 Let's go! You will need to 
@@ -166,16 +165,16 @@ In the directory, run the command to validate your author.xml file against the a
 ```
  xmllint --dtdvalid ./author.dtd author.xml
 ```
-You can do a validation trial run by using one of the example files:
-![linux-command-xmllint-22](images/linux-command-xmllint-2.png)
-
-If the output contains 'fail' or 'error', then there is a problem with the .xml file, i.e. it is not adhering to the .dtd file. 
 
 #### An example of XML validation 
 You can test an XML validation by using one of the example files. You need to be in a Linux directory, and run, for example: 
 ```
 xmllint --dtdvalid ./author.dtd example_institutional_groups.xml
 ```
+You can do a validation trial run by using one of the example files:
+![linux-command-xmllint-22](images/linux-command-xmllint-2.png)
+
+If the output contains 'fail' or 'error', then there is a problem with the .xml file, i.e. it is not adhering to the .dtd file. 
 
 <a name="submitarxiv"></a>
 ## Submitting my author.xml to arXiv
