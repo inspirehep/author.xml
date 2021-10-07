@@ -12,7 +12,7 @@
     - [How do I save the file to my folder?](#getauthorxml)
 4. [**What do I need to get started?**](#needtogetstarted)
     - [How do I get author.dtd and author.xml?](#getauthordtd)  
-    - [How do I fill in the values in author.xml?](#fillinauthorxml)
+    - [How do I fill in the values in author.xml?](#howfillauthorxml)
     - [How do I validate my author.xml file?](#authorxmlvalidate)
 5. [Filling in author.xml file](#fillinauthorxml)    
     - [Template author.xml](#template)
@@ -149,7 +149,7 @@ To get the template file author.xml, go to the [author.xml file](https://raw.git
 
 To get the file author.dtd, go to the [author.dtd file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.dtd), and save "author.dtd" to your own local folder. If necessary, you can do something similar to the picture instructions at [How do I save the file to my folder?](#getauthorxml). 
 
-<a name="fillinauthorxml"></a>
+<a name="howfillauthorxml"></a>
 ### How do I fill in the values in author.xml?
 The author.xml file has been designed for collaborations with more than 10 authors. For each author and collaboration, you should input the data values for the XML elements as described in the section below, [Filling in author.xml file](#fillinauthorxml)
 
