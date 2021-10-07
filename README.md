@@ -306,6 +306,7 @@ This is for use with element at `<foaf:Organization id=""><cal:orgDomain>`. Inte
 - damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
 - cam.ac.uk – for the University of Cambridge in general
 
+Go back up to [**What do I need to get started?**](#needtogetstarted)
 
 <a name="authorxmlconvert"></a>
 ## Can I convert my author.xml file to another format?
