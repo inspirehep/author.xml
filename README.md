@@ -151,7 +151,7 @@ To get the file author.dtd, go to the [author.dtd file](https://raw.githubuserco
 
 <a name="howfillauthorxml"></a>
 ### How do I fill in the values in author.xml?
-The author.xml file has been designed for collaborations with more than 10 authors. For each author and collaboration, you should input the data values for the XML elements as described in the section below, [Filling in author.xml file](#fillinauthorxml)
+For each author and collaboration, you should input the data values for the XML elements as described in the section below, [Filling in author.xml file](#fillinauthorxml)
 
 Some of the data values may have to be obtained from elsewhere. Go to [Data values obtained elsewhere](#infoneeded) to see how to get the ORCID identifier, collaboration ID, etc.
 
@@ -190,7 +190,7 @@ Send an email to authors@inspirehep.net if you are stuck and need assistance.
 
 <a name="fillinauthorxml"></a>
 ## Filling in author.xml file
-The author.xml file has been designed for collaborations with more than 10 authors. An updated author.xml file should be included with each submission to arXiv. The collaboration’s author.xml file should be filled in according to the descriptions of the template items listed below.
+An updated author.xml file should be included with each submission to [arXiv.org](https://arxiv.org/). The collaboration’s author.xml file should be filled in according to the descriptions of the template items listed below.
 
 <a name="template"></a>
 ### Template author.xml
