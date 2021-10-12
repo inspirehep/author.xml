@@ -289,20 +289,26 @@ Motivation for #1: The INSPIRE IDs will be recognized by publishers and other da
 
 Motivation for #2: Easiest approach for the collaboration. However, this will only work for INSPIRE and will not be shared with other parties. In any case, once the author.xml is submitted and checked by the INSPIRE service team, missing IDs will be assigned accordingly, or created, if necessary. 
 
-The value is used to populate the element `<foaf:Person><cal:authorids><cal:authorid source="INSPIRE">` in author.xml.
+The value is used to populate the element: 
+`<foaf:Person><cal:authorids><cal:authorid source="INSPIRE">` 
+in author.xml.
 
 ### INSPIRE ID Number for an individual
 The HEPNAMES database may be utilized to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. If the individual has an entry in HEPNAMES, but not an INSPIRE ID Number, a number will be assigned upon 'update' of the record. If the individual is not in HEPNAMES, you can simply ask the individual to
 add a record for him/herself. An INSPIRE ID number will be assigned automatically.
 
 ### ORCID number
-See [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/) to get information about author profiles in ORCID. This persistent digital identifier distinguishes a researcher from every other researcher. The value is used to populate the element at `<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
+See [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/) to get information about author profiles in ORCID. This persistent digital identifier distinguishes a researcher from every other researcher. The value is used to populate the element at: 
+`<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
 
 ### ROR
-This is the unique identifier for every research organization in the world. The value is used to populate the element at `<foaf:Organization><cal:orgDomain><foaf:name><cal:orgName source="ROR">`.
+This is the unique identifier for every research organization in the world. The value is used to populate the element at: 
+`<foaf:Organization><cal:orgDomain><foaf:name><cal:orgName source="ROR">`.
 
 ### Identification of affiliations by their Internet domain
-This is for use with element at `<foaf:Organization id=""><cal:orgDomain>`. Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
+This is for use with element at: 
+`<foaf:Organization id=""><cal:orgDomain>`. 
+Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
 - damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
 - cam.ac.uk – for the University of Cambridge in general
 
