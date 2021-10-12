@@ -266,7 +266,8 @@ Here is what you need to do - in the author.xml template enter **your value** fo
                 - a collaboration-internal ID (source="INTERNAL"), or 
                 - other author ID services (e.g. source="ORCID"). 
                 
-              Using INSPIRE ID numbers is strongly encouraged. With a persistant ID for an author the INSPIRE service team can identify authors and attach the respective identifiers to their INSPIRE ID. Please consult the section on [Where do I get the information needed for some of the data values?](#infoneeded) for more detailed information about the handling of author ids.
+              
+              The preferred author identifier is the [ORCID](https://orcid.org/) identifier. If the author does not possess an ORCID identifier, an INSPIRE-ID may be used as an alternative. A persistent ID for an author allows the INSPIRE service team to identify authors and attach the respective identifiers to the author ID system. Please consult the section on [Where do I get the information needed for some of the data values?](#infoneeded) for more detailed information about the handling of author ids.
         - Element `<cal:authorFunding>` OPTIONAL - this element describes the author's funding source, such as a grant or fellowship, if necessary (e.g., Alfred P. Sloan Fellow). This element can be left empty|
 
 <a name="infoneeded"></a>
