@@ -317,7 +317,7 @@ To validate your author.xml file, go back up to [How do I validate my author.xml
 <a name="authorxmlconvert"></a>
 ## Can I convert my author.xml file to another format?
 ### Convert XML to MARCXML
-Seeing your XML file formatted as MARCXML can help you see your data fields more easily. Get [authorlist2marcxml.xsl], save it to your directory on Linux, and run the command:
+Seeing your XML file formatted as MARCXML can help you see your data fields more easily. Get [authorlist2marcxml.xsl](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/authorlist2marcxml.xsl), save it to your directory on Linux, and run the command:
 ```
  xsltproc authorlist2marcxml.xsl [filename].xml
 ```
