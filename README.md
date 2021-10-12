@@ -260,7 +260,7 @@ Here is what you need to do - in the author.xml template enter **your value** fo
             - Attribute `"organizationid"` **REQUIRED** - connects with one of the organizations from above. The link is established by using the respective ID of the organization here (e.g. "a1").
             - Attribute `"connection"` OPTIONAL - (Defaults to "Affiliated with"). Here, you can list information about the connection such as "Affiliated with", "On leave from", "Also at" or "Visitor".
         - `<cal:authorids>` is the container element holding element(s) `<cal:authorid>`. 
-            - Element `<cal:authorid>` OPTIONAL - this element specifies an ID number that identifies an author.All ID elements (zero or more) reside within the <cal:authorids> container.
+            - Element `<cal:authorid>` OPTIONAL - this element specifies an ID number that identifies an author. If the author's ID is unknown, leave this element blank.
             - Attribute `"source"` **REQUIRED** - only if there is an authorID element present, specify the origins of the number. This can be: 
                 - an INSPIRE ID number (source="INSPIRE"), or
                 - a collaboration-internal ID (source="INTERNAL"), or 
