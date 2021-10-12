@@ -27,13 +27,13 @@
 <a name="introduction"></a>
 ## Introduction
 
-This user guide will help you to produce an author.xml file for the authors in your collaboration. For collaborations with more than 10 authors, be sure to include your author.xml file with each submission to arXiv. Get on board so that authors get the appreciation and exposure they deserve!
+This user guide will help you to produce an author.xml file for the authors in your collaboration. Be sure to include the author.xml file with each submission to arXiv. Get on board so that authors get the appreciation and exposure they deserve!
 
 <a name="background"></a>
 ### Background and motivation
 Together, INSPIRE, the American Physical Society and arXiv.org have created a template file that you are recommended to use when you provide information about the authors for the submission of your paper. By utilizing unique ID's for authors and organizations (e.g. INSPIRE ID, [ORCID](https://orcid.org/), [ROR](https://ror.org/)), not only will your authors' information be precise and universally understood, but author information linking to professional information — affiliations, grants, publications, peer review, and more will get exposed. 
 
-If the author list for your collaboration has 10 or more authors, we recommend that when submitting your document, you also submit a file called author.xml. A template author.xml file is provided, see [What do I need to get started?](#needtogetstarted) Using this file as your guide, you fill in data value fields such as the authors' details, collaboration details, etc. Once completed and passed through a validator, the file is then deemed ready for submission.
+We recommend that when submitting your document, you also submit an authorlist file called author.xml. A template author.xml file is provided, see [What do I need to get started?](#needtogetstarted) Using this file as your guide, you fill in data value fields such as the authors' details, collaboration details, etc. Once completed and passed through a validator, the file is then deemed ready for submission. It is likely that you will submit your work to [arXiv.org](https://arxiv.org/).
 
 Large collaborations with hundreds and even thousands of authors are already using the author.xml file to enable cataloguers and automated processes to glean complete, accurate information on authors. So, let's all be "on the same page" and ensure that **authors get recognition for their contributions**.
 
