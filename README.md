@@ -65,7 +65,7 @@ Large collaborations with hundreds and even thousands of authors are already usi
  - [Fermilab CDF](https://www.fnal.gov/pub/tevatron/experiments/cdf.html)
  - [Fermilab D0](https://www.fnal.gov/pub/tevatron/experiments/dzero.html)
  - [Fermilab LArIAT](https://inspirehep.net/experiments/1297454) 
- - [Fermilab MicroBooNE](https://microboone.fnal.gov/
+ - [Fermilab MicroBooNE](https://microboone.fnal.gov/)
  - [H1](https://inspirehep.net/experiments/1109080)
  - [IHEP BESIII](http://bes3.ihep.ac.cn/)
  - [JUNO](http://juno.ihep.cas.cn/)
