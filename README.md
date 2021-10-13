@@ -31,7 +31,7 @@ This user guide will help you to produce an author.xml file for the authors in y
 
 <a name="background"></a>
 ### Background and motivation
-Together, INSPIRE, the American Physical Society and arXiv.org have created a template file that you are recommended to use when you provide information about the authors for the submission of your paper. By utilizing unique ID's for authors and organizations (e.g. INSPIRE ID, [ORCID](https://orcid.org/), [ROR](https://ror.org/)), not only will your authors' information be precise and universally understood, but author information linking to professional information — affiliations, grants, publications, peer review, and more will get exposed. 
+Together, INSPIRE, the American Physical Society and arXiv.org have created a template file that you are recommended to use when you provide information about the authors for the submission of your paper. By utilizing unique ID's for authors and organizations (e.g. [INSPIRE ID](#inspireidinline), [ORCID](https://orcid.org/), [ROR](https://ror.org/)), not only will your authors' information be precise and universally understood, but author information linking to professional information — affiliations, grants, publications, peer review, and more will get exposed. 
 
 We recommend that when submitting your document, you also submit an authorlist file called author.xml. A template author.xml file is provided, see [What do I need to get started?](#needtogetstarted) Using this file as your guide, you fill in data value fields such as the authors' details, collaboration details, etc. Once completed and passed through a validator, the file is then deemed ready for submission. It is likely that you will submit your work to [arXiv.org](https://arxiv.org/).
 
@@ -282,6 +282,7 @@ Here is what you need to do - in the author.xml template enter **your value** fo
 ## Data values obtained elsewhere
 When you come to fill in some of the XML elements in author.xml, you will need to refer to some information that is obtained somewhere else. 
 
+<a name="inspireidinline"></a>
 ### INSPIRE ID Numbers for a list of authors
 In your role as maintainer of the collaboration’s author list, you have two options to acquire INSPIRE ID Numbers for authors:
 1. Send a list of 
