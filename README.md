@@ -50,22 +50,31 @@ Large collaborations with hundreds and even thousands of authors are already usi
 
 **Collaborations**  
 
+ - [ADAPT](https://inspirehep.net/experiments/1914484)
+ - [ARA](https://inspirehep.net/experiments/1911572)
  - [Pierre Auger Observatory](https://www.auger.org/)
  - [Brookhaven STAR](https://www.star.bnl.gov/)
  - [CERN ALICE](https://alice-collaboration.web.cern.ch/)
  - [CERN ATLAS](https://atlas.cern/)
  - [CERN CMS](https://cms.cern/)
  - [CERN LHCb](https://lhcb-public.web.cern.ch/)
+ - [CORSIKA 8](https://inspirehep.net/experiments/1891194)
+ - [CTA](https://inspirehep.net/experiments/1339486)
  - [Daya Bay](http://dayabay.ihep.ac.cn/twiki/bin/view/Public/)
  - [DUNE](https://www.dunescience.org/)
  - [Fermilab CDF](https://www.fnal.gov/pub/tevatron/experiments/cdf.html)
  - [Fermilab D0](https://www.fnal.gov/pub/tevatron/experiments/dzero.html)
- - Fermilab LArIAT() 
- - [Fermilab MicroBooNE](https://microboone.fnal.gov/)
+ - [Fermilab LArIAT](https://inspirehep.net/experiments/1297454) 
+ - [Fermilab MicroBooNE](https://microboone.fnal.gov/
+ - [H1](https://inspirehep.net/experiments/1109080)
  - [IHEP BESIII](http://bes3.ihep.ac.cn/)
  - [JUNO](http://juno.ihep.cas.cn/)
  - [KEK T2K](https://t2k-experiment.org/)
+ - [LiteBIRD](https://inspirehep.net/experiments/1923234)
+ - [MAGIC](https://inspirehep.net/experiments/1110626)
+ - [NEMESIS](https://inspirehep.net/experiments/1900553)
  - [NEMO](http://nemo.in2p3.fr/nemow3/)
+ - [STRAW](https://inspirehep.net/experiments/1701337)
  - [ZEUS](https://www-zeus.desy.de/)
 
 <a name="whyxml"></a>
