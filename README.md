@@ -269,14 +269,13 @@ Here is what you need to do - in the author.xml template enter **your value** fo
             - Attribute `"organizationid"` **REQUIRED** - connects with one of the organizations from above. The link is established by using the respective ID of the organization here (e.g. "a1").
             - Attribute `"connection"` OPTIONAL - (Defaults to "Affiliated with"). Here, you can list information about the connection such as "Affiliated with", "On leave from", "Also at" or "Visitor".
         - `<cal:authorids>` is the container element holding element(s) `<cal:authorid>`. 
-            - Element `<cal:authorid>` OPTIONAL - this element specifies an ID number that identifies an author. If the author's ID is unknown, leave this element blank.
+            - Element `<cal:authorid>` OPTIONAL - this element specifies an ID number that identifies an author. If the author's ID is unknown, leave this element blank - do not use placeholder IDs, such as INSPIRE-0000000 or 0000-0000-0000-0000.
             - Attribute `"source"` **REQUIRED** - only if there is an authorID element present, specify the origins of the number. This can be: 
                 - an INSPIRE ID number (source="INSPIRE"), or
                 - a collaboration-internal ID (source="INTERNAL"), or 
                 - other author ID services (e.g. source="ORCID"). 
                 
-              
-              The preferred author identifier is the [ORCID](https://orcid.org/) identifier. If the author does not possess an ORCID identifier, an INSPIRE-ID may be used as an alternative. A persistent ID for an author allows the INSPIRE service team to identify authors and attach the respective identifiers to the author ID system. Please consult the section on [Where do I get the information needed for some of the data values?](#infoneeded) for more detailed information about the handling of author ids.
+              The [ORCID](https://orcid.org/) identifier is the highly reccommended author identifier to use - all authors are encouraged to sign up for this individually. If the author does not possess an ORCID identifier, an INSPIRE-ID may be used as an alternative. Please consult the section on [Where do I get the information needed for some of the data values?](#infoneeded) for more detailed information about the handling of author ids.
         - Element `<cal:authorFunding>` OPTIONAL - this element describes the author's funding source, such as a grant or fellowship, if necessary (e.g., Alfred P. Sloan Fellow). This element can be left empty|
 
 <a name="infoneeded"></a>
@@ -307,8 +306,11 @@ in author.xml.
 The HEPNAMES database may be utilized to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. If the individual has an entry in HEPNAMES, but not an INSPIRE ID Number, a number will be assigned upon 'update' of the record. If the individual is not in HEPNAMES, you can simply ask the individual to
 add a record for him/herself. An INSPIRE ID number will be assigned automatically.
 
-### ORCID number
-See [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/) to get information about author profiles in ORCID. This persistent digital identifier distinguishes a researcher from every other researcher. The value is used to populate the element at: 
+### ORCID identifier
+The [ORCID](https://orcid.org/) identifier comes highly reccommended as author identifier to use - all authors are encouraged to [register](https://orcid.org/register) for this individually. This persistent digital identifier distinguishes a researcher from every other researcher. While INSPIRE-IDs are author identifiers used internally by INSPIRE, **ORCIDs are used across disciplines, institutions, funders, research platforms, and publishers**.
+Following an author obtaining an ORCID, he/she can then connect this to his/her INSPIRE author profile [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/).
+
+The ORCID identifier value is used to populate the element at: 
 `<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
 
 ### ROR
