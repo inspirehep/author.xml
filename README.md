@@ -12,7 +12,7 @@
     - [How do I save the file to my folder?](#getauthorxml)
 4. [**What do I need to get started?**](#needtogetstarted)
     - [How do I get author.dtd and author.xml?](#getauthordtd)  
-    - [How do I fill in the values in author.xml?](#fillinauthorxml)
+    - [How do I fill in the values in author.xml?](#howfillauthorxml)
     - [How do I validate my author.xml file?](#authorxmlvalidate)
 5. [Filling in author.xml file](#fillinauthorxml)    
     - [Template author.xml](#template)
@@ -26,13 +26,14 @@
 
 <a name="introduction"></a>
 ## Introduction
+
+This user guide will help you to produce an author.xml file for the authors in your collaboration. Be sure to include the author.xml file with each submission to arXiv. Get on board so that authors get the appreciation and exposure they deserve!
+
 <a name="background"></a>
-This user guide will help you to produce an author.xml file for the authors in your collaboration. For collaborations with more than 10 authors, be sure to include your author.xml file with each submission to arXiv. Get on board so that authors get the appreciation and exposure they deserve!
-
 ### Background and motivation
-Together, INSPIRE, the American Physical Society and arXiv.org have created a template file that you are recommended to use when you provide information about the authors for the submission of your paper. By utilizing unique ID's for authors and organizations (e.g. INSPIRE ID, [ORCID](https://orcid.org/), [ROR](https://ror.org/)), not only will your authors' information be precise and universally understood, but author information linking to professional information — affiliations, grants, publications, peer review, and more will get exposed. 
+Together, INSPIRE, the American Physical Society and arXiv.org have created a template file that you are recommended to use when you provide information about the authors for the submission of your paper. By utilizing unique ID's for authors and organizations (e.g. [INSPIRE ID](#inspireidinline), [ORCID](https://orcid.org/), [ROR](https://ror.org/)), not only will your authors' information be precise and universally understood, but author information linking to professional information — affiliations, grants, publications, peer review, and more will get exposed. 
 
-If the author list for your collaboration has 10 or more authors, we recommend that when submitting your document, you also submit a file called author.xml. A template author.xml file is provided, see [What do I need to get started?](#needtogetstarted) Using this file as your guide, you fill in data value fields such as the authors' details, collaboration details, etc. Once completed and passed through a validator, the file is then deemed ready for submission.
+We recommend that when submitting your document, you also submit an authorlist file called author.xml. A template author.xml file is provided, see [What do I need to get started?](#needtogetstarted) Using this file as your guide, you fill in data value fields such as the authors' details, collaboration details, etc. Once completed and passed through a validator, the file is then deemed ready for submission. It is likely that you will submit your work to [arXiv.org](https://arxiv.org/).
 
 Large collaborations with hundreds and even thousands of authors are already using the author.xml file to enable cataloguers and automated processes to glean complete, accurate information on authors. So, let's all be "on the same page" and ensure that **authors get recognition for their contributions**.
 
@@ -49,22 +50,31 @@ Large collaborations with hundreds and even thousands of authors are already usi
 
 **Collaborations**  
 
+ - [ADAPT](https://inspirehep.net/experiments/1914484)
+ - [ARA](https://inspirehep.net/experiments/1911572)
  - [Pierre Auger Observatory](https://www.auger.org/)
  - [Brookhaven STAR](https://www.star.bnl.gov/)
  - [CERN ALICE](https://alice-collaboration.web.cern.ch/)
  - [CERN ATLAS](https://atlas.cern/)
  - [CERN CMS](https://cms.cern/)
  - [CERN LHCb](https://lhcb-public.web.cern.ch/)
+ - [CORSIKA 8](https://inspirehep.net/experiments/1891194)
+ - [CTA](https://inspirehep.net/experiments/1339486)
  - [Daya Bay](http://dayabay.ihep.ac.cn/twiki/bin/view/Public/)
  - [DUNE](https://www.dunescience.org/)
  - [Fermilab CDF](https://www.fnal.gov/pub/tevatron/experiments/cdf.html)
  - [Fermilab D0](https://www.fnal.gov/pub/tevatron/experiments/dzero.html)
- - Fermilab LArIAT() 
+ - [Fermilab LArIAT](https://inspirehep.net/experiments/1297454) 
  - [Fermilab MicroBooNE](https://microboone.fnal.gov/)
+ - [H1](https://inspirehep.net/experiments/1109080)
  - [IHEP BESIII](http://bes3.ihep.ac.cn/)
  - [JUNO](http://juno.ihep.cas.cn/)
  - [KEK T2K](https://t2k-experiment.org/)
+ - [LiteBIRD](https://inspirehep.net/experiments/1923234)
+ - [MAGIC](https://inspirehep.net/experiments/1110626)
+ - [NEMESIS](https://inspirehep.net/experiments/1900553)
  - [NEMO](http://nemo.in2p3.fr/nemow3/)
+ - [STRAW](https://inspirehep.net/experiments/1701337)
  - [ZEUS](https://www-zeus.desy.de/)
 
 <a name="whyxml"></a>
@@ -133,15 +143,14 @@ As an example, if you want to save the [author.xml file](https://raw.githubuserc
 ![author-xml-file-22](images/author-xml-file-22.png)
 ![author-xml-file-33](images/author-xml-file-33.png)
 
-
 <a name="needtogetstarted"></a>
 ## What do I need to get started?
 Let's go! You will need to 
 + get 2 files
     - author.xml (file for meta-data for the authors of your collaboration)
     - author.dtd (rules file)
-+ fill in your values in author.xml
-+ validate this against author.dtd.
++ fill in your values in the author.xml
++ validate this against author.dtd
 
 <a name="getauthordtd"></a>
 ### How do I get author.dtd and author.xml?
@@ -149,9 +158,9 @@ To get the template file author.xml, go to the [author.xml file](https://raw.git
 
 To get the file author.dtd, go to the [author.dtd file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.dtd), and save "author.dtd" to your own local folder. If necessary, you can do something similar to the picture instructions at [How do I save the file to my folder?](#getauthorxml). 
 
-<a name="fillinauthorxml"></a>
+<a name="howfillauthorxml"></a>
 ### How do I fill in the values in author.xml?
-The author.xml file has been designed for collaborations with more than 10 authors. For each author and collaboration, you should input the data values for the XML elements as described in the section below, [Filling in author.xml file](#fillinauthorxml)
+For each author and collaboration, you should input the data values for the XML elements as described in the section below, [Filling in author.xml file](#fillinauthorxml)
 
 Some of the data values may have to be obtained from elsewhere. Go to [Data values obtained elsewhere](#infoneeded) to see how to get the ORCID identifier, collaboration ID, etc.
 
@@ -162,20 +171,22 @@ Your directory needs to contain:
 - your author.xml
 - the given author.dtd
 
+![linux-XML-directory](images/linux-xml-directory-2.png)
+
 In the directory, run the command to validate your author.xml file against the author.dtd file:
 ```
  xmllint --dtdvalid ./author.dtd author.xml
 ```
-You can do a validation trial run by using one of the example files:
-![linux-command-xmllint-22](images/linux-command-xmllint-2.png)
-
-If the output contains 'fail' or 'error', then there is a problem with the .xml file, i.e. it is not adhering to the .dtd file. 
 
 #### An example of XML validation 
 You can test an XML validation by using one of the example files. You need to be in a Linux directory, and run, for example: 
 ```
 xmllint --dtdvalid ./author.dtd example_institutional_groups.xml
 ```
+You can do a validation trial run by using one of the example files:
+![linux-command-xmllint-22](images/linux-command-xmllint-2.png)
+
+If the output contains 'fail' or 'error', then there is a problem with the .xml file, i.e. it is not adhering to the .dtd file. 
 
 <a name="submitarxiv"></a>
 ## Submitting my author.xml to arXiv
@@ -188,7 +199,7 @@ Send an email to authors@inspirehep.net if you are stuck and need assistance.
 
 <a name="fillinauthorxml"></a>
 ## Filling in author.xml file
-The author.xml file has been designed for collaborations with more than 10 authors. An updated author.xml file should be included with each submission to arXiv. The collaboration’s author.xml file should be filled in according to the descriptions of the template items listed below.
+An updated author.xml file should be included with each submission to [arXiv.org](https://arxiv.org/). The collaboration’s author.xml file should be filled in according to the descriptions of the template items listed below.
 
 <a name="template"></a>
 ### Template author.xml
@@ -258,19 +269,20 @@ Here is what you need to do - in the author.xml template enter **your value** fo
             - Attribute `"organizationid"` **REQUIRED** - connects with one of the organizations from above. The link is established by using the respective ID of the organization here (e.g. "a1").
             - Attribute `"connection"` OPTIONAL - (Defaults to "Affiliated with"). Here, you can list information about the connection such as "Affiliated with", "On leave from", "Also at" or "Visitor".
         - `<cal:authorids>` is the container element holding element(s) `<cal:authorid>`. 
-            - Element `<cal:authorid>` OPTIONAL - this element specifies an ID number that identifies an author.All ID elements (zero or more) reside within the <cal:authorids> container.
+            - Element `<cal:authorid>` OPTIONAL - this element specifies an ID number that identifies an author. If the author's ID is unknown, leave this element blank - do not use placeholder IDs, such as INSPIRE-0000000 or 0000-0000-0000-0000.
             - Attribute `"source"` **REQUIRED** - only if there is an authorID element present, specify the origins of the number. This can be: 
                 - an INSPIRE ID number (source="INSPIRE"), or
                 - a collaboration-internal ID (source="INTERNAL"), or 
                 - other author ID services (e.g. source="ORCID"). 
                 
-              Using INSPIRE ID numbers is strongly encouraged. With a persistant ID for an author the INSPIRE service team can identify authors and attach the respective identifiers to their INSPIRE ID. Please consult the section on [Where do I get the information needed for some of the data values?](#infoneeded) for more detailed information about the handling of author ids.
+              The [ORCID](https://orcid.org/) identifier is the highly reccommended author identifier to use - all authors are encouraged to sign up for this individually. If the author does not possess an ORCID identifier, an INSPIRE-ID may be used as an alternative. Please consult the section on [Where do I get the information needed for some of the data values?](#infoneeded) for more detailed information about the handling of author ids.
         - Element `<cal:authorFunding>` OPTIONAL - this element describes the author's funding source, such as a grant or fellowship, if necessary (e.g., Alfred P. Sloan Fellow). This element can be left empty|
 
 <a name="infoneeded"></a>
 ## Data values obtained elsewhere
 When you come to fill in some of the XML elements in author.xml, you will need to refer to some information that is obtained somewhere else. 
 
+<a name="inspireidinline"></a>
 ### INSPIRE ID Numbers for a list of authors
 In your role as maintainer of the collaboration’s author list, you have two options to acquire INSPIRE ID Numbers for authors:
 1. Send a list of 
@@ -287,28 +299,38 @@ Motivation for #1: The INSPIRE IDs will be recognized by publishers and other da
 
 Motivation for #2: Easiest approach for the collaboration. However, this will only work for INSPIRE and will not be shared with other parties. In any case, once the author.xml is submitted and checked by the INSPIRE service team, missing IDs will be assigned accordingly, or created, if necessary. 
 
-The value is used to populate the element `<foaf:Person><cal:authorids><cal:authorid source="INSPIRE">` in author.xml.
+The value is used to populate the element: 
+`<foaf:Person><cal:authorids><cal:authorid source="INSPIRE">` 
+in author.xml.
 
 ### INSPIRE ID Number for an individual
 The HEPNAMES database may be utilized to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. If the individual has an entry in HEPNAMES, but not an INSPIRE ID Number, a number will be assigned upon 'update' of the record. If the individual is not in HEPNAMES, you can simply ask the individual to
 add a record for him/herself. An INSPIRE ID number will be assigned automatically.
 
-### ORCID number
-See [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/) to get information about author profiles in ORCID. This persistent digital identifier distinguishes a researcher from every other researcher. The value is used to populate the element at `<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
+### ORCID identifier
+The [ORCID](https://orcid.org/) identifier comes highly reccommended as author identifier to use - all authors are encouraged to [register](https://orcid.org/register) for this individually. This persistent digital identifier distinguishes a researcher from every other researcher. While INSPIRE-IDs are author identifiers used internally by INSPIRE, **ORCIDs are used across disciplines, institutions, funders, research platforms, and publishers**.
+Following an author obtaining an ORCID, he/she can then connect this to his/her INSPIRE author profile [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/).
+
+The ORCID identifier value is used to populate the element at: 
+`<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
 
 ### ROR
-This is the unique identifier for every research organization in the world. The value is used to populate the element at `<foaf:Organization><cal:orgDomain><foaf:name><cal:orgName source="ROR">`.
+This is the unique identifier for every research organization in the world. The value is used to populate the element at: 
+`<foaf:Organization><cal:orgDomain><foaf:name><cal:orgName source="ROR">`.
 
 ### Identification of affiliations by their Internet domain
-This is for use with element at `<foaf:Organization id=""><cal:orgDomain>`. Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
+This is for use with element at: 
+`<foaf:Organization id=""><cal:orgDomain>`. 
+Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
 - damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
 - cam.ac.uk – for the University of Cambridge in general
 
+To validate your author.xml file, go back up to [How do I validate my author.xml file?](#authorxmlvalidate)
 
 <a name="authorxmlconvert"></a>
 ## Can I convert my author.xml file to another format?
 ### Convert XML to MARCXML
-Seeing your XML file formatted as MARCXML can help you see your data fields more easily. Get [authorlist2marcxml.xsl], save it to your directory on Linux, and run the command:
+Seeing your XML file formatted as MARCXML can help you see your data fields more easily. Get [authorlist2marcxml.xsl](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/authorlist2marcxml.xsl), save it to your directory on Linux, and run the command:
 ```
  xsltproc authorlist2marcxml.xsl [filename].xml
 ```
