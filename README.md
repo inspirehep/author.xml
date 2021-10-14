@@ -210,7 +210,7 @@ The parts you will have to fill in are shown in this diagram:
 
 <a name="tablexmlelements"></a>
 ### Explanation of data value fields in author.xml
-At the beginning of author.xml there is the XML declaration. This describes the version, encoding, and declares that this XML file will follow the rules in document type definition file author.dtd. The file 'author.dtd' needs to be in the same directory. The root element and namespaces are also defined. Do not modify these:
+At the beginning of author.xml there is the XML declaration. This describes the version, encoding, and declares that this XML file will follow the rules in document type definition file author.dtd. The file 'author.dtd' needs to be in the same directory as the author.xml file. The root element and namespaces are also defined. Do not modify these:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -220,7 +220,7 @@ At the beginning of author.xml there is the XML declaration. This describes the 
    xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
 ```
 
-Here is what you need to do - in the author.xml template enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**:
+Here is what you need to do - in your copy of author.xml enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**, as described below. Keep the elements and attributes in the exact order as in the author.xml template - this will  ensure that the XML will validate without warnings.   
 
 + Element `<cal:CreationDate>` **REQUIRED** - date of creation of this author.xml file
 + Element `<cal:publicationReference>` **REQUIRED**
