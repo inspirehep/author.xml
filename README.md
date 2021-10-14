@@ -303,8 +303,8 @@ The value is used to populate the element:
 `<foaf:Person><cal:authorids><cal:authorid source="INSPIRE">` 
 in author.xml.
 
-### INSPIRE ID Number for an individual
-The [INSPIRE Authors](https://inspirehep.net/authors) database (also known as HEPNames database) may be used to find the correct ID for an individual. The INSPIRE ID Number will be on the author’s record page. 
+### Getting the INSPIRE ID Number for an individual
+The [INSPIRE Authors](https://inspirehep.net/authors) database (also known as HEPNames database) can be used to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. 
 
  + If an individual does not have an INSPIRE ID Number and
     - has an entry in [INSPIRE Authors](https://inspirehep.net/authors)
@@ -312,11 +312,9 @@ The [INSPIRE Authors](https://inspirehep.net/authors) database (also known as H
     - does not have an entry in [INSPIRE Authors](https://inspirehep.net/authors)
         - ask the individual to [submit a record](https://inspirehep.net/submissions/authors) for him/herself. An INSPIRE ID number will be assigned automatically.        
 
-If the individual has an entry in [INSPIRE Authors](https://inspirehep.net/authors), but doesn't have an INSPIRE ID Number, a number will be assigned upon 'update' of the record. If the individual is not in [INSPIRE Authors](https://inspirehep.net/authors), you can simply ask the individual to add a record for him/herself. An INSPIRE ID number will be assigned automatically.
-
 ### ORCID identifier
-The [ORCID](https://orcid.org/) identifier comes highly reccommended as author identifier to use - all authors are encouraged to [register](https://orcid.org/register) for this individually. This persistent digital identifier distinguishes a researcher from every other researcher. While INSPIRE-IDs are author identifiers used internally by INSPIRE, **ORCIDs are used across disciplines, institutions, funders, research platforms, and publishers**.
-Following an author obtaining an ORCID, he/she can then connect this to his/her INSPIRE author profile [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/).
+The [ORCID](https://orcid.org/) identifier comes highly reccommended as author identifier to use - all authors are encouraged to [**register for an ORCID**](https://orcid.org/register) individually. This persistent digital identifier distinguishes a researcher from every other researcher, and while INSPIRE-IDs are author identifiers used internally by INSPIRE, **ORCIDs are used across disciplines, institutions, funders, research platforms, and publishers**.
+Following an author obtaining an ORCID, he/she can then connect this to his/her INSPIRE author profile at [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/).
 
 The ORCID identifier value is used to populate the element at: 
 `<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
@@ -344,17 +342,15 @@ Seeing your XML file formatted as MARCXML can help you see your data fields more
 As an example, for file example_multicollaboration.xml:
 ![linux-command-xmllint-44](images/linux-command-xmllint-44.png)
 
-
 <a name="contact"></a>
 [Who can I contact for assistance?]
 Send an email to authors@inspirehep.net if you are stuck and need assistance. 
-
-        
+      
 <a name="Links"></a>
 ## Links
  - [ORCID](https://orcid.org/)
  - [INSPIRE](https://inspirehep.net/)
- - HEPNames
- - [HEPInstitutes](https://inspirehep.net/institutions?sort=mostrecent&size=25&page=1)
+ - [INSPIRE Authors](https://inspirehep.net/authors)(also known as 'HEPNames')
+ - [INSPIRE Institutions](https://inspirehep.net/institutions)(also known as 'HEPInstitutes')
  - [FOAF Project](http://www.foaf-project.org/)
 
