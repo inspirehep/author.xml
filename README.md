@@ -31,7 +31,7 @@ This user guide will help you to produce an author.xml file for the authors in y
 
 <a name="background"></a>
 ### Background and motivation
-Together, INSPIRE, the American Physical Society and arXiv.org have created a template file that you are recommended to use when you provide information about the authors for the submission of your paper. By utilizing unique ID's for authors and organizations (e.g. [INSPIRE ID](#inspireidinline), [ORCID](https://orcid.org/), [ROR](https://ror.org/)), not only will your authors' information be precise and universally understood, but author information linking to professional information — affiliations, grants, publications, peer review, and more will get exposed. 
+Together, INSPIRE, the American Physical Society and arXiv.org have created a template file that you are recommended to use when you provide information about the authors for the submission of your paper. By utilizing unique ID's for authors and organizations (e.g. [INSPIRE ID](https://inspirehep.net/authors), [ORCID](https://orcid.org/), [ROR](https://ror.org/)), not only will your authors' information be precise and universally understood, but author information linking to professional information — affiliations, grants, publications, peer review, and more will get exposed. 
 
 We recommend that when submitting your document, you also submit an authorlist file called author.xml. A template author.xml file is provided, see [What do I need to get started?](#needtogetstarted) Using this file as your guide, you fill in data value fields such as the authors' details, collaboration details, etc. Once completed and passed through a validator, the file is then deemed ready for submission. It is likely that you will submit your work to [arXiv.org](https://arxiv.org/).
 
@@ -304,8 +304,15 @@ The value is used to populate the element:
 in author.xml.
 
 ### INSPIRE ID Number for an individual
-The HEPNAMES database may be utilized to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. If the individual has an entry in HEPNAMES, but not an INSPIRE ID Number, a number will be assigned upon 'update' of the record. If the individual is not in HEPNAMES, you can simply ask the individual to
-add a record for him/herself. An INSPIRE ID number will be assigned automatically.
+The [INSPIRE Authors](https://inspirehep.net/authors) database (also known as HEPNames database) may be used to find the correct ID for an individual. The INSPIRE ID Number will be on the author’s record page. 
+
+ + If an individual does not have an INSPIRE ID Number and
+    - has an entry in [INSPIRE Authors](https://inspirehep.net/authors)
+        - a number will be assigned upon 'update' of the record.
+    - does not have an entry in [INSPIRE Authors](https://inspirehep.net/authors)
+        - ask the individual to [submit a record](https://inspirehep.net/submissions/authors) for him/herself. An INSPIRE ID number will be assigned automatically.        
+
+If the individual has an entry in [INSPIRE Authors](https://inspirehep.net/authors), but doesn't have an INSPIRE ID Number, a number will be assigned upon 'update' of the record. If the individual is not in [INSPIRE Authors](https://inspirehep.net/authors), you can simply ask the individual to add a record for him/herself. An INSPIRE ID number will be assigned automatically.
 
 ### ORCID identifier
 The [ORCID](https://orcid.org/) identifier comes highly reccommended as author identifier to use - all authors are encouraged to [register](https://orcid.org/register) for this individually. This persistent digital identifier distinguishes a researcher from every other researcher. While INSPIRE-IDs are author identifiers used internally by INSPIRE, **ORCIDs are used across disciplines, institutions, funders, research platforms, and publishers**.
