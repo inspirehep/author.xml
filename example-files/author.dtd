@@ -50,7 +50,7 @@ Date: August 2010
 
 <!-- AUTHORS -->
 <!ELEMENT cal:authors ( foaf:Person+ ) >
-    <!ELEMENT foaf:Person ( foaf:name?, cal:authorNameNative?, foaf:givenName?, foaf:familyName, cal:authorSuffix?, cal:authorStatus?, cal:authorNamePaper, cal:authorNamePaperGiven?, cal:authorNamePaperFamily?, cal:authorCollaboration+, cal:authorAffiliations?, cal:authorids?, cal:authorFunding? ) >
+    <!ELEMENT foaf:Person ( foaf:name?, cal:authorNameNative?, foaf:givenName?, foaf:familyName, cal:authorSuffix?, cal:authorStatus?, cal:authorNamePaper, cal:authorNamePaperGiven?, cal:authorNamePaperFamily?, cal:authorCollaboration?, cal:authorAffiliations?, cal:authorids?, cal:authorFunding? ) >
 
     <!ELEMENT foaf:familyName ( #PCDATA ) >
     <!ELEMENT foaf:givenName ( #PCDATA ) >
