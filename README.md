@@ -304,7 +304,7 @@ The value is used to populate the element:
 in author.xml.
 
 ### Getting the INSPIRE ID Number for an individual
-The [INSPIRE Authors](https://inspirehep.net/authors) database (also known as HEPNames database) can be used to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. 
+The [INSPIRE Authors](https://inspirehep.net/authors) database (also known as 'HEPNames') can be used to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. 
 
  + If an individual does not have an INSPIRE ID Number and
     - has an entry in [INSPIRE Authors](https://inspirehep.net/authors)
@@ -350,7 +350,7 @@ Send an email to authors@inspirehep.net if you are stuck and need assistance.
 ## Links
  - [ORCID](https://orcid.org/)
  - [INSPIRE](https://inspirehep.net/)
- - [INSPIRE Authors](https://inspirehep.net/authors)(also known as 'HEPNames')
- - [INSPIRE Institutions](https://inspirehep.net/institutions)(also known as 'HEPInstitutes')
+ - [INSPIRE Authors](https://inspirehep.net/authors) (also known as 'HEPNames')
+ - [INSPIRE Institutions](https://inspirehep.net/institutions) (also known as 'HEPInstitutes')
  - [FOAF Project](http://www.foaf-project.org/)
 
