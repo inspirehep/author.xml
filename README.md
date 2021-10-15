@@ -241,7 +241,7 @@ Here is what you need to do - in your copy of author.xml enter **your value** fo
 + `<cal:organizations>` is the container element holding container element(s) `<foaf:Organization>`.
     - `<foaf:Organization>` **REQUIRED** - container element with information about an organization with which authors are affiliated. There may be one or more organizations within the <cal:organizations> container, and each organization is identified by the “id” attribute.
         - Attribute `“id”` **REQUIRED** - typically, it is a letter+sequential number, starting at “a1”, used to denote the author’s institution in this particular author.xml file so as to attach authors to the institution.
-        - Element <`cal:orgDomain`> OPTIONAL - internet domain of the institution. The domain should be detailed enough to unambiguously determine the institution if there are distinct locations throughout the nation, e.g., pv.infn.it rather than just infn.it. If desired, this can go to the department/research-group level.
+        - <a name="elementorgdomain"></a>Element <`cal:orgDomain`> OPTIONAL - internet domain of the institution. See [Identification of affiliations by their Internet domain](#orgdomain) below.
         - Element <`foaf:name`> **REQUIRED** this is the name of the organization as it will appear on the document.
         - Element <`cal:orgName`> OPTIONAL - this element also defines the name of the organization. Depending on where this name originates from, the source attribute can be used. The element content shall be only the name of the respective institute. Location information, if not part of the name, may be stated in the orgAddress element.
         - Attribute `“source”` OPTIONAL - (Defaults to “INTERNAL”) enables you to use the following for the institution’s name:
@@ -319,7 +319,7 @@ The [INSPIRE Authors](https://inspirehep.net/authors) database (previously know
 ### ORCID identifier
 This is the 'gold standard' when it comes to researcher digital identification. This persistent digital identifier distinguishes a researcher from every other researcher, and while INSPIRE-IDs are author identifiers used internally by INSPIRE, **ORCIDs are used across disciplines, institutions, funders, research platforms, and publishers**.
 
-Researchers are reccommended to use their [ORCID](https://orcid.org/) identifier. If they do not possess one, they should register for  an ORCID at [**register for an ORCID**](https://orcid.org/register). This has to be done by the individual him/herself. 
+Researchers are reccommended to use their [ORCID](https://orcid.org/) identifier. If they do not possess one, they should [**register for an ORCID**](https://orcid.org/register). This has to be done by the individual him/herself. 
 
 After an author has obtained an ORCID, it is possible to connect this to his/her INSPIRE author profile at [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/).
 
@@ -332,12 +332,17 @@ This is the unique identifier for every research organization in the world. Find
 The value is used to populate the element at: 
 `<foaf:Organization><cal:orgDomain><foaf:name><cal:orgName source="ROR">`.
 
+<a name="orgDomain"></a>
 ### Identification of affiliations by their Internet domain
 This is for use with element at: 
 `<foaf:Organization id=""><cal:orgDomain>`. 
-Internet domains provide a unique, universally-understood way to list an institution. Their hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
-- damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP)
+Internet domains provide a unique, universally-understood way to list an institution. The hierarchical structure enables you to choose the required level of granularity, either at the institutional or departmental level. For example:
+- damtp.cam.ac.uk – for the Department of Applied Mathematics and Theoretical Physics (DAMTP) at the University of Cambridge, or
 - cam.ac.uk – for the University of Cambridge in general
+
+The domain should be detailed enough to unambiguously determine the institution if there are distinct locations throughout the nation, e.g., pv.infn.it rather than just infn.it. If desired, this can go to the department/research-group level.
+
+I want to back up to ['<cal:orgDomain>'](#elementorgdomain) under 'Explanation of data value fields in author.xml'.
 
 To validate your author.xml file, go back up to [How do I validate my author.xml file?](#authorxmlvalidate)
 
