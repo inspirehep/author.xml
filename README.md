@@ -286,36 +286,6 @@ I want to go back up to ['How do I fill in the values in author.xml?'](#howfilla
 ## Data values obtained elsewhere
 When filling in some of the XML elements in author.xml, you will need to refer to some information that is obtained somewhere else. 
 
-<a name="inspireidinline"></a>
-### INSPIRE ID Numbers for a list of authors
-In your role as maintainer of the collaboration’s author list, you have two options to acquire INSPIRE ID Numbers for authors:
-1. Send a list of 
-    - names and email addresses, or
-    - the xml file without INSPIRE IDs 
-to authors@inspirehep.net. 
-
-We will return this list enriched with all the INSPIRE ID Numbers for the authors. These INSPIRE IDs can then be integrated into your author database and delivered as part of your author list.
-
-1. Provide the collaboration’s internal ID Numbers of the respective person directly in the author.xml file. 
-If you choose this option, please ensure these IDs are persistent and unique within your collaboration. This way, no additional information will be needed in the collaboration’s author database – we will match up the internal IDs with INSPIRE ID Numbers and make sure the authors always have the correct ID.
-
-Motivation for #1: The INSPIRE IDs will be recognized by publishers and other databases or repositories and can also be shared with the authors, who may like to use them for searching and for papers they might write independently.
-
-Motivation for #2: Easiest approach for the collaboration. However, this will only work for INSPIRE and will not be shared with other parties. In any case, once the author.xml is submitted and checked by the INSPIRE service team, missing IDs will be assigned accordingly, or created, if necessary. 
-
-The value is used to populate the element: 
-`<foaf:Person><cal:authorids><cal:authorid source="INSPIRE">` 
-in author.xml.
-
-### Getting the INSPIRE ID Number for an individual
-The [INSPIRE Authors](https://inspirehep.net/authors) database (previously known as 'HEPNames') can be used to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. 
-
- + If an individual does not have an INSPIRE ID Number and
-    - has an entry in [INSPIRE Authors](https://inspirehep.net/authors)
-        - a number will be assigned upon 'update' of the record.
-    - does not have an entry in [INSPIRE Authors](https://inspirehep.net/authors)
-        - ask the individual to [submit a record](https://inspirehep.net/submissions/authors) for him/herself. An INSPIRE ID number will be assigned automatically.        
-
 ### ORCID identifier
 This is the 'gold standard' when it comes to researcher digital identification. This persistent digital identifier distinguishes a researcher from every other researcher, and while INSPIRE-IDs are author identifiers used internally by INSPIRE, **ORCIDs are used across disciplines, institutions, funders, research platforms, and publishers**.
 
@@ -327,11 +297,16 @@ The ORCID identifier value is used to populate the element at:
 `<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
 
 <a name="inspireidinline"></a>
-### INSPIRE ID Numbers
+### INSPIRE ID
 
 As mentioned above, ORCID is the principal researcher digital identifier that authors are encouraged to use. 
-`
-In certain cases, however, for instance when authors are no longer actively publishing contributions, or when authors have passed away, then the INSPIRE-ID can be used. If any of your authors do not possess an ORCID, send an email to:
+
+In certain cases, however, for instance when authors are no longer actively publishing contributions, or when authors have passed away,  the INSPIRE-ID can be used. If any of your authors do not possess an ORCID, send the:
+
+- author's name 
+- author's email address
+
+in an email to:
 
 [authors@inspirehep.net](mailto:authors@inspirehep.net?subject=To do with Obtaining INSPIRE-ID for authors)
 
