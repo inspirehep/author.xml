@@ -291,9 +291,11 @@ This is the 'gold standard' when it comes to researcher digital identification. 
 
 Researchers are reccommended to use their [ORCID](https://orcid.org/) identifier. If they do not possess one, they should [**register for an ORCID**](https://orcid.org/register). This has to be done by the individual him/herself. 
 
+
 After an author has obtained an ORCID, it is possible to connect this to his/her INSPIRE author profile at [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/).
 
 The ORCID identifier value is used to populate the element at: 
+
 `<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
 
 <a name="inspireidinline"></a>
