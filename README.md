@@ -10,7 +10,7 @@
     - [Which XML terms should I know before starting?](#knowterms)
 3. [Examples of author.xml files](#examplefiles)
     - [How do I save the file to my folder?](#getauthorxml)
-4. [**What do I need to get started?**](#needtogetstarted)
+4. [**What do I need to do to produce my author.xml?**](#needtogetstarted)
     - [How do I get author.dtd and author.xml?](#getauthordtd)  
     - [How do I fill in the values in author.xml?](#howfillauthorxml)
     - [How do I validate my author.xml file?](#authorxmlvalidate)
@@ -144,13 +144,13 @@ As an example, if you want to save the [author.xml file](https://raw.githubuserc
 ![author-xml-file-33](images/author-xml-file-33.png)
 
 <a name="needtogetstarted"></a>
-## What do I need to get started?
-Let's go! You will need to 
-+ get 2 files
-    - author.xml (file for meta-data for the authors of your collaboration)
-    - author.dtd (rules file)
-+ fill in your values in the author.xml
-+ validate your author.xml against author.dtd
+## What do I need to do to produce my author.xml?
+Let's go! You will need to: 
+1. Get 2 files:
+    1. author.xml (file for meta-data for the authors of your collaboration)
+    1. author.dtd (rules file)
+1. Fill in your values in the author.xml
+1. Validate your author.xml against author.dtd
 
 <a name="getauthordtd"></a>
 ### How do I get author.dtd and author.xml?
@@ -204,9 +204,11 @@ An updated author.xml file should be included with each submission to [arXiv.org
 <a name="template"></a>
 ### Template author.xml
 You should already have the author.xml template from [How do I get author.dtd and author.xml?](<#getauthordtd)
-The parts you will have to fill in are shown in this diagram:
+The parts you will have to fill in are shown in the diagram that follows. For the data fields that you have to fill in, these are described underneath at [Explanation of data value fields in author.xml](#tablexmlelements). In some cases you will need to pick up values from another place, as described in [Data values obtained elsewhere](#infoneeded).
 
 ![author-xml-template](images/author-template-1.png)
+
+I want to go back up to ['How do I fill in the values in author.xml?'](#howfillauthorxml)
 
 <a name="tablexmlelements"></a>
 ### Explanation of data value fields in author.xml
@@ -220,7 +222,7 @@ At the beginning of author.xml there is the XML declaration. This describes the 
    xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
 ```
 
-Here is what you need to do - in your copy of author.xml enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**, as described below. Keep the elements and attributes in the exact order as in the author.xml template - this will  ensure that the XML will validate without warnings.   
+Here is what you need to do - in your copy of author.xml enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**, as described below. Keep the elements and attributes in the **exact order** as in the author.xml template - this will  ensure that the XML will validate without warnings.   
 
 + Element `<cal:CreationDate>` **REQUIRED** - date of creation of this author.xml file
 + Element `<cal:publicationReference>` **REQUIRED**
@@ -277,6 +279,8 @@ Here is what you need to do - in your copy of author.xml enter **your value** fo
                 
               The [ORCID](https://orcid.org/) identifier is the highly reccommended author identifier to use - all authors are encouraged to sign up for this individually. If the author does not possess an ORCID identifier, an INSPIRE-ID may be used as an alternative. Please consult the section on [Where do I get the information needed for some of the data values?](#infoneeded) for more detailed information about the handling of author ids.
         - Element `<cal:authorFunding>` OPTIONAL - this element describes the author's funding source, such as a grant or fellowship, if necessary (e.g., Alfred P. Sloan Fellow). This element can be left empty|
+
+I want to go back up to ['How do I fill in the values in author.xml?'](#howfillauthorxml)
 
 <a name="infoneeded"></a>
 ## Data values obtained elsewhere
