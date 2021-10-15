@@ -311,7 +311,9 @@ in an email to authors@inspirehep.net
 so that we can manually generate an INSPIRE-ID, and that person's work will get it's due credit and exposure.
 
 The value is used to populate the element: 
+
 `<foaf:Person><cal:authorids><cal:authorid source="INSPIRE">` 
+
 in author.xml.
 
 Currently, the INSPIRE-ID is often quoted in conjunction with the ORCID in the author.xml file, for example:
