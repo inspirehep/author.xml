@@ -324,7 +324,7 @@ Currently, the INSPIRE-ID is often quoted in conjunction with the ORCID in the a
             <cal:authorid source="INSPIRE">INSPIRE-00060668</cal:authorid>
             <cal:authorid source="ORCID">0000-0002-5888-2734</cal:authorid>
         </cal:authorids>
-``
+```
 
 But having the ORCID is normally sufficient.
 
