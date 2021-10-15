@@ -317,14 +317,19 @@ The [INSPIRE Authors](https://inspirehep.net/authors) database (previously know
         - ask the individual to [submit a record](https://inspirehep.net/submissions/authors) for him/herself. An INSPIRE ID number will be assigned automatically.        
 
 ### ORCID identifier
-The [ORCID](https://orcid.org/) identifier comes highly reccommended as author identifier to use - all authors are encouraged to [**register for an ORCID**](https://orcid.org/register) individually. This persistent digital identifier distinguishes a researcher from every other researcher, and while INSPIRE-IDs are author identifiers used internally by INSPIRE, **ORCIDs are used across disciplines, institutions, funders, research platforms, and publishers**.
-Following an author obtaining an ORCID, he/she can then connect this to his/her INSPIRE author profile at [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/).
+This is the 'gold standard' when it comes to researcher digital identification. This persistent digital identifier distinguishes a researcher from every other researcher, and while INSPIRE-IDs are author identifiers used internally by INSPIRE, **ORCIDs are used across disciplines, institutions, funders, research platforms, and publishers**.
+
+Researchers are reccommended to use their [ORCID](https://orcid.org/) identifier. If they do not possess one, they should register for  an ORCID at [**register for an ORCID**](https://orcid.org/register). This has to be done by the individual him/herself. 
+
+After an author has obtained an ORCID, it is possible to connect this to his/her INSPIRE author profile at [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/).
 
 The ORCID identifier value is used to populate the element at: 
 `<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
 
 ### ROR
-This is the unique identifier for every research organization in the world. The value is used to populate the element at: 
+This is the unique identifier for every research organization in the world. Find an organization's identifier at:
+[ROR](https://ror.org/)
+The value is used to populate the element at: 
 `<foaf:Organization><cal:orgDomain><foaf:name><cal:orgName source="ROR">`.
 
 ### Identification of affiliations by their Internet domain
@@ -352,16 +357,13 @@ Send an email to authors@inspirehep.net if you are stuck and need assistance.
       
 <a name="Links"></a>
 ## Links
- - [ORCID](https://orcid.org/)
+ - [FOAF Project](http://www.foaf-project.org/)
  - [INSPIRE](https://inspirehep.net/)
  - [INSPIRE Authors](https://inspirehep.net/authors) (previously known as 'HEPNames')
  - [INSPIRE Institutions](https://inspirehep.net/institutions) (previously known as 'HEPInstitutes')
- - [FOAF Project](http://www.foaf-project.org/)
+ - [ORCID](https://orcid.org/)
+ - [ROR](https://ror.org/)
 
 
- 1. item1
-     1. subitem 1.1
-     1. subitem 1.2
- 1. item2
  
 
