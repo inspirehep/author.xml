@@ -284,7 +284,7 @@ I want to go back up to ['How do I fill in the values in author.xml?'](#howfilla
 
 <a name="infoneeded"></a>
 ## Data values obtained elsewhere
-When you come to fill in some of the XML elements in author.xml, you will need to refer to some information that is obtained somewhere else. 
+When filling in some of the XML elements in author.xml, you will need to refer to some information that is obtained somewhere else. 
 
 <a name="inspireidinline"></a>
 ### INSPIRE ID Numbers for a list of authors
@@ -325,6 +325,35 @@ After an author has obtained an ORCID, it is possible to connect this to his/her
 
 The ORCID identifier value is used to populate the element at: 
 `<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
+
+<a name="inspireidinline"></a>
+### INSPIRE ID Numbers
+
+As mentioned above, ORCID is the principal researcher digital identifier that authors are encouraged to use. 
+`
+In certain cases, however, for instance when authors are no longer actively publishing contributions, or when authors have passed away, then the INSPIRE-ID can be used. If any of your authors do not possess an ORCID, send an email to:
+
+[authors@inspirehep.net](mailto:authors@inspirehep.net?subject=To do with Obtaining INSPIRE-ID for authors)
+
+so that we can manually generate an INSPIRE-ID, and that person's work will get it's due credit and exposure.
+
+The value is used to populate the element: 
+`<foaf:Person><cal:authorids><cal:authorid source="INSPIRE">` 
+in author.xml.
+
+Currently, the INSPIRE-ID is often quoted in conjunction with the ORCID in the author.xml file, for example:
+
+```
+<foaf:Person>
+        :
+        : 
+        <cal:authorids>
+            <cal:authorid source="INSPIRE">INSPIRE-00060668</cal:authorid>
+            <cal:authorid source="ORCID">0000-0002-5888-2734</cal:authorid>
+        </cal:authorids>
+``
+
+But having the ORCID is normally sufficient.
 
 ### ROR
 This is the unique identifier for every research organization in the world. Find an organization's identifier at:
