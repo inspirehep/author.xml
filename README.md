@@ -306,9 +306,7 @@ In certain cases, however, for instance when authors are no longer actively publ
 - author's name 
 - author's email address
 
-in an email to:
-
-[authors(at)inspirehep.net](authors@inspirehep.net?subject=To do with Obtaining INSPIRE-ID for authors)
+in an email to authors@inspirehep.net
 
 so that we can manually generate an INSPIRE-ID, and that person's work will get it's due credit and exposure.
 
