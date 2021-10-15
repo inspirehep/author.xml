@@ -308,7 +308,7 @@ In certain cases, however, for instance when authors are no longer actively publ
 
 in an email to:
 
-[authors@inspirehep.net](mailto:authors@inspirehep.net?subject=To do with Obtaining INSPIRE-ID for authors)
+[authors(at)inspirehep.net](authors@inspirehep.net?subject=To do with Obtaining INSPIRE-ID for authors)
 
 so that we can manually generate an INSPIRE-ID, and that person's work will get it's due credit and exposure.
 
