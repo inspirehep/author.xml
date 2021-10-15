@@ -160,7 +160,7 @@ To get the file author.dtd, go to the [**author.dtd file**](https://raw.githubus
 
 <a name="howfillauthorxml"></a>
 ### How do I fill in the values in author.xml?
-For each author and collaboration, you should input the data values for the XML elements as described in the section below, [Filling in author.xml file](#fillinauthorxml)
+For each author and collaboration, you should input the data values for the XML elements. A whole section is dedicated to the filling-in part, see [Filling in author.xml file](#fillinauthorxml) further down.
 
 Some of the data values may have to be obtained from elsewhere. Go to [Data values obtained elsewhere](#infoneeded) to see how to get the ORCID identifier, collaboration ID, etc.
 
