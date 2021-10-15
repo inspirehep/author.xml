@@ -342,7 +342,7 @@ Internet domains provide a unique, universally-understood way to list an institu
 
 The domain should be detailed enough to unambiguously determine the institution if there are distinct locations throughout the nation, e.g., pv.infn.it rather than just infn.it. If desired, this can go to the department/research-group level.
 
-I want to back up to ['<cal:orgDomain>'](#elementorgdomain) under 'Explanation of data value fields in author.xml'.
+I want to back up to [Element <`cal:orgDomain`>](#elementorgdomain) in section 'Explanation of data value fields in author.xml'.
 
 To validate your author.xml file, go back up to [How do I validate my author.xml file?](#authorxmlvalidate)
 
