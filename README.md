@@ -31,7 +31,7 @@ This user guide will help you to produce an author.xml file for the authors in y
 
 <a name="background"></a>
 ### Background and motivation
-Together, INSPIRE, the American Physical Society and arXiv.org have created a template file that you are recommended to use when you provide information about the authors for the submission of your paper. By utilizing unique ID's for authors and organizations (e.g. [INSPIRE ID](#inspireidinline), [ORCID](https://orcid.org/), [ROR](https://ror.org/)), not only will your authors' information be precise and universally understood, but author information linking to professional information — affiliations, grants, publications, peer review, and more will get exposed. 
+Together, INSPIRE, the American Physical Society and arXiv.org have created a template file that you are recommended to use when you provide information about the authors for the submission of your paper. By utilizing unique ID's for authors and organizations (e.g. [INSPIRE ID](https://inspirehep.net/authors), [ORCID](https://orcid.org/), [ROR](https://ror.org/)), not only will your authors' information be precise and universally understood, but author information linking to professional information — affiliations, grants, publications, peer review, and more will get exposed. 
 
 We recommend that when submitting your document, you also submit an authorlist file called author.xml. A template author.xml file is provided, see [What do I need to get started?](#needtogetstarted) Using this file as your guide, you fill in data value fields such as the authors' details, collaboration details, etc. Once completed and passed through a validator, the file is then deemed ready for submission. It is likely that you will submit your work to [arXiv.org](https://arxiv.org/).
 
@@ -150,13 +150,13 @@ Let's go! You will need to
     - author.xml (file for meta-data for the authors of your collaboration)
     - author.dtd (rules file)
 + fill in your values in the author.xml
-+ validate this against author.dtd
++ validate your author.xml against author.dtd
 
 <a name="getauthordtd"></a>
 ### How do I get author.dtd and author.xml?
-To get the template file author.xml, go to the [author.xml file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.xml), and save "author.xml" to your own local folder. If necessary, follow the picture instructions at [How do I save the file to my folder?](#getauthorxml). 
+To get the template file author.xml, go to the [**author.xml file**](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.xml), and save "author.xml" to your own local folder. If necessary, follow the picture instructions at [How do I save the file to my folder?](#getauthorxml). 
 
-To get the file author.dtd, go to the [author.dtd file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.dtd), and save "author.dtd" to your own local folder. If necessary, you can do something similar to the picture instructions at [How do I save the file to my folder?](#getauthorxml). 
+To get the file author.dtd, go to the [**author.dtd file**](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.dtd), and save "author.dtd" to your own local folder. If necessary, you can do something similar to the picture instructions at [How do I save the file to my folder?](#getauthorxml). 
 
 <a name="howfillauthorxml"></a>
 ### How do I fill in the values in author.xml?
@@ -210,7 +210,7 @@ The parts you will have to fill in are shown in this diagram:
 
 <a name="tablexmlelements"></a>
 ### Explanation of data value fields in author.xml
-At the beginning of author.xml there is the XML declaration. This describes the version, encoding, and declares that this XML file will follow the rules in document type definition file author.dtd. The file 'author.dtd' needs to be in the same directory. The root element and namespaces are also defined. Do not modify these:
+At the beginning of author.xml there is the XML declaration. This describes the version, encoding, and declares that this XML file will follow the rules in document type definition file author.dtd. The file 'author.dtd' needs to be in the same directory as the author.xml file. The root element and namespaces are also defined. Do not modify these:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -220,7 +220,7 @@ At the beginning of author.xml there is the XML declaration. This describes the 
    xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
 ```
 
-Here is what you need to do - in the author.xml template enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**:
+Here is what you need to do - in your copy of author.xml enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**, as described below. Keep the elements and attributes in the exact order as in the author.xml template - this will  ensure that the XML will validate without warnings.   
 
 + Element `<cal:CreationDate>` **REQUIRED** - date of creation of this author.xml file
 + Element `<cal:publicationReference>` **REQUIRED**
@@ -303,13 +303,18 @@ The value is used to populate the element:
 `<foaf:Person><cal:authorids><cal:authorid source="INSPIRE">` 
 in author.xml.
 
-### INSPIRE ID Number for an individual
-The HEPNAMES database may be utilized to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. If the individual has an entry in HEPNAMES, but not an INSPIRE ID Number, a number will be assigned upon 'update' of the record. If the individual is not in HEPNAMES, you can simply ask the individual to
-add a record for him/herself. An INSPIRE ID number will be assigned automatically.
+### Getting the INSPIRE ID Number for an individual
+The [INSPIRE Authors](https://inspirehep.net/authors) database (previously known as 'HEPNames') can be used to find the right ID for an individual. The INSPIRE ID Number will be on the author’s record page. 
+
+ + If an individual does not have an INSPIRE ID Number and
+    - has an entry in [INSPIRE Authors](https://inspirehep.net/authors)
+        - a number will be assigned upon 'update' of the record.
+    - does not have an entry in [INSPIRE Authors](https://inspirehep.net/authors)
+        - ask the individual to [submit a record](https://inspirehep.net/submissions/authors) for him/herself. An INSPIRE ID number will be assigned automatically.        
 
 ### ORCID identifier
-The [ORCID](https://orcid.org/) identifier comes highly reccommended as author identifier to use - all authors are encouraged to [register](https://orcid.org/register) for this individually. This persistent digital identifier distinguishes a researcher from every other researcher. While INSPIRE-IDs are author identifiers used internally by INSPIRE, **ORCIDs are used across disciplines, institutions, funders, research platforms, and publishers**.
-Following an author obtaining an ORCID, he/she can then connect this to his/her INSPIRE author profile [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/).
+The [ORCID](https://orcid.org/) identifier comes highly reccommended as author identifier to use - all authors are encouraged to [**register for an ORCID**](https://orcid.org/register) individually. This persistent digital identifier distinguishes a researcher from every other researcher, and while INSPIRE-IDs are author identifiers used internally by INSPIRE, **ORCIDs are used across disciplines, institutions, funders, research platforms, and publishers**.
+Following an author obtaining an ORCID, he/she can then connect this to his/her INSPIRE author profile at [Connecting ORCID to your INSPIRE author profile](https://inspirehep.net/help/knowledge-base/connect_orcid_author_profile/).
 
 The ORCID identifier value is used to populate the element at: 
 `<foaf:Person><cal:authorids><cal:authorid source="ORCID">`.
@@ -337,17 +342,15 @@ Seeing your XML file formatted as MARCXML can help you see your data fields more
 As an example, for file example_multicollaboration.xml:
 ![linux-command-xmllint-44](images/linux-command-xmllint-44.png)
 
-
 <a name="contact"></a>
 [Who can I contact for assistance?]
 Send an email to authors@inspirehep.net if you are stuck and need assistance. 
-
-        
+      
 <a name="Links"></a>
 ## Links
  - [ORCID](https://orcid.org/)
  - [INSPIRE](https://inspirehep.net/)
- - HEPNames
- - [HEPInstitutes](https://inspirehep.net/institutions?sort=mostrecent&size=25&page=1)
+ - [INSPIRE Authors](https://inspirehep.net/authors) (previously known as 'HEPNames')
+ - [INSPIRE Institutions](https://inspirehep.net/institutions) (previously known as 'HEPInstitutes')
  - [FOAF Project](http://www.foaf-project.org/)
 
