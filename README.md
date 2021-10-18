@@ -334,8 +334,8 @@ But having the ORCID is normally sufficient.
 
 ### ROR
 This is the unique identifier for every research organization in the world. Find an organization's identifier at:
-[ROR](https://ror.org/)
-The value is used to populate the element at: 
+[ROR](https://ror.org/). The value is used to populate the element at:
+
 `<foaf:Organization><cal:orgDomain><foaf:name><cal:orgName source="ROR">`.
 
 <a name="orgDomain"></a>
