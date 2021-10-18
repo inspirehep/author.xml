@@ -251,7 +251,7 @@ Here is what you need to do - in your copy of author.xml enter **your value** fo
         - Element `<cal:orgStatus>` OPTIONAL - status of the organization within the collaboration. Typically this would be either “member” or “nonmember.”
         - Attribute `“collaborationid”` OPTIONAL - enables you to specify which exact collaboration this organization is attached to. The collaboration is represented through its ID (e.g. “c1”). This element may be repeated if necessary.
         - Element <`cal:orgAddress`> OPTIONAL - full postal address of the institution as it would be written on a letter head.
-        - Element <`cal:group`> OPTIONAL - this value can be used for collaborations wishing to group institutions together, see [About groups](#aboutgroups>) below. 
+        - Element <`cal:group`> OPTIONAL - this value can be used for collaborations wishing to group institutions together, see [About groups](#aboutgroups) below. 
         - Attribute `“with”` OPTIONAL - you can specify which group.
        
 
