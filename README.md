@@ -203,7 +203,7 @@ An updated author.xml file should be included with each submission to [arXiv.org
 
 <a name="template"></a>
 ### Template author.xml
-You should already have the author.xml template from [How do I get author.dtd and author.xml?](<#getauthordtd)
+You should already have the author.xml template from [How do I get author.dtd and author.xml?](#getauthordtd)
 The parts you will have to fill in are shown in the diagram that follows. For the data fields that you have to fill in, these are described underneath at [Explanation of data value fields in author.xml](#tablexmlelements). In some cases you will need to pick up values from another place, as described in [Data values obtained elsewhere](#infoneeded).
 
 ![author-xml-template](images/author-template-1.png)
@@ -235,8 +235,11 @@ Here is what you need to do - in your copy of author.xml enter **your value** fo
     If no immediate identifier, the title can be used
 + `<cal:collaborations>` is the container element holding container element(s) `<cal:collaboration>`.
     - `<cal:collaboration>` **REQUIRED** - container element with information about the collaboration.
-        - Attribute `“id”`: OPTIONAL - is only needed if two (2) or more collaborations publish together. Typically, it is a letter+sequential number, starting at “c1”. </br> Element `<foaf:name>`: **REQUIRED** - name of the collaboration. 
+        - Attribute `“id”`: OPTIONAL - is only needed if two (2) or more collaborations publish together. Typically, it is a letter+sequential number, starting at “c1”. 
+        - Element `<foaf:name>`: **REQUIRED** - name of the collaboration. 
         - Element `<cal:experimentNumber>` OPTIONAL - number assigned by laboratory to the experiment, if present.
+        - Element <`cal:group`> OPTIONAL - this value can be used for collaborations wishing to group institutions together
+        - Attribute `“with”` OPTIONAL - you can specify which group. See [About groups](#aboutgroups) below. 
 
 + `<cal:organizations>` is the container element holding container element(s) `<foaf:Organization>`.
     - `<foaf:Organization>` **REQUIRED** - container element with information about an organization with which authors are affiliated. There may be one or more organizations within the <cal:organizations> container, and each organization is identified by the “id” attribute.
@@ -251,10 +254,9 @@ Here is what you need to do - in your copy of author.xml enter **your value** fo
         - Element `<cal:orgStatus>` OPTIONAL - status of the organization within the collaboration. Typically this would be either “member” or “nonmember.”
         - Attribute `“collaborationid”` OPTIONAL - enables you to specify which exact collaboration this organization is attached to. The collaboration is represented through its ID (e.g. “c1”). This element may be repeated if necessary.
         - Element <`cal:orgAddress`> OPTIONAL - full postal address of the institution as it would be written on a letter head.
-        - Element <`cal:group`> OPTIONAL - this value can be used for collaborations wishing to group institutions together, see [About groups](#aboutgroups) below. 
-        - Attribute `“with”` OPTIONAL - you can specify which group.
+        - Element <`cal:group`> OPTIONAL - this value can be used for collaborations wishing to group institutions together
+        - Attribute `“with”` OPTIONAL - you can specify which group. See [About groups](#aboutgroups) below. 
        
-
 + `<cal:authors>` is the container element holding container element(s) `<foaf:Person>`.
     - `<foaf:Person>` **REQUIRED** - container element with information about the author. One or more authors reside within the <cal:authors> container.
         - Element `<foaf:name>` OPTIONAL - author's complete name written in the format e.g. "Johannes Diderik van der Waals".
@@ -320,7 +322,7 @@ it is helpful to use a set of IDs for them that plainly show their relationship,
 <foaf:Organization id="a27c">
 ```
 
-I want to go back up to ['How do I fill in the values in author.xml?'](#howfillauthorxml)
+I want to go back up to ['Explanation of data value fields in author.xml'](#tablexmlelements)
 
 <a name="infoneeded"></a>
 ## Data values obtained elsewhere
@@ -371,6 +373,8 @@ Currently, the INSPIRE-ID is often quoted in conjunction with the ORCID in the a
 ```
 
 But having the ORCID is normally sufficient.
+
+I want to go back up to ['Explanation of data value fields in author.xml'](#tablexmlelements)
 
 ### ROR
 This is the unique identifier for every research organization in the world. Find an organization's identifier at:
