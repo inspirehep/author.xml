@@ -251,7 +251,10 @@ Here is what you need to do - in your copy of author.xml enter **your value** fo
         - Element `<cal:orgStatus>` OPTIONAL - status of the organization within the collaboration. Typically this would be either “member” or “nonmember.”
         - Attribute `“collaborationid”` OPTIONAL - enables you to specify which exact collaboration this organization is attached to. The collaboration is represented through its ID (e.g. “c1”). This element may be repeated if necessary.
         - Element <`cal:orgAddress`> OPTIONAL - full postal address of the institution as it would be written on a letter head.
-        - Element <`cal:group`> OPTIONAL - see group discussion below|
+        - Element <`cal:group`> OPTIONAL - this value can be used for collaborations wishing to group institutions together, see [About groups](#aboutgroups>) below. 
+        - Attribute `“with”` OPTIONAL - you can specify which group.
+       
+
 + `<cal:authors>` is the container element holding container element(s) `<foaf:Person>`.
     - `<foaf:Person>` **REQUIRED** - container element with information about the author. One or more authors reside within the <cal:authors> container.
         - Element `<foaf:name>` OPTIONAL - author's complete name written in the format e.g. "Johannes Diderik van der Waals".
@@ -278,7 +281,31 @@ Here is what you need to do - in your copy of author.xml enter **your value** fo
                 - other author ID services (e.g. source="ORCID"). 
                 
               The [ORCID](https://orcid.org/) identifier is the highly reccommended author identifier to use - all authors are encouraged to sign up for this individually. If the author does not possess an ORCID identifier, an INSPIRE-ID may be used as an alternative. Please consult the section on [Where do I get the information needed for some of the data values?](#infoneeded) for more detailed information about the handling of author ids.
-        - Element `<cal:authorFunding>` OPTIONAL - this element describes the author's funding source, such as a grant or fellowship, if necessary (e.g., Alfred P. Sloan Fellow). This element can be left empty|
+        - Element `<cal:authorFunding>` OPTIONAL - this element describes the author's funding source, such as a grant or fellowship, if necessary (e.g., Alfred P. Sloan Fellow). This element can be left empty.
+
+<a name="aboutgroups"></a>
+### About groups
+
+Occassionally collaborations wish to group together institutions that form a consortium. 
+
+In this particular case, the group is handled as just another institution and the institutions are connected together via the ID of this group: 
+`<cal:group with=”a1″ />`
+
+Although intended for affiliations, typically united by some sort of funding arrangement, this element can be used to group collaborations and even authors.
+
+The [XML example - institutional groups](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_institutional_groups.xml) shows groups of collaborations and institutions. In the example, there is an Italian institution group and a Canadian institution group. The Canadian physicist is affiliated with the Canadian group as a whole while the Italian physicist is affiliated with 2 of the 3 institutions in the Italian institution group.
+
+Where multiple institutions are treated as a single entity, in addition to using the element:
+
+`<cal:group>`
+
+it is helpful to use a set of IDs for them that plainly show their relationship, e.g.
+
+```
+<foaf:Organization id="a27a">
+<foaf:Organization id="a27b">
+<foaf:Organization id="a27c">
+```
 
 I want to go back up to ['How do I fill in the values in author.xml?'](#howfillauthorxml)
 
