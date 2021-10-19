@@ -98,10 +98,6 @@ Using an author.xml file allows INSPIRE to automatically add all authors and aff
  - Accurate author information and attribution of credit
  
 The author.xml file, with all authors identified by an INSPIRE ID or ORCID number, will be used by publishers such as the APS in producing their journal articles. It will also be used by other database providers covering the scientific literature. Providing accurate information about the authors will result in more accurate publication lists and citation counts in addition to comprehensive search results.
-
- - Automatic generation
- 
-Given the XML file, an auto-generation process using xslt (stands for Extensible Stylesheet Language Transformations) can be used to generate the author list for the paper in the desired LaTeX format.
     
 <a name="knowterms"></a>
 ### Which XML terms should I know before starting?
@@ -138,7 +134,7 @@ The links below go to individual example author.xml files. To save a copy in you
 
 <a name="getauthorxml"></a>
 ### How do I save the file to my folder?
-As an example, if you want to save the [author.xml file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.xml) to your own folder, open the file in your Web browser. All Web browsers have a "Save as" option (try to right-click to get the pop-up menu), and you will be able to save the file. Below is our demo using Google Chrome Web browser on a Windows desktop:
+As an example, if you want to save a file called [author.xml](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/author.xml) to your own folder, open the file in your Web browser. All Web browsers have a "Save as" option (try to right-click to get the pop-up menu), and you will be able to save the file. Below is our demo using Google Chrome Web browser on a Windows desktop:
 
 ![author-xml-file-11](images/author-xml-file-11.png)
 ![author-xml-file-22](images/author-xml-file-22.png)
@@ -187,7 +183,11 @@ xmllint --dtdvalid ./author.dtd example_institutional_groups.xml
 You can do a validation trial run by using one of the example files:
 ![linux-command-xmllint-22](images/linux-command-xmllint-2.png)
 
-If the output contains 'fail' or 'error', then there is a problem with the .xml file, i.e. it is not adhering to the .dtd file. 
+If the output contains 'fail' or 'error', then there is a problem with the .xml file, i.e. it is not adhering to the .dtd file. To check if this is the case, use this command:
+
+```
+ xmllint --dtdvalid ./author.dtd author.xml | grep -i error\|fail
+```
 
 <a name="submitarxiv"></a>
 ## My author.xml is ready to be submitted to arXiv
@@ -398,8 +398,6 @@ The domain should be detailed enough to unambiguously determine the institution 
 
 I want to back up to [Element <`cal:orgDomain`>](#elementorgdomain) in section 'Explanation of data value fields in author.xml'.
 
-To validate your author.xml file, go back up to [How do I validate my author.xml file?](#authorxmlvalidate)
-
 <a name=namespaceinfo></a>
 ### Additional information concerning the name spaces “cal” and “foaf”
 
@@ -427,6 +425,7 @@ As an example, for file example_multicollaboration.xml:
 
 <a name="contact"></a>
 ## Who can I contact for assistance?
+
 Send an email to authors@inspirehep.net if you are stuck and need assistance. 
       
 <a name="Links"></a>
