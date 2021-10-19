@@ -12,6 +12,7 @@
       <cal:collaboration id="c1">
          <foaf:name></foaf:name>
          <cal:experimentNumber></cal:experimentNumber>
+         <cal:group with=""/>
       </cal:collaboration>
    </cal:collaborations>
    
@@ -29,9 +30,9 @@
    <cal:authors>
       <foaf:Person>
          <foaf:name></foaf:name>
+         <cal:authorNameNative></cal:authorNameNative>
          <foaf:givenName></foaf:givenName>
          <foaf:familyName></foaf:familyName>
-         <cal:authorNameNative></cal:authorNameNative>
          <cal:authorSuffix></cal:authorSuffix>
          <cal:authorStatus></cal:authorStatus>
          <cal:authorNamePaper></cal:authorNamePaper>
