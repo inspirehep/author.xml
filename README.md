@@ -199,12 +199,13 @@ Send an email to authors@inspirehep.net if you are stuck and need assistance.
 
 <a name="fillinauthorxml"></a>
 ## Filling in author.xml file
-An updated author.xml file should be included with each submission to [arXiv.org](https://arxiv.org/). The collaboration’s author.xml file should be filled in according to the descriptions of the template items listed below.
+Your author.xml file should be included with each submission to [arXiv.org](https://arxiv.org/). This file should be filled in according to the descriptions of the template items listed below.
 
 <a name="template"></a>
 ### Template author.xml
 You should already have the author.xml template from [How do I get author.dtd and author.xml?](#getauthordtd)
 The parts you will have to fill in are shown in the diagram that follows. For the data fields that you have to fill in, these are described underneath at [Explanation of data value fields in author.xml](#tablexmlelements). In some cases you will need to pick up values from another place, as described in [Data values obtained elsewhere](#infoneeded).
+Keep in the mind the [Examples of author.xml files](examplefiles) as this will be a good guide for you. 
 
 ![author-xml-template](images/author-template-1.png)
 
@@ -214,7 +215,7 @@ I want to go back up to ['How do I fill in the values in author.xml?'](#howfilla
 ### Explanation of data value fields in author.xml
 At the beginning of author.xml there is the XML declaration. This describes the version, encoding, and declares that this XML file will follow the rules in document type definition file author.dtd. The file 'author.dtd' needs to be in the same directory as the author.xml file. The root element and namespaces are also defined. [Additional information concerning the name spaces “cal” and “foaf”](#namespaceinfo) is available further down. Suffice to say here that these are used so as to group elements referring to similar properties. 
 
-Do not modify these:
+Do not modify the XML declaration:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -224,7 +225,7 @@ Do not modify these:
    xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
 ```
 
-Here is what you need to do - in your copy of author.xml enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**, as described below. Keep the elements and attributes in the **exact order** as in the author.xml template - this will  ensure that the XML will validate without warnings.   
+**Here is what you need to do** - in your copy of author.xml enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**, as described below. Keep the elements and attributes in the **exact order** as in the author.xml template - this will ensure that the XML will validate without warnings.   
 
 + Element `<cal:CreationDate>` **REQUIRED** - date of creation of this author.xml file
 + Element `<cal:publicationReference>` **REQUIRED**
@@ -262,9 +263,9 @@ Here is what you need to do - in your copy of author.xml enter **your value** fo
 + `<cal:authors>` is the container element holding container element(s) `<foaf:Person>`.
     - `<foaf:Person>` **REQUIRED** - container element with information about the author. One or more authors reside within the <cal:authors> container.
         - Element `<foaf:name>` OPTIONAL - author's complete name written in the format e.g. "Johannes Diderik van der Waals".
+        - Element `<cal:authorNameNative>` OPTIONAL - name of author as written in his or her native language e.g., "Ле́в Дави́дович Ланда́у" or "張晨光".
         - Element `<foaf:givenName>` OPTIONAL - all first/given names of an author in roman letters, e.g. "Johannes Diderik". You may leave this out in the rare case that a person does not possess a first name.
         - Element `<foaf:familyName>` **REQUIRED** - all sur/family names of an author in roman letters, e.g. "van der Waals".
-        - Element `<cal:authorNameNative>` OPTIONAL - name of author as written in his or her native language e.g., "Ле́в Дави́дович Ланда́у" or "張晨光".
         - Element `<cal:authorSuffix>` OPTIONAL - suffiix information for a name E.g. "Jr.", "Sr.", "III".
         - Element `<cal:authorStatus>` OPTIONAL - this element describes the vital status of an author. If the author is deceased, please state "Deceased". This element can be left empty.
         - Element `<cal:authorNamePaper>` **REQUIRED** - name of author as it appears on the title page of the paper, e.g. "J. van der Waals". This element supports Roman letters only.
@@ -292,7 +293,7 @@ Here is what you need to do - in your copy of author.xml enter **your value** fo
 
 Occassionally collaborations wish to group together institutions that form a consortium. 
 
-In this particular case, the group is handled as just another institution and the institutions are connected together via the ID of this group: 
+In this particular case, the group is handled as just another institution and the institutions are connected together via the ID of this group, for example: 
 `<cal:group with=”a1″ />`
 
 Although intended for affiliations, typically united by some sort of funding arrangement, this element can be used to group collaborations and even authors.
