@@ -14,6 +14,7 @@
     - [How do I get author.dtd and author.xml?](#getauthordtd)  
     - [How do I fill in the values in author.xml?](#howfillauthorxml)
     - [How do I validate my author.xml file?](#authorxmlvalidate)
+    - [My author.xml is ready to be submitted to arXiv](#submitarxiv)
 5. [Filling in author.xml file](#fillinauthorxml)    
     - [Template author.xml](#template)
     - [Explanation of data value fields in author.xml](#tablexmlelements) 
@@ -189,7 +190,7 @@ You can do a validation trial run by using one of the example files:
 If the output contains 'fail' or 'error', then there is a problem with the .xml file, i.e. it is not adhering to the .dtd file. 
 
 <a name="submitarxiv"></a>
-## Submitting my author.xml to arXiv
+## My author.xml is ready to be submitted to arXiv
 Congratulations if your author.xml validated successfully!
 
 Following validation, you can now submit the author.xml file as part of your submission to arXiv in a .tar ball. The instructions to do this are in [arxiv.org](https://arxiv.org/help/tar). 
@@ -199,7 +200,7 @@ Send an email to authors@inspirehep.net if you are stuck and need assistance.
 
 <a name="fillinauthorxml"></a>
 ## Filling in author.xml file
-Your author.xml file should be included with each submission to [arXiv.org](https://arxiv.org/). This file should be filled in according to the descriptions of the template items listed below.
+Your author.xml file should be filled in according to the descriptions of the template items listed below.
 
 <a name="template"></a>
 ### Template author.xml
