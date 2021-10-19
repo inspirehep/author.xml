@@ -424,7 +424,7 @@ As an example, for file example_multicollaboration.xml:
 ![linux-command-xmllint-44](images/linux-command-xmllint-44.png)
 
 <a name="contact"></a>
-[Who can I contact for assistance?]
+## Who can I contact for assistance?
 Send an email to authors@inspirehep.net if you are stuck and need assistance. 
       
 <a name="Links"></a>
