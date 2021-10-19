@@ -325,12 +325,27 @@ it is helpful to use a set of IDs for them that plainly show their relationship,
 <foaf:Organization id="a27b">
 <foaf:Organization id="a27c">
 ```
+<a name=namespaceinfo></a>
+### Additional information concerning the name spaces “cal” and “foaf”
 
+XML namespaces differentiate between XML items with the same name, and also group XML data of the same type or function. XML Namespaces provide a method to avoid element name conflicts: so, despite both elements having 'xyz' in the following elements:
+ 1. `<cal:xyz>` 
+ 1. `<foaf:xyz>`
+
+the 'xyz' are referring to completely different values. It is the prefixes 'cal' and 'foaf' that distinguish them from each other.  
+
+“cal” is the official name space for ‘collaboration author lists’ as defined in this document.
+
+“foaf” is a project creating a Web of machine-readable pages describing people, the links between them and the things they create and do. For building such an information system, standards have been created (For the creation of this document, the foaf vocabulary version 0.97 as of Jan. 1st 2010 is used). It stands for “friend of a friend” and is further described in the foaf specification and the [FOAF Project](http://www.foaf-project.org/) Web page.
 I want to go back up to ['Explanation of data value fields in author.xml'](#tablexmlelements)
 
 <a name="infoneeded"></a>
 ## Data values obtained elsewhere
-When filling in some of the XML elements in author.xml, you will need to refer to some information that is obtained somewhere else. 
+When filling in some of the XML elements in author.xml, you will need to get some of the information elsewhere. These include:
+    - ORCID identifier 
+    - INSPIRE ID
+    - ROR
+    - Identification of affiliations by their Internet domain
 
 ### ORCID identifier
 This is the 'gold standard' when it comes to researcher digital identification. This persistent digital identifier distinguishes a researcher from every other researcher, and while INSPIRE-IDs are author identifiers used internally by INSPIRE, **ORCIDs are used across disciplines, institutions, funders, research platforms, and publishers**.
@@ -397,19 +412,6 @@ Internet domains provide a unique, universally-understood way to list an institu
 The domain should be detailed enough to unambiguously determine the institution if there are distinct locations throughout the nation, e.g., pv.infn.it rather than just infn.it. If desired, this can go to the department/research-group level.
 
 I want to back up to [Element <`cal:orgDomain`>](#elementorgdomain) in section 'Explanation of data value fields in author.xml'.
-
-<a name=namespaceinfo></a>
-### Additional information concerning the name spaces “cal” and “foaf”
-
-XML namespaces differentiate between XML items with the same name, and also group XML data of the same type or function. XML Namespaces provide a method to avoid element name conflicts: so, despite both elements having 'xyz' in the following elements:
- 1. `<cal:xyz>` 
- 1. `<foaf:xyz>`
-
-the 'xyz' are referring to completely different values. It is the prefixes 'cal' and 'foaf' that distinguish them from each other.  
-
-“cal” is the official name space for ‘collaboration author lists’ as defined in this document.
-
-“foaf” is a project creating a Web of machine-readable pages describing people, the links between them and the things they create and do. For building such an information system, standards have been created (For the creation of this document, the foaf vocabulary version 0.97 as of Jan. 1st 2010 is used). It stands for “friend of a friend” and is further described in the foaf specification and the [FOAF Project](http://www.foaf-project.org/) Web page.
 
 I want to go back up to [Explanation of data value fields in author.xml](#tablexmlelements)
 
