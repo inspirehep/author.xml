@@ -23,7 +23,7 @@
          <cal:orgName source=""></cal:orgName>
          <cal:orgStatus collaborationid="c1"></cal:orgStatus>
          <cal:orgAddress></cal:orgAddress>
-         <cal:group with="c1"/>
+         <cal:group with="a1"/>
       </foaf:Organization>
    </cal:organizations>
 
