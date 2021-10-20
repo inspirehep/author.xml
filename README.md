@@ -184,11 +184,11 @@ If the output contains 'fail' or 'error', then there is a problem with the .xml 
 ```
 
 #### An example of XML validation 
-You can test an XML validation by using one of the example files. You need to be in a Linux directory containing both the .xml file and the .dtd file. For example: 
+You can test an XML validation by using one of the [example files](#examplefiles) from the list above. You need to be in a Linux directory containing both the .xml file and the .dtd file. For example: 
 ```
 xmllint --dtdvalid ./author.dtd example_institutional_groups.xml
 ```
-You can do a validation trial run by using one of the example files:
+Validation trial run:
 ![linux-command-xmllint-22](images/linux-command-xmllint-2.png)
 
 <a name="submitarxiv"></a>
