@@ -202,13 +202,22 @@ Send an email to authors@inspirehep.net if you are stuck and need assistance.
 
 <a name="fillinauthorxml"></a>
 ## Filling in author.xml file
-Your author.xml file should be filled in according to the descriptions of the template items listed below.
+We have a dedicated section for this exercise, and will cover these subjects:
+- [Template author.xml](#template)
+- [Explanation of data value fields in author.xml](#tablexmlelements)
+    - [About groups](#aboutgroups)
+    - [Additional information concerning the name spaces “cal” and “foaf”](#namespaceinfo)
+- [Data values obtained elsewhere](#infoneeded)
+    - [ORCID identifier](#orcididentifier)
+    - [INSPIRE ID](#inspireidinline)
+    - [ROR](#rorinline)
+    - [Identification of affiliations by their Internet domain](#orgDomain)
 
 <a name="template"></a>
 ### Template author.xml
-You should already have the author.xml template from [How do I get author.dtd and author.xml?](#getauthordtd)
-The parts you will have to fill in are shown in the diagram that follows. For the data fields that you have to fill in, these are described underneath at [Explanation of data value fields in author.xml](#tablexmlelements). In some cases you will need to pick up values from another place, as described in [Data values obtained elsewhere](#infoneeded).
-Do refer to the [Examples of author.xml files](examplefiles) as this will be a good guide for you. 
+You should already have the author.xml template by having followed [How do I get author.dtd and author.xml?](#getauthordtd)
+
+The parts of author.xml that you will have to fill in are shown in the diagram that follows. For the data fields are described underneath at [Explanation of data value fields in author.xml](#tablexmlelements). In some cases you will need to pick up values from another place, as described in [Data values obtained elsewhere](#infoneeded). Do refer to the [Examples of author.xml files](examplefiles) as this will be a good guide for you. 
 
 ![author-xml-template](images/author-template-2.png)
 
@@ -353,6 +362,7 @@ When filling in some of the XML elements in author.xml, you will need to get som
     - ROR
     - Identification of affiliations by their Internet domain
 
+<a name="orcididentifier"></a>
 ### ORCID identifier
 This is the 'gold standard' when it comes to researcher digital identification. This persistent digital identifier distinguishes a researcher from every other researcher, and while INSPIRE-IDs are author identifiers used internally by INSPIRE, **ORCIDs are used across disciplines, institutions, funders, research platforms, and publishers**.
 
@@ -401,6 +411,7 @@ But having the ORCID is normally sufficient.
 
 I want to go back up to ['Explanation of data value fields in author.xml'](#tablexmlelements)
 
+<a name="rorinline"></a>
 ### ROR
 This is the unique identifier for every research organization in the world. Find an organization's identifier at:
 [ROR](https://ror.org/). The value is used to populate the element at:
