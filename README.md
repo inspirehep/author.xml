@@ -315,10 +315,11 @@ In this particular case, the group is handled as just another institution and th
 Although intended for affiliations, typically united by some sort of funding arrangement, this element can be used to group collaborations and even authors.
 
 The [XML example - institutional groups](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_institutional_groups.xml) shows groups of collaborations and institutions. In the example, there is: 
-    - an Italian institution group`:
+
+    - an Italian institution group:
         - `<cal:group with="ai"/>`
     - a Canadian institution group:
-        - `<cal:group with="aCanada"/>
+        - `<cal:group with="aCanada"/>`
  
 The physicist 'John Quentin' is affiliated with the Canadian group as a whole:
 `<cal:authorAffiliation organizationid="aCanada" connection="" />
