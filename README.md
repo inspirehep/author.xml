@@ -327,14 +327,18 @@ The [XML example - institutional groups](https://raw.githubusercontent.com/inspi
  
 The physicist 'John Quentin' is affiliated with the Canadian group as a whole:
 
-`<cal:authorAffiliation organizationid="aCanada" connection="" />`
+```
+<cal:authorAffiliation organizationid="aCanada" connection="" />
+```
 
 while the physicist 'Maria Rossi' is affiliated with 2 of the 3 institutions in the Italian institution group:
 
-`<cal:authorAffiliations>
-            <cal:authorAffiliation organizationid="a1aa" connection="" />
-            <cal:authorAffiliation organizationid="a1cc" connection="" />
- </cal:authorAffiliations>`
+```
+<cal:authorAffiliations>
+    <cal:authorAffiliation organizationid="a1aa" connection="" />
+    <cal:authorAffiliation organizationid="a1cc" connection="" />
+ </cal:authorAffiliations>
+ ```
 
 Where multiple institutions are treated as a single entity, in addition to using the element:
 
