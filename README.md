@@ -244,6 +244,7 @@ Do not modify the XML declaration:
  1. Remove elements/attributes that are **OPTIONAL** and not used.
  1. Refer to [Examples of author.xml files](examplefiles) - this will be a good guide for you.     
 
+***
 
 + Element `<cal:CreationDate>` **REQUIRED** - date of creation of this author.xml file
 + Element `<cal:publicationReference>` **REQUIRED**
@@ -305,6 +306,8 @@ Do not modify the XML declaration:
                 
               The [ORCID](https://orcid.org/) identifier is the highly reccommended author identifier to use - all authors are encouraged to sign up for this individually. If the author does not possess an ORCID identifier, an INSPIRE-ID may be used as an alternative. Please consult the section on [Where do I get the information needed for some of the data values?](#infoneeded) for more detailed information about the handling of author ids.
         - Element `<cal:authorFunding>` OPTIONAL - this element describes the author's funding source, such as a grant or fellowship, if necessary (e.g., Alfred P. Sloan Fellow). This element can be left empty.
+
+***
 
 <a name="aboutgroups"></a>
 ### About groups
