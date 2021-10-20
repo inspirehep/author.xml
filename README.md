@@ -206,9 +206,9 @@ Your author.xml file should be filled in according to the descriptions of the te
 ### Template author.xml
 You should already have the author.xml template from [How do I get author.dtd and author.xml?](#getauthordtd)
 The parts you will have to fill in are shown in the diagram that follows. For the data fields that you have to fill in, these are described underneath at [Explanation of data value fields in author.xml](#tablexmlelements). In some cases you will need to pick up values from another place, as described in [Data values obtained elsewhere](#infoneeded).
-Keep in the mind the [Examples of author.xml files](examplefiles) as this will be a good guide for you. 
+Do refer to the [Examples of author.xml files](examplefiles) as this will be a good guide for you. 
 
-![author-xml-template](images/author-template-1.png)
+![author-xml-template](images/author-template-2.png)
 
 I want to go back up to ['How do I fill in the values in author.xml?'](#howfillauthorxml)
 
@@ -226,7 +226,11 @@ Do not modify the XML declaration:
    xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
 ```
 
-**Here is what you need to do** - in your copy of author.xml enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**, as described below. Keep the elements and attributes in the **exact order** as in the author.xml template - this will ensure that the XML will validate without warnings.   
+**Here is what you need to do** - in your copy of author.xml template:
+ - Enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**, as described below.
+ - Keep the elements and attributes in the **exact order** as in the author.xml template (avoids validation warnings).
+ - Remove elements/attributes that are **OPTIONAL** and not used.
+ - Refer to [Examples of author.xml files](examplefiles) - this will be a good guide for you.     
 
 + Element `<cal:CreationDate>` **REQUIRED** - date of creation of this author.xml file
 + Element `<cal:publicationReference>` **REQUIRED**
@@ -318,7 +322,7 @@ Where multiple institutions are treated as a single entity, in addition to using
 
 `<cal:group>`
 
-it is helpful to use a set of IDs for them that plainly show their relationship, e.g.
+it is helpful to use a set of IDs for them that plainly show their relationship, for example:
 
 ```
 <foaf:Organization id="a27a">
