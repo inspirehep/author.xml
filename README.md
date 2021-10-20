@@ -239,10 +239,11 @@ Do not modify the XML declaration:
 ```
 <a name="whatyouneedtodo"></a>
 **Here is what you need to do** - in your copy of author.xml template:
- - Enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**, as described below.
- - Keep the elements and attributes in the **exact order** as in the author.xml template (avoids validation warnings).
- - Remove elements/attributes that are **OPTIONAL** and not used.
- - Refer to [Examples of author.xml files](examplefiles) - this will be a good guide for you.     
+ 1. Enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**, as described below.
+ 1. Keep the elements and attributes in the **exact order** as in the author.xml template (avoids validation warnings).
+ 1. Remove elements/attributes that are **OPTIONAL** and not used.
+ 1. Refer to [Examples of author.xml files](examplefiles) - this will be a good guide for you.     
+
 
 + Element `<cal:CreationDate>` **REQUIRED** - date of creation of this author.xml file
 + Element `<cal:publicationReference>` **REQUIRED**
