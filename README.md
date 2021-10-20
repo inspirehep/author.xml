@@ -205,6 +205,7 @@ Send an email to authors@inspirehep.net if you are stuck and need assistance.
 We have a dedicated section for this exercise, and will cover these subjects:
 - [Template author.xml](#template)
 - [Explanation of data value fields in author.xml](#tablexmlelements)
+    - [**Here is what you need to do**](#whatyouneedtodo) 
     - [About groups](#aboutgroups)
     - [Additional information concerning the name spaces “cal” and “foaf”](#namespaceinfo)
 - [Data values obtained elsewhere](#infoneeded)
@@ -236,7 +237,7 @@ Do not modify the XML declaration:
    xmlns:foaf="http://xmlns.com/foaf/0.1/"
    xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
 ```
-
+<a name="whatyouneedtodo"></a>
 **Here is what you need to do** - in your copy of author.xml template:
  - Enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**, as described below.
  - Keep the elements and attributes in the **exact order** as in the author.xml template (avoids validation warnings).
