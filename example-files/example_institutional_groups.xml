@@ -106,9 +106,9 @@
          <cal:authorFunding>Gretzky Foundation Fellow</cal:authorFunding>
       </foaf:Person>
       <foaf:Person>
-         <foaf:name>Mario Rossi</foaf:name>
+         <foaf:name>Maria Rossi</foaf:name>
          <cal:authorNameNative></cal:authorNameNative>
-         <foaf:givenName>Mario</foaf:givenName>
+         <foaf:givenName>Maria</foaf:givenName>
          <foaf:familyName>Rossi</foaf:familyName>
          <cal:authorSuffix></cal:authorSuffix>
          <cal:authorStatus></cal:authorStatus>

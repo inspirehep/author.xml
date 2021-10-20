@@ -4,17 +4,18 @@
 <collaborationauthorlist
    xmlns:foaf="http://xmlns.com/foaf/0.1/"
    xmlns:cal="http://inspirehep.net/info/HepNames/tools/authors_xml/">
-   
+
    <cal:creationDate></cal:creationDate>
    <cal:publicationReference></cal:publicationReference>
-   
+
    <cal:collaborations>
       <cal:collaboration id="c1">
          <foaf:name></foaf:name>
          <cal:experimentNumber></cal:experimentNumber>
+         <cal:group with="c1"/>
       </cal:collaboration>
    </cal:collaborations>
-   
+
    <cal:organizations>
       <foaf:Organization id="a1">
          <cal:orgDomain>http://</cal:orgDomain>
@@ -22,16 +23,16 @@
          <cal:orgName source=""></cal:orgName>
          <cal:orgStatus collaborationid="c1"></cal:orgStatus>
          <cal:orgAddress></cal:orgAddress>
-         <cal:group with=""/>
+         <cal:group with="a1"/>
       </foaf:Organization>
    </cal:organizations>
-   
+
    <cal:authors>
       <foaf:Person>
          <foaf:name></foaf:name>
+         <cal:authorNameNative></cal:authorNameNative>
          <foaf:givenName></foaf:givenName>
          <foaf:familyName></foaf:familyName>
-         <cal:authorNameNative></cal:authorNameNative>
          <cal:authorSuffix></cal:authorSuffix>
          <cal:authorStatus></cal:authorStatus>
          <cal:authorNamePaper></cal:authorNamePaper>
