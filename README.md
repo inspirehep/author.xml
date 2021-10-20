@@ -359,6 +359,7 @@ the 'xyz' are referring to completely different values. It is the prefixes 'cal'
 “cal” is the official name space for ‘collaboration author lists’ as defined in this document.
 
 “foaf” is a project creating a Web of machine-readable pages describing people, the links between them and the things they create and do. For building such an information system, standards have been created (For the creation of this document, the foaf vocabulary version 0.97 as of Jan. 1st 2010 is used). It stands for “friend of a friend” and is further described in the foaf specification and the [FOAF Project](http://www.foaf-project.org/) Web page.
+
 I want to go back up to ['Explanation of data value fields in author.xml'](#tablexmlelements)
 
 <a name="infoneeded"></a>
