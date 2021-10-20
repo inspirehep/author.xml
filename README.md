@@ -315,6 +315,7 @@ Do not modify the XML declaration:
 Occassionally collaborations wish to group together institutions that form a consortium. 
 
 In this particular case, the group is handled as just another institution and the institutions are connected together via the ID of this group, for example: 
+
 `<cal:group with=”a1″ />`
 
 Although intended for affiliations, typically united by some sort of funding arrangement, this element can be used to group collaborations and even authors.
@@ -327,14 +328,18 @@ The [XML example - institutional groups](https://raw.githubusercontent.com/inspi
  
 The physicist 'John Quentin' is affiliated with the Canadian group as a whole:
 
-`<cal:authorAffiliation organizationid="aCanada" connection="" />`
+```
+<cal:authorAffiliation organizationid="aCanada" connection="" />
+```
 
 while the physicist 'Maria Rossi' is affiliated with 2 of the 3 institutions in the Italian institution group:
 
-`<cal:authorAffiliations>
-            <cal:authorAffiliation organizationid="a1aa" connection="" />
-            <cal:authorAffiliation organizationid="a1cc" connection="" />
- </cal:authorAffiliations>`
+```
+<cal:authorAffiliations>
+    <cal:authorAffiliation organizationid="a1aa" connection="" />
+    <cal:authorAffiliation organizationid="a1cc" connection="" />
+ </cal:authorAffiliations>
+ ```
 
 Where multiple institutions are treated as a single entity, in addition to using the element:
 
