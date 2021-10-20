@@ -168,7 +168,7 @@ Some of the data values may have to be obtained from elsewhere. Go to [Data valu
 After you have filled in all the data values of your author.xml, you should validate the file against the author.dtd file. Validation of your author.xml file is done in Linux.
 Your directory needs to contain:
 - your author.xml
-- the given author.dtd
+- the author.dtd
 
 ![linux-XML-directory](images/linux-xml-directory-1.png)
 
