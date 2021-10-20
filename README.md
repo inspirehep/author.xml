@@ -177,6 +177,12 @@ In the directory, run the command to validate your author.xml file against the a
  xmllint --dtdvalid ./author.dtd author.xml
 ```
 
+If the output contains 'fail' or 'error', then there is a problem with the .xml file, i.e. it is not adhering to the .dtd file. To check specifically for these strings, use this command:
+
+```
+ xmllint --dtdvalid ./author.dtd author.xml | grep -i error\|fail
+```
+
 #### An example of XML validation 
 You can test an XML validation by using one of the example files. You need to be in a Linux directory, and run, for example: 
 ```
@@ -184,12 +190,6 @@ xmllint --dtdvalid ./author.dtd example_institutional_groups.xml
 ```
 You can do a validation trial run by using one of the example files:
 ![linux-command-xmllint-22](images/linux-command-xmllint-2.png)
-
-If the output contains 'fail' or 'error', then there is a problem with the .xml file, i.e. it is not adhering to the .dtd file. To check if this is the case, use this command:
-
-```
- xmllint --dtdvalid ./author.dtd author.xml | grep -i error\|fail
-```
 
 <a name="submitarxiv"></a>
 ## My author.xml is ready to be submitted to arXiv
