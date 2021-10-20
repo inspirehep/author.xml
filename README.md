@@ -315,6 +315,7 @@ Do not modify the XML declaration:
 Occassionally collaborations wish to group together institutions that form a consortium. 
 
 In this particular case, the group is handled as just another institution and the institutions are connected together via the ID of this group, for example: 
+
 `<cal:group with=”a1″ />`
 
 Although intended for affiliations, typically united by some sort of funding arrangement, this element can be used to group collaborations and even authors.
