@@ -111,7 +111,7 @@ You don't need to know any specific terms. However, as you will come across the 
 
  - **Well formed XML document** -> An XML document is said to be well formed if it satifies the syntax rules. These rules are:
      - XML documents must have a root element (i.e. one sole parent element for all the XML elements in the document)
-     - XML elements must have a start and end tag
+     - XML elements must have a start and end tag (written as <element></element> or <element/>) 
      - XML tags are case sensitive
      - XML elements must be properly nested
      - XML attribute values must be quoted
