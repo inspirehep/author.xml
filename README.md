@@ -260,7 +260,7 @@ Do not modify the XML declaration:
         - Attribute `“id”`: OPTIONAL - is only needed if two (2) or more collaborations publish together. Typically, it is a letter+sequential number, starting at “c1”. 
         - Element `<foaf:name>`: **REQUIRED** - name of the collaboration. 
         - Element `<cal:experimentNumber>` OPTIONAL - number assigned by laboratory to the experiment, if present.
-        - Element <`cal:group`> OPTIONAL - this value can be used for collaborations wishing to group institutions together
+        - Element <`cal:group`> OPTIONAL - this value can be used for collaborations wishing to group institutions together: if not needed, you can **remove the element** as a value will be expected for the consortium. 
         - Attribute `“with”` OPTIONAL - you can specify which group. See [About groups](#aboutgroups) below. 
 
 + `<cal:organizations>` is the container element holding container element(s) `<foaf:Organization>`.
