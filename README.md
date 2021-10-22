@@ -1,4 +1,4 @@
-⚠️ **This documentation is still work-in-progress and shouldn't be relied on**
+⚠️ **This documentation is now in status pre-production**
 
 # INSPIRE Collaboration Author Lists
 ### The author.xml file - introduction, specification, creation
@@ -111,7 +111,7 @@ You don't need to know any specific terms. However, as you will come across the 
 
  - **Well formed XML document** -> An XML document is said to be well formed if it satifies the syntax rules. These rules are:
      - XML documents must have a root element (i.e. one sole parent element for all the XML elements in the document)
-     - XML elements must have a start and end tag
+     - XML elements must have a start and end tag (written as &lt;element&gt;&lt;/element&gt; or &lt;element/&gt;) 
      - XML tags are case sensitive
      - XML elements must be properly nested
      - XML attribute values must be quoted
@@ -241,7 +241,6 @@ Do not modify the XML declaration:
 **Here is what you need to do** - in your copy of author.xml template:
  1. Enter **your value** for the element or attribute when you see **REQUIRED** or **OPTIONAL**, as described below.
  1. Keep the elements and attributes in the **exact order** as in the author.xml template (avoids validation warnings).
- 1. Remove elements/attributes that are **OPTIONAL** and not used.
  1. Refer to [Examples of author.xml files](#examplefiles) - this will be a good guide for you.     
 
 ***
@@ -260,7 +259,7 @@ Do not modify the XML declaration:
         - Attribute `“id”`: OPTIONAL - is only needed if two (2) or more collaborations publish together. Typically, it is a letter+sequential number, starting at “c1”. 
         - Element `<foaf:name>`: **REQUIRED** - name of the collaboration. 
         - Element `<cal:experimentNumber>` OPTIONAL - number assigned by laboratory to the experiment, if present.
-        - Element <`cal:group`> OPTIONAL - this value can be used for collaborations wishing to group institutions together
+        - Element <`cal:group`> OPTIONAL - this value can be used for collaborations wishing to group institutions together: if not needed, you can **remove the element** as a value will be expected for the consortium. 
         - Attribute `“with”` OPTIONAL - you can specify which group. See [About groups](#aboutgroups) below. 
 
 + `<cal:organizations>` is the container element holding container element(s) `<foaf:Organization>`.
