@@ -273,7 +273,7 @@ Do not modify the XML declaration:
         - Element `<cal:orgStatus>` OPTIONAL - status of the organization within the collaboration. Typically this would be either “member” or “nonmember.”
         - Attribute `“collaborationid”` OPTIONAL - enables you to specify which exact collaboration this organization is attached to. The collaboration is represented through its ID (e.g. “c1”). This element may be repeated if necessary.
         - Element <`cal:orgAddress`> OPTIONAL - full postal address of the institution as it would be written on a letter head.
-        - Element <`cal:group`> OPTIONAL - this value can be used for collaborations wishing to group institutions together
+        - Element <`cal:group`> OPTIONAL - this value can be used for collaborations wishing to group institutions together: if not needed, you can **remove the element** as a value will be expected for the consortium. 
         - Attribute `“with”` OPTIONAL - you can specify which group. See [About groups](#aboutgroups) below. 
        
 + `<cal:authors>` is the container element holding container element(s) `<foaf:Person>`.
