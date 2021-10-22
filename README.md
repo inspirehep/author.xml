@@ -124,7 +124,7 @@ You don't need to know any specific terms. However, as you will come across the 
 ## Examples of author.xml files
 The links below go to individual example author.xml files. We recommend that you save some of these files for browsing/testing later on. 
 
-To save a copy in your own folder, go to each file and do save as "[filename].xml". Picture instructions for saving a file that is displayed in your Web browser are at [How do I save the file to my folder?](#getauthorxml) just below.
+To save a copy in your own folder, go to each file and do 'save as' "[filename].xml". Picture instructions for saving a file that is displayed in your Web browser are at [How do I save the file to my folder?](#getauthorxml) just below.
 
 [XML example - minimal file](https://raw.githubusercontent.com/inspirehep/author.xml/abchan-paragraph/example-files/example_minimal.xml)
 
