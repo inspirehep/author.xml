@@ -124,17 +124,17 @@ The links below go to individual example author.xml files. We recommend that you
 
 To save a copy in your own folder, go to each file and do 'save as' "[filename].xml". Picture instructions for saving a file that is displayed in your Web browser are at [How do I save the file to my folder?](#getauthorxml) just below.
 
-[XML example - minimal file](https://github.com/inspirehep/author.xml/blob/main/example-files/example_minimal.xml)
+[XML example - minimal file](https://raw.githubusercontent.com/inspirehep/author.xml/main/example-files/example_minimal.xml)
 
-[XML example - full-data file](https://github.com/inspirehep/author.xml/blob/main/example-files/example_fulldata.xml)
+[XML example - full-data file](https://raw.githubusercontent.com/inspirehep/author.xml/main/example-files/example_fulldata.xml)
 
-[XML example - multicollaboration file](https://github.com/inspirehep/author.xml/blob/main/example-files/example_multicollaboration.xml)
+[XML example - multicollaboration file](https://raw.githubusercontent.com/inspirehep/author.xml/main/example-files/example_multicollaboration.xml)
 
-[XML example - institutional groups](https://github.com/inspirehep/author.xml/blob/main/example-files/example_institutional_groups.xml)
+[XML example - institutional groups](https://raw.githubusercontent.com/inspirehep/author.xml/main/example-files/example_institutional_groups.xml)
 
 <a name="getauthorxml"></a>
 ### How do I save the file to my folder?
-As an example, if you want to save a file called [author.xml](https://github.com/inspirehep/author.xml/blob/main/example-files/author.xml) to your own folder, open the file in your Web browser. All Web browsers have a "Save as" option (try to right-click to get the pop-up menu), and you will be able to save the file. Below is our demo using Google Chrome Web browser on a Windows desktop:
+As an example, if you want to save a file called [author.xml](https://raw.githubusercontent.com/inspirehep/author.xml/main/example-files/author.xml) to your own folder, open the file in your Web browser. All Web browsers have a "Save as" option (try to right-click to get the pop-up menu), and you will be able to save the file. Below is our demo using Google Chrome Web browser on a Windows desktop:
 
 ![author-xml-file-11](images/author-xml-file-11.png)
 ![author-xml-file-22](images/author-xml-file-22.png)
@@ -151,9 +151,9 @@ Let's go! You will need to:
 
 <a name="getauthordtd"></a>
 ### How do I get author.dtd and author.xml?
-To get the template file author.xml, go to the [**author.xml file**](https://github.com/inspirehep/author.xml/blob/main/example-files/author.xml), and save "author.xml" to your own local folder. If necessary, follow the picture instructions at [How do I save the file to my folder?](#getauthorxml). 
+To get the template file author.xml, go to the [**author.xml file**](https://raw.githubusercontent.com/inspirehep/author.xml/main/example-files/author.xml), and save "author.xml" to your own local folder. If necessary, follow the picture instructions at [How do I save the file to my folder?](#getauthorxml). 
 
-To get the file author.dtd, go to the [**author.dtd file**](https://github.com/inspirehep/author.xml/blob/main/example-files/author.dtd), and save "author.dtd" to your own local folder. If necessary, you can do something similar to the picture instructions at [How do I save the file to my folder?](#getauthorxml). 
+To get the file author.dtd, go to the [**author.dtd file**](https://raw.githubusercontent.com/inspirehep/author.xml/main/example-files/author.dtd), and save "author.dtd" to your own local folder. If necessary, you can do something similar to the picture instructions at [How do I save the file to my folder?](#getauthorxml). 
 
 <a name="howfillauthorxml"></a>
 ### How do I fill in the values in author.xml?
@@ -317,7 +317,7 @@ In this particular case, the group is handled as just another institution and th
 
 Although intended for affiliations, typically united by some sort of funding arrangement, this element can be used to group collaborations and even authors.
 
-The [XML example - institutional groups](https://github.com/inspirehep/author.xml/blob/main/example-files/example_institutional_groups.xml) shows groups of collaborations and institutions. In the example, there is: 
+The [XML example - institutional groups](https://raw.githubusercontent.com/inspirehep/author.xml/main/example-files/example_institutional_groups.xml) shows groups of collaborations and institutions. In the example, there is: 
 + an Italian institution group:
     - `<cal:group with="ai"/>`
 + a Canadian institution group:
@@ -445,7 +445,7 @@ I want to go back up to [Explanation of data value fields in author.xml](#tablex
 <a name="authorxmlconvert"></a>
 ## Can I convert my author.xml file to another format?
 ### Convert XML to MARCXML
-Seeing your XML file formatted as MARCXML can help you see your data fields more easily. Get [authorlist2marcxml.xsl](https://github.com/inspirehep/author.xml/blob/main/example-files/authorlist2marcxml.xsl), save it to your directory on Linux, and run the command:
+Seeing your XML file formatted as MARCXML can help you see your data fields more easily. Get [authorlist2marcxml.xsl](https://raw.githubusercontent.com/inspirehep/author.xml/main/example-files/authorlist2marcxml.xsl), save it to your directory on Linux, and run the command:
 ```
  xsltproc authorlist2marcxml.xsl [filename].xml
 ```
