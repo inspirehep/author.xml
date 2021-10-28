@@ -216,7 +216,7 @@ We have a dedicated section for this exercise, and will cover these subjects:
 ### Template author.xml
 You should already have the author.xml template by having followed [How do I get author.dtd and author.xml?](#getauthordtd)
 
-The parts of author.xml that you will have to fill in are shown in the diagram that follows. For the data fields are described underneath at [Explanation of data value fields in author.xml](#tablexmlelements). In some cases you will need to pick up values from another place, as described in [Data values obtained elsewhere](#infoneeded). Do refer to the [Examples of author.xml files](#examplefiles) as this will be a good guide for you. 
+The parts of author.xml that you will have to fill in are shown in the diagram that follows. The data fields are described underneath at [Explanation of data value fields in author.xml](#tablexmlelements). In some cases you will need to pick up values from another place, as described in [Data values obtained elsewhere](#infoneeded). Do refer to the [Examples of author.xml files](#examplefiles) as this will be a good guide for you. 
 
 ![author-xml-template](images/author-template-2.png)
 
