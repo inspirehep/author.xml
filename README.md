@@ -187,7 +187,7 @@ You can test an XML validation by using one of the [example files](#examplefiles
 xmllint --dtdvalid ./author.dtd example_institutional_groups.xml
 ```
 Validation trial run:
-![linux-command-xmllint-22](images/linux-command-xmllint-2.png)
+![linux-command-xmllint-22](images/linux-command-xmllint-22.png)
 
 <a name="submitarxiv"></a>
 ## My author.xml is ready to be submitted to arXiv
