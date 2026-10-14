@@ -195,7 +195,7 @@ Congratulations if your author.xml validated successfully!
 
 Following validation, you can now submit the author.xml file as part of your submission to arXiv in a .tar ball. The instructions to do this are in [arxiv.org](https://arxiv.org/help/tar). 
 
-Send an email to authors@inspirehep.net if you are stuck and need assistance.   
+Please [contact us](https://help.inspirehep.net/knowledge-base/contact-us/) if you are stuck and need assistance.   
 
 
 <a name="fillinauthorxml"></a>
@@ -390,12 +390,10 @@ The ORCID identifier value is used to populate the element at:
 
 As mentioned above, ORCID is the principal researcher digital identifier that authors are encouraged to use. 
 
-In certain cases, however, for instance when authors are no longer actively publishing contributions, or when authors have passed away,  the INSPIRE-ID can be used. If any of your authors do not possess an ORCID, send the:
+In certain cases, however, for instance when authors are no longer actively publishing contributions, or when authors have passed away,  the INSPIRE-ID can be used. If any of your authors do not possess an ORCID, please [send us a request](https://cern.service-now.com/service-portal?id=sc_cat_item&name=inspire&fe=INSPIRE) containing:
 
 - author's name 
 - author's email address
-
-in an email to authors@inspirehep.net
 
 so that we can manually generate an INSPIRE-ID, and that person's work will get it's due credit and exposure.
 
@@ -455,7 +453,7 @@ As an example, for file example_multicollaboration.xml:
 <a name="contact"></a>
 ## Who can I contact for assistance?
 
-Send an email to authors@inspirehep.net if you are stuck and need assistance. 
+Please [contact us](https://help.inspirehep.net/knowledge-base/contact-us/) if you are stuck and need assistance. 
       
 <a name="Links"></a>
 ## Links
